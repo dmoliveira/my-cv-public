@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="220" viewBox="0 0 640 220">
+  <rect width="640" height="220" fill="#fff7ec" />
+  <rect x="30" y="60" width="160" height="80" rx="10" fill="#ffe1bd" stroke="#c46b1a" />
+  <rect x="240" y="60" width="160" height="80" rx="10" fill="#ffd5a3" stroke="#c46b1a" />
+  <rect x="450" y="60" width="160" height="80" rx="10" fill="#ffe1bd" stroke="#c46b1a" />
+  <text x="110" y="105" text-anchor="middle" font-family="Arial" font-size="14" fill="#5b3a17">User Query</text>
+  <text x="320" y="95" text-anchor="middle" font-family="Arial" font-size="13" fill="#5b3a17">GenAI Retrieval</text>
+  <text x="320" y="114" text-anchor="middle" font-family="Arial" font-size="13" fill="#5b3a17">+ Ranking</text>
+  <text x="530" y="105" text-anchor="middle" font-family="Arial" font-size="13" fill="#5b3a17">Answer</text>
+  <path d="M190 100 H240" stroke="#c46b1a" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M400 100 H450" stroke="#c46b1a" stroke-width="2" marker-end="url(#arrow)" />
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#c46b1a" />
+    </marker>
+  </defs>
+</svg>
