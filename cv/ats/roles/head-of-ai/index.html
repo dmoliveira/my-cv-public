@@ -7,22 +7,22 @@
     <meta name="description" content="AI/ML Leader | Agentic AI, AI
 Search, and Recommendations | Production AI at Scale" />
 
-    <link rel="canonical" href="https://dmztheone.github.io/my-cv/cv/ats/roles/head-of-ai/" />
-    <meta property="og:url" content="https://dmztheone.github.io/my-cv/cv/ats/roles/head-of-ai/" />
+    <link rel="canonical" href="https://dmoliveira.github.io/my-cv-public/cv/ats/roles/head-of-ai/" />
+    <meta property="og:url" content="https://dmoliveira.github.io/my-cv-public/cv/ats/roles/head-of-ai/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Diego Marinho de Oliveira" />
     <meta property="og:description" content="AI/ML Leader | Agentic AI,
 AI Search, and Recommendations | Production AI at Scale" />
 
-    <meta property="og:image" content="https://dmztheone.github.io/my-cv/assets/photos/thumbnail-linkedin-1200x627.png" />
+    <meta property="og:image" content="https://dmoliveira.github.io/my-cv-public/assets/photos/thumbnail-linkedin-1200x627.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Diego Marinho de Oliveira" />
     <meta name="twitter:description" content="AI/ML Leader | Agentic AI,
 AI Search, and Recommendations | Production AI at Scale" />
 
-    <meta name="twitter:image" content="https://dmztheone.github.io/my-cv/assets/photos/thumbnail-linkedin-1200x627.png" />
+    <meta name="twitter:image" content="https://dmoliveira.github.io/my-cv-public/assets/photos/thumbnail-linkedin-1200x627.png" />
 
     <style>
       :root {
@@ -75,10 +75,28 @@ AI Search, and Recommendations | Production AI at Scale" />
       a:hover {
         text-decoration: underline;
       }
+      .ats-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 16px;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+      }
+      .ats-link {
+        border: 1px solid #d9d9d9;
+        padding: 6px 10px;
+        border-radius: 999px;
+      }
     </style>
   </head>
   <body>
     <main>
+      <div class="ats-bar" aria-label="Navigation">
+        <a class="ats-link" href="/cv/human/">Main View</a>
+        <button class="ats-link" type="button" data-action="print">Print / PDF</button>
+      </div>
       <h1 id="diego-marinho-de-oliveira">Diego Marinho de Oliveira</h1>
       <p>AI/ML Leader | Agentic AI, AI Search, and Recommendations |
       Production AI at Scale</p>
@@ -126,16 +144,18 @@ AI Search, and Recommendations | Production AI at Scale" />
       </ul>
       <h2 id="signature-projects">Signature Projects</h2>
       <ul>
-      <li><div class="cv-item" data-roles="ai-ml-leader,head-of-ai"
+      <li><div class="cv-item"
       data-diagram="/assets/diagrams/genai-property-search.svg"
-      data-variant="one-page,full" data-highlights="genai">
+      data-roles="ai-ml-leader,head-of-ai" data-variant="one-page,full"
+      data-highlights="genai">
       GenAI Property Search (REA): Built and launched in under 30 days;
       production AI search for property discovery. <a
       href="https://www.mediaweek.com.au/rea-group-unveils-openai-powered-realassist/">Media</a>
       </div></li>
-      <li><div class="cv-item" data-roles="ai-ml-leader,head-of-ai"
+      <li><div class="cv-item"
       data-diagram="/assets/diagrams/agentic-ai-platform.svg"
-      data-variant="one-page,full" data-highlights="genai,scale">
+      data-roles="ai-ml-leader,head-of-ai" data-variant="one-page,full"
+      data-highlights="genai,scale">
       Agentic AI Platform (REA): Designed and deployed AI agents at
       scale with cost controls, safety, and observability. <a
       href="https://www.mediaweek.com.au/rea-group-unveils-openai-powered-realassist/">Media</a>
@@ -303,5 +323,15 @@ AI Search, and Recommendations | Production AI at Scale" />
       retrieval, recommender systems, GenAI, LLMs, RAG, MLOps,
       observability, safety, guardrails.</p>
     </main>
+    <script>
+      (function () {
+        var printBtn = document.querySelector("[data-action='print']");
+        if (printBtn) {
+          printBtn.addEventListener("click", function () {
+            window.print();
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
