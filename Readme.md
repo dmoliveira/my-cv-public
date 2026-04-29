@@ -7,18 +7,18 @@ linkedin: https://www.linkedin.com/in/dmztheone
 ---
 
 # Diego Marinho de Oliveira
-AI/ML Leader | Agentic AI, AI Search, and Recommendations | Production AI at Scale
+AI/ML Leader | Agentic AI, Multi-Agent Systems, AI Search, and Recommendations | Production AI Platforms at Scale
 
 Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · https://www.linkedin.com/in/dmztheone
 
 ## Executive Summary
 - AI/ML leader with 10+ years delivering Agentic AI, AI search, and recommender systems across Oceania, Asia, and South America.
-- Designed, developed, and deployed a production-grade AI agent platform at scale.
+- Designed, developed, and deployed production-grade agentic AI platforms at scale, including multi-agent orchestration, tool use, evaluation, and safety guardrails.
 - Proven business impact through 150+ online experiments and multiple customer-facing AI launches.
-- Track record of leading global DS/MLE teams, hiring at scale, and shipping end-to-end production systems.
+- Track record of leading global DS/MLE teams, hiring at scale, and shipping end-to-end production AI systems with strong cost, latency, and reliability controls.
 
 ## Leadership and Impact
-- Led AI initiatives across Agentic AI, AI search, multimodal CV, and recommendations.
+- Led AI initiatives across agentic AI, multi-agent systems, AI search, multimodal CV, and recommendations.
 - Built REA's first GenAI property search in under 30 days and shipped production AI agents for direct user conversations.
 - Delivered the first real-time attribute extraction CV system to production (45+ attributes).
 - Drove multi-market recommender transformations at SEEK with 5-10x gains and a 12x record in an Asia market.
@@ -27,14 +27,14 @@ Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · https://www.linkedin.
 ## Operating at Scale
 - Ran 150+ online experiments and A/B tests with positive impact on primary metrics; record uplift in an Asia market.
 - Delivered real-time recommendations for millions of users across homepage, email, and push.
-- Owned cost and performance targets across AWS/GCP; optimized LLM usage with caching and token-level cost tracking.
+- Owned cost and performance targets across AWS/GCP; optimized LLM usage with prompt caching, token-level cost tracking, and latency-aware production controls.
 - Designed systems with offline evaluation, online testing, and load tests to meet SLAs (recs ~500ms, GenAI 1-2s).
-- Implemented guardrails, rate limiting, and LLM-as-judge monitoring; completed a security pen test.
+- Implemented guardrails, rate limiting, LLM-as-judge evaluation, and production monitoring; completed a security pen test.
 - Defined OKRs with executive stakeholders and partnered across product, engineering, and leadership.
 
 ## Signature Projects
 - GenAI Property Search (REA): Built and launched in under 30 days; production AI search for property discovery.
-- Agentic AI Platform (REA): Designed and deployed AI agents at scale with cost controls, safety, and observability.
+- Agentic AI Platform (REA): Designed and deployed tool-augmented AI agents at scale with orchestration, cost controls, safety, observability, and evaluation.
 - Multimodal CV Attribute Extraction (REA): Real-time system extracting 45+ property attributes in production.
 - Unified Recommender Platform (SEEK): 8+ markets, 5-10x gains, and a 12x record in an Asia market.
 - Personalized AI Search (SEEK JobsDB): +14% improvement on a core metric in HK.
@@ -45,11 +45,11 @@ Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · https://www.linkedin.
 April 2024 — Present
 - Lead DS/MLE teams delivering production Agentic AI, AI search, and personalization (12 people, up to 3 teams).
 - Built a GenAI property search engine for the RED brand end-to-end in under one month.
-- Designed and deployed AI agent systems to production at scale.
+- Designed and deployed tool-augmented AI agent systems to production at scale, including orchestration, observability, evaluation, and guardrails.
 - Delivered real-time CV attribute extraction and multimodal inference in production.
-- Implemented GenAI observability for real-time monitoring, evaluation, and tracing.
+- Implemented GenAI observability for real-time monitoring, evaluation, tracing, and operational debugging.
 - Managed GenAI costs (input/output, caching) and met SLAs (1-2s per request).
-- Applied guardrails, rate limiting, and LLM-as-judge monitoring; completed a security pen test.
+- Applied guardrails, rate limiting, LLM-as-judge evaluation, and production monitoring; completed a security pen test.
 
 ### AI / Data Scientist Manager; Senior Data Scientist; Data Scientist, SEEK (Melbourne, Australia)
 March 2017 — April 2024
@@ -102,17 +102,17 @@ July 2015 — February 2017
 ## Skills
 Leadership: org design, hiring, mentoring, cross-functional strategy.
 AI/ML Systems: ranking, retrieval, AI search, semantic search, sequential recommenders, online experimentation, A/B testing, learning-to-rank.
-GenAI/LLMs: agentic AI, AI agents, RAG, embeddings, structured outputs, fine-tuning (QLoRA), evaluation.
+GenAI/LLMs: agentic AI, AI agents, multi-agent orchestration, RAG, tool use, structured outputs, embeddings, evaluation, fine-tuning (QLoRA).
 ML Techniques: transformers, embeddings, matrix factorization, clustering, RL, offline evaluation.
 Tools: PyTorch, TensorFlow, scikit-learn, Pandas, XGBoost, LightGBM, CatBoost, Spark, Hadoop, FastAPI.
-AI Tools/Services: Codex, Claude Code, Cline, Gemini CLI, VS Code Copilot, Cursor, Antigravity, Vertex AI Studio, MCPs.
-Cloud/MLOps: GCP, Vertex AI, AWS, BigQuery, Kubernetes, Terraform, Buildkite, CI/CD, observability, data pipelines.
+AI Tools/Services: Codex, Claude Code, OpenCode, Cline, Gemini CLI, VS Code Copilot, Cursor, Vertex AI Studio, MCP.
+Cloud/MLOps: GCP, Vertex AI, AWS, BigQuery, Kubernetes, Terraform, Buildkite, CI/CD, observability, tracing, data pipelines.
 Observability: Arize AX/Phoenix, Langfuse, Opik, Braintrust, New Relic, PagerDuty, W&B.
 Datastores: SQL, Solr, OpenSearch, Elasticsearch, Redis, MongoDB, PostgreSQL, vector databases.
 Languages: Python, R, Julia, Java, Scala, Go, C/C++.
 
 ## Core Expertise
-AI/ML leadership, Agentic AI, AI search, semantic search, ranking systems, retrieval, recommender systems, GenAI, LLMs, RAG, multimodal AI, online experimentation, A/B testing, MLOps, observability, safety, guardrails.
+AI/ML leadership, agentic AI, multi-agent systems, AI search, semantic search, ranking systems, retrieval, recommender systems, GenAI, LLMs, RAG, multimodal AI, online experimentation, A/B testing, observability, evaluation, safety, guardrails.
 
 ## Languages
 English (fluent), Portuguese (native), Spanish (basic).
