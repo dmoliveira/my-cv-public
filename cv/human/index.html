@@ -440,9 +440,29 @@
         border: 1px solid rgba(42, 111, 219, 0.14);
         box-shadow: 0 10px 22px rgba(18, 19, 15, 0.06);
       }
+      .proof-card-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 6px;
+      }
+      .proof-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 12px;
+        background: rgba(42, 111, 219, 0.08);
+        color: var(--accent-dark);
+      }
+      .proof-icon svg {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+      }
       .proof-value {
         display: block;
-        margin-bottom: 6px;
         color: var(--accent-dark);
         font-size: 28px;
         font-weight: 700;
@@ -459,6 +479,46 @@
         margin-top: 6px;
         font-size: 13px;
         color: var(--muted);
+      }
+      .brand-strip {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 22px;
+        padding: 14px 16px;
+        border-radius: 18px;
+        background: #f7faff;
+        border: 1px solid rgba(42, 111, 219, 0.12);
+      }
+      .brand-strip-label {
+        margin-right: 6px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+      }
+      .brand-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 10px 6px 6px;
+        border-radius: 999px;
+        background: #ffffff;
+        border: 1px solid rgba(42, 111, 219, 0.12);
+        color: var(--text);
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .brand-pill .brand-badge {
+        min-width: 28px;
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        border-radius: 10px;
+        font-size: 10px;
+        letter-spacing: 0.06em;
       }
       .section-intro {
         margin: 0 0 16px;
@@ -632,6 +692,9 @@
         .education-grid {
           grid-template-columns: 1fr;
         }
+        .brand-strip {
+          gap: 8px;
+        }
         .experience-header,
         .education-header {
           grid-template-columns: auto 1fr;
@@ -727,10 +790,18 @@ Marinho de Oliveira headshot" />
         </div>
       </section>
       <section class="proof-grid" aria-label="Selected impact metrics">
-        <article class="proof-card"><span class="proof-value">10+ years</span><span class="proof-label">AI/ML Leadership</span><span class="proof-note">Delivery across Oceania, Asia, and South America.</span></article>
-        <article class="proof-card"><span class="proof-value">150+</span><span class="proof-label">Online Experiments</span><span class="proof-note">A/B tests and launches tied to core business metrics.</span></article>
-        <article class="proof-card"><span class="proof-value">5-10x</span><span class="proof-label">Platform Gains</span><span class="proof-note">Recommender transformation with a 12x record in Asia.</span></article>
-        <article class="proof-card"><span class="proof-value">Millions</span><span class="proof-label">Users Served</span><span class="proof-note">Real-time recommendations, AI search, and production AI experiences.</span></article>
+        <article class="proof-card"><div class="proof-card-header"><span class="proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 2h6v2l-1 1v4.586l4.95 8.579A3 3 0 0 1 16.35 22h-8.7a3 3 0 0 1-2.6-4.835L10 9.586V5L9 4V2zm2 8.414-4.218 7.308A1 1 0 0 0 7.65 20h8.7a1 1 0 0 0 .867-1.278L13 10.414V5h-2v5.414z"/></svg></span><span class="proof-value">10+ years</span></div><span class="proof-label">AI/ML Leadership</span><span class="proof-note">Delivery across Oceania, Asia, and South America.</span></article>
+        <article class="proof-card"><div class="proof-card-header"><span class="proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 3h2v18h-2V3zM3 13h2v8H3v-8zm8-6h2v14h-2V7zm4 3h2v11h-2V10zm-8-3h2v14H7V7z"/></svg></span><span class="proof-value">150+</span></div><span class="proof-label">Online Experiments</span><span class="proof-note">A/B tests and launches tied to core business metrics.</span></article>
+        <article class="proof-card"><div class="proof-card-header"><span class="proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 4h6v6h-2V7.414l-7.293 7.293-1.414-1.414L16.586 6H14V4zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg></span><span class="proof-value">5-10x</span></div><span class="proof-label">Platform Gains</span><span class="proof-note">Recommender transformation with a 12x record in Asia.</span></article>
+        <article class="proof-card"><div class="proof-card-header"><span class="proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4.418 0-8 2.239-8 5v1h16v-1c0-2.761-3.582-5-8-5z"/></svg></span><span class="proof-value">Millions</span></div><span class="proof-label">Users Served</span><span class="proof-note">Real-time recommendations, AI search, and production AI experiences.</span></article>
+      </section>
+      <section class="brand-strip" aria-label="Organizations and institutions represented">
+        <span class="brand-strip-label">Experience across</span>
+        <span class="brand-pill"><span class="brand-badge brand-badge--rea" aria-hidden="true">REA</span>REA Group</span>
+        <span class="brand-pill"><span class="brand-badge brand-badge--seek" aria-hidden="true">SEEK</span>SEEK</span>
+        <span class="brand-pill"><span class="brand-badge brand-badge--catho" aria-hidden="true">Catho</span>Catho</span>
+        <span class="brand-pill"><span class="brand-badge brand-badge--ufmg" aria-hidden="true">UFMG</span>UFMG</span>
+        <span class="brand-pill"><span class="brand-badge brand-badge--puc" aria-hidden="true">PUC</span>PUC Minas</span>
       </section>
       <section class="impact-highlights" aria-label="Impact Highlights">
         <h3>Impact Highlights</h3>
