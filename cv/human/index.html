@@ -72,24 +72,91 @@
         background: radial-gradient(circle, rgba(42, 111, 219, 0.18), rgba(42, 111, 219, 0));
         pointer-events: none;
       }
-      .profile-aside {
-        float: right;
-        margin: 2px 0 12px 16px;
+      .section-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 28px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid rgba(42, 111, 219, 0.12);
+      }
+      .section-nav a {
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(42, 111, 219, 0.07);
+        color: var(--accent-dark);
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+      }
+      .section-nav a:hover {
+        text-decoration: none;
+        background: rgba(42, 111, 219, 0.14);
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.45fr) minmax(220px, 0.8fr);
+        gap: 28px;
+        align-items: start;
+        margin-bottom: 22px;
+      }
+      .hero-eyebrow {
+        display: inline-flex;
+        margin-bottom: 12px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(42, 111, 219, 0.08);
+        color: var(--accent-dark);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+      .hero-copy h1 {
+        margin-bottom: 14px;
+      }
+      .hero-title {
+        margin: 0 0 12px 0;
+        color: var(--accent-dark);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+      .hero-summary {
+        max-width: 62ch;
+        margin-bottom: 16px;
+        font-size: 17px;
+      }
+      .hero-actions {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 8px;
+        gap: 12px;
+        align-items: flex-start;
+      }
+      .profile-aside {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 12px;
       }
       .photo-wrap {
         margin: 0;
       }
+      .photo-link {
+        display: block;
+        cursor: zoom-in;
+      }
       .photo {
-        width: 84px;
-        height: 84px;
-        border-radius: 18px;
+        width: 188px;
+        height: 188px;
+        border-radius: 28px;
         object-fit: cover;
         border: 2px solid rgba(42, 111, 219, 0.25);
-        box-shadow: 0 10px 24px rgba(18, 19, 15, 0.18);
+        box-shadow: 0 18px 36px rgba(18, 19, 15, 0.18);
       }
       .profile-share {
         display: flex;
@@ -155,7 +222,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        margin: 10px 0 18px 0;
+        margin: 0;
       }
       .utility-link {
         display: inline-flex;
@@ -329,7 +396,7 @@
         border-bottom: 1px solid rgba(63, 95, 120, 0.35);
       }
       .impact-highlights {
-        margin: 8px 0 18px;
+        margin: 0 0 22px;
         padding: 14px 16px;
         border-radius: 16px;
         background: #f6f9ff;
@@ -360,6 +427,82 @@
         color: var(--accent-dark);
         font-weight: 700;
       }
+      .proof-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+        margin: 0 0 22px;
+      }
+      .proof-card {
+        padding: 18px 18px 16px;
+        border-radius: 18px;
+        background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+        border: 1px solid rgba(42, 111, 219, 0.14);
+        box-shadow: 0 10px 22px rgba(18, 19, 15, 0.06);
+      }
+      .proof-value {
+        display: block;
+        margin-bottom: 6px;
+        color: var(--accent-dark);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.1;
+      }
+      .proof-label {
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--text);
+      }
+      .proof-note {
+        display: block;
+        margin-top: 6px;
+        font-size: 13px;
+        color: var(--muted);
+      }
+      .section-intro {
+        margin: 0 0 16px;
+        max-width: 60ch;
+      }
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 12px;
+      }
+      .project-card {
+        padding: 18px;
+        border-radius: 20px;
+        background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+        border: 1px solid rgba(42, 111, 219, 0.14);
+        box-shadow: 0 12px 22px rgba(18, 19, 15, 0.06);
+      }
+      .project-card .cv-item {
+        padding: 0;
+        border-left: none;
+      }
+      .project-card h3 {
+        margin: 0 0 8px;
+        font-size: 19px;
+      }
+      .project-card p {
+        margin-bottom: 10px;
+      }
+      .project-metric {
+        display: inline-flex;
+        margin: 4px 0 10px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(42, 111, 219, 0.08);
+        color: var(--accent-dark);
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .project-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
       @keyframes rise {
         from {
           opacity: 0;
@@ -381,11 +524,34 @@
         h1 {
           font-size: 30px;
         }
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .hero-title {
+          font-size: 21px;
+        }
+        .hero-summary {
+          font-size: 16px;
+        }
+        .profile-aside {
+          align-items: flex-start;
+        }
+        .photo {
+          width: 140px;
+          height: 140px;
+          border-radius: 24px;
+        }
+        .proof-grid,
+        .project-grid {
+          grid-template-columns: 1fr;
+        }
+        .section-nav {
+          gap: 8px;
+          padding-bottom: 14px;
+        }
         .filter-bar {
           padding: 14px;
-        }
-        .utility-bar {
-          margin-bottom: 12px;
         }
       }
       @media print {
@@ -405,6 +571,76 @@
   </head>
   <body data-asset-prefix="../../assets/">
     <main>
+      <nav class="section-nav" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#professional-experience">Experience</a>
+        <a href="#signature-projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#awards-selected">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <section class="hero" id="overview" aria-label="Executive overview">
+        <div class="hero-copy">
+          <span class="hero-eyebrow">AI/ML Leadership CV</span>
+          <h1 id="diego-marinho-de-oliveira">Diego Marinho de Oliveira</h1>
+          <p class="hero-title">AI/ML Leader | Agentic AI, Multi-Agent Systems, AI Search, and Recommenders at Scale</p>
+          <p class="hero-summary">Senior Engineering Manager &amp; Principal AI with 10+ years delivering production AI systems, agentic AI experiences, AI search, and recommender platforms with measurable business impact across multiple markets and millions of users.</p>
+          <div class="hero-actions">
+            <div class="profile-links" id="contact" data-view="human">
+            <p><a class="social-link" href="https://www.linkedin.com/in/dmztheone/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="social-icon"><path d="M4.98 3.5a2.5 2.5 0 0 0 0 5h.02a2.5 2.5 0 0 0 0-5zM3 8.98h4v12H3zm7 0h3.8v1.64h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.34c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21h-4z"/></svg>
+            LinkedIn </a>
+            <a class="social-link" href="https://github.com/dmoliveira" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="social-icon"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.38 6.84 9.74.5.1.68-.22.68-.48 0-.24-.01-.86-.01-1.69-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.58 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.74 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 7.2c.85 0 1.71.12 2.5.35 1.9-1.32 2.74-1.05 2.74-1.05.56 1.43.21 2.48.1 2.74.64.72 1.03 1.64 1.03 2.76 0 3.93-2.34 4.8-4.57 5.05.36.32.68.95.68 1.92 0 1.38-.01 2.5-.01 2.84 0 .26.18.58.69.48A10.2 10.2 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+            GitHub </a></p>
+            </div>
+            <div class="utility-bar" aria-label="Quick actions">
+              <a class="utility-link" href="../../cv/ats/">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg>
+                Simple View (ATS)
+              </a>
+              <button class="utility-link" type="button" data-action="print">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6H6zm10-4H8v2h8V5zm4 4H4a2 2 0 0 0-2 2v6h4v4h12v-4h4v-6a2 2 0 0 0-2-2zm-4 10H8v-4h8v4z"/></svg>
+                Print / PDF
+              </button>
+            </div>
+            <p>Melbourne, Victoria, Australia · dmarinho.ai@gmail.com</p>
+          </div>
+        </div>
+        <div class="profile-aside">
+          <div class="photo-wrap">
+            <a class="photo-link" href="../../assets/photos/dmz-2.png" target="_blank" rel="noopener" aria-label="Open full-size headshot">
+            <img class="photo" src="../../assets/photos/dmz-2.png" alt="Diego
+Marinho de Oliveira headshot" />
+            </a>
+          </div>
+          <div class="profile-share" aria-label="Share profile">
+            <button type="button" aria-label="Share on LinkedIn" title="Share on LinkedIn" onclick="shareLinkedIn()">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.036-1.852-3.036-1.853 0-2.136 1.445-2.136 2.939v5.666H9.35V9h3.414v1.561h.047c.476-.9 1.637-1.85 3.368-1.85 3.6 0 4.268 2.37 4.268 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.813 20.452H3.86V9h2.953v11.452z"/></svg>
+            </button>
+            <button type="button" aria-label="Share on X" title="Share on X" onclick="shareX()">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2H21l-6.528 7.46L22 22h-6.172l-4.833-6.1L4.756 22H2l7.02-8.02L2 2h6.318l4.37 5.52L18.244 2zm-1.08 18h1.529L6.91 4H5.3l11.864 16z"/></svg>
+            </button>
+            <button type="button" aria-label="Share on Bluesky" title="Share on Bluesky" onclick="shareBluesky()">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.01 12.83c.62.69 1.93 2.69 2.56 3.72.73 1.2 1.4 2.43 2.61 2.43 1.16 0 2.12-.87 2.12-2.12 0-1.64-1.13-2.51-2.25-3.37-1.16-.9-2.37-1.65-3.77-2.17 1.4-.52 2.61-1.27 3.77-2.17 1.12-.86 2.25-1.73 2.25-3.37 0-1.25-.96-2.12-2.12-2.12-1.21 0-1.88 1.23-2.61 2.43-.63 1.03-1.94 3.03-2.56 3.72-.62-.69-1.93-2.69-2.56-3.72C8.01 2.33 7.34 1.1 6.13 1.1 4.97 1.1 4.01 1.97 4.01 3.22c0 1.64 1.13 2.51 2.25 3.37 1.16.9 2.37 1.65 3.77 2.17-1.4.52-2.61 1.27-3.77 2.17-1.12.86-2.25 1.73-2.25 3.37 0 1.25.96 2.12 2.12 2.12 1.21 0 1.88-1.23 2.61-2.43.63-1.03 1.94-3.03 2.56-3.72z"/></svg>
+            </button>
+            <button type="button" aria-label="Share via email" title="Share via email" onclick="shareEmail()">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.511l8 5.333 8-5.333V6H4zm16 12V9.156l-7.445 4.963a1 1 0 0 1-1.11 0L4 9.156V18h16z"/></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="proof-grid" aria-label="Selected impact metrics">
+        <article class="proof-card"><span class="proof-value">10+ years</span><span class="proof-label">AI/ML Leadership</span><span class="proof-note">Delivery across Oceania, Asia, and South America.</span></article>
+        <article class="proof-card"><span class="proof-value">150+</span><span class="proof-label">Online Experiments</span><span class="proof-note">A/B tests and launches tied to core business metrics.</span></article>
+        <article class="proof-card"><span class="proof-value">5-10x</span><span class="proof-label">Platform Gains</span><span class="proof-note">Recommender transformation with a 12x record in Asia.</span></article>
+        <article class="proof-card"><span class="proof-value">Millions</span><span class="proof-label">Users Served</span><span class="proof-note">Real-time recommendations, AI search, and production AI experiences.</span></article>
+      </section>
+      <section class="impact-highlights" aria-label="Impact Highlights">
+        <h3>Impact Highlights</h3>
+        <div class="impact-highlights-list" id="impact-highlights"></div>
+      </section>
       <section class="filter-bar" aria-label="CV filters">
         <div class="filter-group">
           <span class="filter-label">Highlights</span>
@@ -423,56 +659,6 @@
           <button class="filter-pill" data-role="head-of-ai">Head of AI</button>
         </div>
       </section>
-      <div class="profile-aside">
-        <div class="photo-wrap">
-          <a class="photo-link" href="../../assets/photos/dmz-2.png" target="_blank" rel="noopener" aria-label="Open full-size headshot">
-          <img class="photo" src="../../assets/photos/dmz-2.png" alt="Diego
-Marinho de Oliveira headshot" />
-          </a>
-        </div>
-        <div class="profile-share" aria-label="Share profile">
-          <button type="button" aria-label="Share on LinkedIn" title="Share on LinkedIn" onclick="shareLinkedIn()">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.036-1.852-3.036-1.853 0-2.136 1.445-2.136 2.939v5.666H9.35V9h3.414v1.561h.047c.476-.9 1.637-1.85 3.368-1.85 3.6 0 4.268 2.37 4.268 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.813 20.452H3.86V9h2.953v11.452z"/></svg>
-          </button>
-          <button type="button" aria-label="Share on X" title="Share on X" onclick="shareX()">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2H21l-6.528 7.46L22 22h-6.172l-4.833-6.1L4.756 22H2l7.02-8.02L2 2h6.318l4.37 5.52L18.244 2zm-1.08 18h1.529L6.91 4H5.3l11.864 16z"/></svg>
-          </button>
-          <button type="button" aria-label="Share on Bluesky" title="Share on Bluesky" onclick="shareBluesky()">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.01 12.83c.62.69 1.93 2.69 2.56 3.72.73 1.2 1.4 2.43 2.61 2.43 1.16 0 2.12-.87 2.12-2.12 0-1.64-1.13-2.51-2.25-3.37-1.16-.9-2.37-1.65-3.77-2.17 1.4-.52 2.61-1.27 3.77-2.17 1.12-.86 2.25-1.73 2.25-3.37 0-1.25-.96-2.12-2.12-2.12-1.21 0-1.88 1.23-2.61 2.43-.63 1.03-1.94 3.03-2.56 3.72-.62-.69-1.93-2.69-2.56-3.72C8.01 2.33 7.34 1.1 6.13 1.1 4.97 1.1 4.01 1.97 4.01 3.22c0 1.64 1.13 2.51 2.25 3.37 1.16.9 2.37 1.65 3.77 2.17-1.4.52-2.61 1.27-3.77 2.17-1.12.86-2.25 1.73-2.25 3.37 0 1.25.96 2.12 2.12 2.12 1.21 0 1.88-1.23 2.61-2.43.63-1.03 1.94-3.03 2.56-3.72z"/></svg>
-          </button>
-          <button type="button" aria-label="Share via email" title="Share via email" onclick="shareEmail()">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.511l8 5.333 8-5.333V6H4zm16 12V9.156l-7.445 4.963a1 1 0 0 1-1.11 0L4 9.156V18h16z"/></svg>
-          </button>
-        </div>
-      </div>
-
-      <div class="utility-bar" aria-label="Quick actions">
-        <a class="utility-link" href="../../cv/ats/">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg>
-          Simple View (ATS)
-        </a>
-        <button class="utility-link" type="button" data-action="print">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6H6zm10-4H8v2h8V5zm4 4H4a2 2 0 0 0-2 2v6h4v4h12v-4h4v-6a2 2 0 0 0-2-2zm-4 10H8v-4h8v4z"/></svg>
-          Print / PDF
-        </button>
-      </div>
-      <section class="impact-highlights" aria-label="Impact Highlights">
-        <h3>Impact Highlights</h3>
-        <div class="impact-highlights-list" id="impact-highlights"></div>
-      </section>
-      <h1 id="diego-marinho-de-oliveira">Diego Marinho de Oliveira</h1>
-      <p>AI/ML Leader | Agentic AI, Multi-Agent Systems, AI Search, and Recommendations |
-      Production AI Platforms at Scale</p>
-      <p>Melbourne, Victoria, Australia · dmarinho.ai@gmail.com</p>
-      <div class="profile-links" data-view="human">
-      <p><a class="social-link" href="https://www.linkedin.com/in/dmztheone/" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" aria-hidden="true" class="social-icon"><path d="M4.98 3.5a2.5 2.5 0 0 0 0 5h.02a2.5 2.5 0 0 0 0-5zM3 8.98h4v12H3zm7 0h3.8v1.64h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.34c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21h-4z"/></svg>
-      LinkedIn </a>
-      <a class="social-link" href="https://github.com/dmoliveira" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" aria-hidden="true" class="social-icon"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.38 6.84 9.74.5.1.68-.22.68-.48 0-.24-.01-.86-.01-1.69-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.58 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.74 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 7.2c.85 0 1.71.12 2.5.35 1.9-1.32 2.74-1.05 2.74-1.05.56 1.43.21 2.48.1 2.74.64.72 1.03 1.64 1.03 2.76 0 3.93-2.34 4.8-4.57 5.05.36.32.68.95.68 1.92 0 1.38-.01 2.5-.01 2.84 0 .26.18.58.69.48A10.2 10.2 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
-      GitHub </a></p>
-      </div>
-      <div class="tag-cloud"><div class="filter-label">Tag Cloud</div><div class="cv-meta"><span class="cv-chip" style="font-size: 12px;">Experimentation</span><span class="cv-chip" style="font-size: 16px;">GenAI</span><span class="cv-chip" style="font-size: 13px;">Leadership</span><span class="cv-chip" style="font-size: 14px;">Recommenders</span><span class="cv-chip" style="font-size: 18px;">Scale</span></div></div>
       <h2 id="executive-summary">Executive Summary</h2>
       <ul>
       <li><div class="cv-item" data-highlights="leadership,scale"
@@ -581,45 +767,42 @@ Marinho de Oliveira headshot" />
       </ul>
       <hr class="section-divider" style="border: none; border-top: 1px solid rgba(42, 111, 219, 0.18); margin: 22px 0 18px;">
       <h2 id="signature-projects">Signature Projects</h2>
-      <ul>
-      <li><div class="cv-item"
-     
-      data-highlights="genai" data-variant="one-page,full"
-      data-roles="ai-ml-leader,head-of-ai">
-      GenAI Property Search (REA): Built and launched in under 30 days;
-      production AI search for property discovery. <a
-      href="https://www.mediaweek.com.au/rea-group-unveils-openai-powered-realassist/">Media</a>
-      </div></li>
-      <li><div class="cv-item"
-     
-      data-highlights="genai,scale" data-variant="one-page,full"
-      data-roles="ai-ml-leader,head-of-ai">
-      Agentic AI Platform (REA): Designed and deployed tool-augmented AI
-      agents at scale with orchestration, cost controls, safety,
-      observability, and evaluation. <a
-      href="https://www.mediaweek.com.au/rea-group-unveils-openai-powered-realassist/">Media</a>
-      </div></li>
-      <li><div class="cv-item" data-highlights="genai"
-      data-variant="full" data-roles="principal-ml-engineer">
-      Computer Vision Attribute Extraction (REA): Property photo
-      semantic attribute extraction using multimodal LLM/transformers,
-      <strong>45+ attributes</strong> in production.
-      </div></li>
-      <li><div class="cv-item"
-     
-      data-highlights="recommender,scale" data-variant="one-page,full"
-      data-roles="ai-ml-leader,principal-ml-engineer">
-      Unified Recommender Platform (SEEK): <strong>8+ markets</strong>,
-      <strong>5-10x</strong> gains, and a <strong>12x</strong> record in
-      an Asia market.
-      </div></li>
-      <li><div class="cv-item" data-market="hk"
-      data-highlights="recommender,experimentation" data-variant="full"
-      data-roles="principal-ml-engineer">
-      Personalized AI Search (SEEK JobsDB): <strong>+14%</strong>
-      improvement on a core metric in HK.
-      </div></li>
-      </ul>
+      <p class="section-intro">Selected programs and launches representing production AI leadership across agentic systems, search, multimodal computer vision, and recommender platforms.</p>
+      <div class="project-grid">
+        <article class="project-card"><div class="cv-item"
+        data-highlights="genai" data-variant="one-page,full"
+        data-roles="ai-ml-leader,head-of-ai">
+        <h3>GenAI Property Search</h3>
+        <p>Built and launched production AI property search in under 30 days for real user discovery workflows. <a
+        href="https://www.mediaweek.com.au/rea-group-unveils-openai-powered-realassist/">Media</a></p>
+        <span class="project-metric">Launch in under 30 days</span>
+        <div class="project-tags"><span class="cv-chip">GenAI</span><span class="cv-chip">Search</span><span class="cv-chip">Production</span></div>
+        </div></article>
+        <article class="project-card"><div class="cv-item"
+        data-highlights="genai,scale" data-variant="one-page,full"
+        data-roles="ai-ml-leader,head-of-ai">
+        <h3>Agentic AI Platform</h3>
+        <p>Designed and deployed tool-augmented AI agents at scale with orchestration, guardrails, observability, evaluation, and cost controls. <a
+        href="https://www.mediaweek.com.au/rea-group-unveils-openai-powered-realassist/">Media</a></p>
+        <span class="project-metric">Production platform at scale</span>
+        <div class="project-tags"><span class="cv-chip">Agentic AI</span><span class="cv-chip">Orchestration</span><span class="cv-chip">Safety</span></div>
+        </div></article>
+        <article class="project-card"><div class="cv-item" data-highlights="genai"
+        data-variant="full" data-roles="principal-ml-engineer">
+        <h3>Multimodal CV Attribute Extraction</h3>
+        <p>Delivered a real-time property photo attribute extraction system using multimodal LLMs and transformers in production.</p>
+        <span class="project-metric">45+ attributes in production</span>
+        <div class="project-tags"><span class="cv-chip">Multimodal</span><span class="cv-chip">Computer Vision</span><span class="cv-chip">LLMs</span></div>
+        </div></article>
+        <article class="project-card"><div class="cv-item"
+        data-highlights="recommender,scale" data-variant="one-page,full"
+        data-roles="ai-ml-leader,principal-ml-engineer">
+        <h3>Unified Recommender Platform</h3>
+        <p>Unified recommender systems across multiple markets with sustained performance gains and a record uplift in Asia.</p>
+        <span class="project-metric">5-10x gains, 12x record</span>
+        <div class="project-tags"><span class="cv-chip">Recommenders</span><span class="cv-chip">Ranking</span><span class="cv-chip">Scale</span></div>
+        </div></article>
+      </div>
       <hr class="section-divider" style="border: none; border-top: 1px solid rgba(42, 111, 219, 0.18); margin: 22px 0 18px;">
       <h2 id="professional-experience">Professional Experience</h2>
       <h3
