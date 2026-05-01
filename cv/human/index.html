@@ -965,6 +965,8 @@
         body[data-print-mode="concise"] h2#publications-selected,
         body[data-print-mode="concise"] h2#publications-selected + ul,
         body[data-print-mode="concise"] #divider-between-awards-publications,
+        body[data-print-mode="concise"] h2#skills,
+        body[data-print-mode="concise"] h2#skills + ul,
         body[data-print-mode="concise"] [data-variant="full"] {
           display: none !important;
         }
@@ -1006,6 +1008,9 @@
           border-radius: 0;
           background: transparent;
         }
+        body[data-print-mode="concise"] #experience-catho {
+          display: none !important;
+        }
         body[data-print-mode="concise"] .experience-card + .experience-card,
         body[data-print-mode="concise"] .education-card + .education-card {
           border-top: 1px solid rgba(0, 0, 0, 0.12);
@@ -1024,6 +1029,9 @@
         }
         body[data-print-mode="concise"] ul {
           margin-top: 2px;
+        }
+        body[data-print-mode="concise"] .education-card ul {
+          display: none;
         }
         body[data-print-mode="concise"] .cv-item {
           padding: 2px 0 2px 6px;
@@ -1287,7 +1295,7 @@ Marinho de Oliveira headshot" />
       <hr class="section-divider" style="border: none; border-top: 1px solid rgba(42, 111, 219, 0.18); margin: 22px 0 18px;">
       <h2 id="professional-experience">Professional Experience</h2>
       <div class="section-stack">
-      <section class="experience-card">
+      <section id="experience-catho" class="experience-card">
       <div class="experience-header">
       <div class="brand-logo brand-logo--wide" aria-hidden="true"><img src="../../assets/logos/rea-group.svg" alt="" /></div>
       <div class="experience-meta"><h3 
