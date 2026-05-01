@@ -225,9 +225,10 @@
       }
       .utility-bar {
         display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+        flex-wrap: nowrap;
+        gap: 8px;
         margin: 0;
+        max-width: 100%;
       }
       .utility-note {
         margin: 2px 0 0;
@@ -245,9 +246,10 @@
         color: var(--accent-dark);
         font-size: 12px;
         font-weight: 600;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.06em;
         text-transform: uppercase;
         cursor: pointer;
+        white-space: nowrap;
       }
       .utility-link svg {
         width: 14px;
@@ -765,6 +767,9 @@
         }
         .filter-bar {
           padding: 14px;
+        }
+        .utility-bar {
+          flex-wrap: wrap;
         }
       }
       @media print {
