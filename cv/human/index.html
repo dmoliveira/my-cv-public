@@ -229,6 +229,11 @@
         gap: 10px;
         margin: 0;
       }
+      .utility-note {
+        margin: 2px 0 0;
+        font-size: 12px;
+        color: var(--muted);
+      }
       .utility-link {
         display: inline-flex;
         align-items: center;
@@ -789,6 +794,7 @@
         .profile-links,
         .profile-share,
         .utility-bar,
+        .utility-note,
         .impact-highlights,
         .brand-strip {
           display: none !important;
@@ -993,15 +999,16 @@
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg>
                 Simple View (ATS)
               </a>
-              <button class="utility-link" type="button" data-action="print">
+              <button class="utility-link" type="button" data-action="print" title="Print the complete human CV as a polished PDF">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6H6zm10-4H8v2h8V5zm4 4H4a2 2 0 0 0-2 2v6h4v4h12v-4h4v-6a2 2 0 0 0-2-2zm-4 10H8v-4h8v4z"/></svg>
                 Full Print / PDF
               </button>
-              <button class="utility-link" type="button" data-action="print-concise">
+              <button class="utility-link" type="button" data-action="print-concise" title="Print a shorter executive version with fewer sections">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6H6zm1 9h10v2H7zm0-4h10v2H7zm13-5H4a2 2 0 0 0-2 2v6h4v4h12v-4h4v-6a2 2 0 0 0-2-2z"/></svg>
                 Concise Print / PDF
               </button>
             </div>
+            <p class="utility-note">Full includes the complete human CV. Concise trims lower-priority sections for a tighter executive PDF.</p>
             <p>Melbourne, Victoria, Australia · dmarinho.ai@gmail.com</p>
             <div class="print-contact" aria-label="Print contact details">
               <p>Melbourne, Victoria, Australia · dmarinho.ai@gmail.com</p>
