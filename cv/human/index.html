@@ -952,6 +952,9 @@
         body[data-print-mode="concise"] .proof-grid,
         body[data-print-mode="concise"] #selected-impact,
         body[data-print-mode="concise"] #early-career-roles-grouped,
+        body[data-print-mode="concise"] #divider-before-operating-scale,
+        body[data-print-mode="concise"] h2#operating-at-scale,
+        body[data-print-mode="concise"] h2#operating-at-scale + ul,
         body[data-print-mode="concise"] h2#signature-projects,
         body[data-print-mode="concise"] h2#signature-projects + .section-intro,
         body[data-print-mode="concise"] h2#signature-projects + .section-intro + .project-grid,
@@ -1063,12 +1066,12 @@
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6H6zm10-4H8v2h8V5zm4 4H4a2 2 0 0 0-2 2v6h4v4h12v-4h4v-6a2 2 0 0 0-2-2zm-4 10H8v-4h8v4z"/></svg>
                 Full Print / PDF
               </button>
-              <button class="utility-link" type="button" data-action="print-concise" title="Print a shorter executive version with fewer sections">
+              <button class="utility-link" type="button" data-action="print-concise" title="Print a tighter executive version focused on summary, leadership highlights, and recent experience">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6H6zm1 9h10v2H7zm0-4h10v2H7zm13-5H4a2 2 0 0 0-2 2v6h4v4h12v-4h4v-6a2 2 0 0 0-2-2z"/></svg>
-                Concise Print / PDF
+                Executive Print / PDF
               </button>
             </div>
-            <p class="utility-note">Full includes the complete human CV. Concise trims lower-priority sections for a tighter executive PDF.</p>
+            <p class="utility-note">Full includes the complete human CV. Executive focuses on summary, leadership highlights, and recent experience.</p>
             <p>Melbourne, Victoria, Australia · dmarinho.ai@gmail.com</p>
             <div class="print-contact" aria-label="Print contact details">
               <p>Melbourne, Victoria, Australia · dmarinho.ai@gmail.com</p>
@@ -1203,7 +1206,7 @@ Marinho de Oliveira headshot" />
       flagship projects listed below.
       </div></li>
       </ul>
-      <hr class="section-divider" style="border: none; border-top: 1px solid rgba(42, 111, 219, 0.18); margin: 22px 0 18px;">
+      <hr id="divider-before-operating-scale" class="section-divider" style="border: none; border-top: 1px solid rgba(42, 111, 219, 0.18); margin: 22px 0 18px;">
       <h2 id="operating-at-scale">Operating at Scale</h2>
       <ul>
       <li><div class="cv-item" data-experiment="online"
@@ -1713,7 +1716,7 @@ Marinho de Oliveira headshot" />
           var role = roleLabel(activeRole);
           var date = new Date();
           var stamp = date.toISOString().slice(0, 10);
-          return base + " - " + role + (mode === "concise" ? " - concise" : "") + " - " + stamp;
+          return base + " - " + role + (mode === "concise" ? " - executive" : "") + " - " + stamp;
         }
 
         function triggerPrint(mode) {
