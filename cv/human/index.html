@@ -138,9 +138,9 @@
         gap: 12px;
         align-items: flex-start;
       }
-      .print-contact {
-        display: none;
-      }
+        .print-contact {
+          display: none;
+        }
       .profile-aside {
         margin: 0;
         display: flex;
@@ -943,6 +943,22 @@
           color: #111111;
           text-decoration: none;
         }
+        body[data-print-mode="concise"] .proof-grid,
+        body[data-print-mode="concise"] #selected-impact,
+        body[data-print-mode="concise"] #early-career-roles-grouped,
+        body[data-print-mode="concise"] h2#signature-projects,
+        body[data-print-mode="concise"] h2#signature-projects + .section-intro,
+        body[data-print-mode="concise"] h2#signature-projects + .section-intro + .project-grid,
+        body[data-print-mode="concise"] #divider-before-signature-projects,
+        body[data-print-mode="concise"] h2#awards-selected,
+        body[data-print-mode="concise"] h2#awards-selected + ul,
+        body[data-print-mode="concise"] #divider-before-awards,
+        body[data-print-mode="concise"] h2#publications-selected,
+        body[data-print-mode="concise"] h2#publications-selected + ul,
+        body[data-print-mode="concise"] #divider-between-awards-publications,
+        body[data-print-mode="concise"] [data-variant="full"] {
+          display: none !important;
+        }
       }
     </style>
   </head>
@@ -979,7 +995,11 @@
               </a>
               <button class="utility-link" type="button" data-action="print">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6H6zm10-4H8v2h8V5zm4 4H4a2 2 0 0 0-2 2v6h4v4h12v-4h4v-6a2 2 0 0 0-2-2zm-4 10H8v-4h8v4z"/></svg>
-                Print / PDF
+                Full Print / PDF
+              </button>
+              <button class="utility-link" type="button" data-action="print-concise">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6H6zm1 9h10v2H7zm0-4h10v2H7zm13-5H4a2 2 0 0 0-2 2v6h4v4h12v-4h4v-6a2 2 0 0 0-2-2z"/></svg>
+                Concise Print / PDF
               </button>
             </div>
             <p>Melbourne, Victoria, Australia · dmarinho.ai@gmail.com</p>
@@ -1156,7 +1176,7 @@ Marinho de Oliveira headshot" />
       product, engineering, and leadership.
       </div></li>
       </ul>
-      <hr class="section-divider" style="border: none; border-top: 1px solid rgba(42, 111, 219, 0.18); margin: 22px 0 18px;">
+      <hr id="divider-before-signature-projects" class="section-divider" style="border: none; border-top: 1px solid rgba(42, 111, 219, 0.18); margin: 22px 0 18px;">
       <h2 id="signature-projects">Signature Projects</h2>
       <p class="section-intro">Selected programs and launches representing production AI leadership across agentic systems, search, multimodal computer vision, and recommender platforms.</p>
       <div class="project-grid">
@@ -1362,7 +1382,7 @@ Marinho de Oliveira headshot" />
       <article class="education-card"><div class="education-header"><div class="brand-logo brand-logo--wide" aria-hidden="true"><img src="../../assets/logos/ufmg-logo.png" alt="" /></div><div class="education-meta"><h3>M.Sc. Computer Science</h3><p class="education-org">Universidade Federal de Minas Gerais</p></div><p class="education-date">2010 — 2012</p></div><ul><li><div class="cv-item">Focus: NLP/NER; FS-NER research (see Publications).</div></li><li><div class="cv-item">Top student with 90%+ average.</div></li></ul></article>
       <article class="education-card"><div class="education-header"><div class="brand-logo" aria-hidden="true"><img src="../../assets/logos/puc-minas-filled.png" alt="" /></div><div class="education-meta"><h3>B.Sc. Computer Science</h3><p class="education-org">Pontificia Universidade Catolica de Minas Gerais</p></div><p class="education-date">2006 — 2009</p></div><ul><li><div class="cv-item">Student Medal for Excellence; 90%+ average.</div></li><li><div class="cv-item">Research in ANN, tutoring, and internships.</div></li></ul></article>
       </div>
-      <hr class="section-divider" style="border: none; border-top: 1px solid rgba(42, 111, 219, 0.18); margin: 22px 0 18px;">
+      <hr id="divider-before-awards" class="section-divider" style="border: none; border-top: 1px solid rgba(42, 111, 219, 0.18); margin: 22px 0 18px;">
       <h2 id="awards-selected">Awards (Selected)</h2>
       <ul>
       <li><div class="cv-item" data-variant="one-page,full">
@@ -1379,7 +1399,7 @@ Marinho de Oliveira headshot" />
       Student Medal for Excellence, B.Sc. Computer Science (2009)
       </div></li>
       </ul>
-      <hr class="section-divider" style="border: none; border-top: 1px solid rgba(42, 111, 219, 0.18); margin: 22px 0 18px;">
+      <hr id="divider-between-awards-publications" class="section-divider" style="border: none; border-top: 1px solid rgba(42, 111, 219, 0.18); margin: 22px 0 18px;">
       <h2 id="publications-selected">Publications (Selected)</h2>
       <ul>
       <li><div class="cv-item" data-variant="one-page,full">
@@ -1615,35 +1635,113 @@ Marinho de Oliveira headshot" />
         });
 
         var printBtn = document.querySelector("[data-action='print']");
+        var concisePrintBtn = document.querySelector("[data-action='print-concise']");
         function roleLabel(role) {
-          if (!role || role === "all") return "full";
+          if (!role || role === "all") return "all-roles";
           return role.replace(/-/g, " ");
         }
 
-        function buildPrintTitle() {
+        function buildPrintTitle(mode) {
           var base = (document.querySelector("h1") || {}).textContent || document.title;
           var role = roleLabel(activeRole);
           var date = new Date();
           var stamp = date.toISOString().slice(0, 10);
-          return base + " - " + role + " - " + stamp;
+          return base + " - " + role + (mode === "concise" ? " - concise" : "") + " - " + stamp;
+        }
+
+        function triggerPrint(mode) {
+          var originalTitle = document.title;
+          var originalMode = document.body.getAttribute("data-print-mode");
+          var originalHighlight = activeHighlight;
+          var restored = false;
+          var mediaQuery = typeof window.matchMedia === "function" ? window.matchMedia("print") : null;
+          var hasAfterPrintSupport = "onafterprint" in window;
+          var hasBeforePrintSupport = "onbeforeprint" in window;
+          var printLifecycleObserved = false;
+          function restoreTitle() {
+            if (restored) return;
+            restored = true;
+            document.title = originalTitle;
+            if (originalMode === null) {
+              document.body.removeAttribute("data-print-mode");
+            } else {
+              document.body.setAttribute("data-print-mode", originalMode);
+            }
+            activeHighlight = originalHighlight;
+            setActive(highlightButtons, null, "data-highlight", activeHighlight);
+            updateVisibility();
+            window.removeEventListener("beforeprint", handleBeforePrint);
+            window.removeEventListener("afterprint", restoreTitle);
+            if (mediaQuery) {
+              if (typeof mediaQuery.removeEventListener === "function") {
+                mediaQuery.removeEventListener("change", handlePrintMediaChange);
+              } else if (typeof mediaQuery.removeListener === "function") {
+                mediaQuery.removeListener(handlePrintMediaChange);
+              }
+            }
+            document.removeEventListener("visibilitychange", handleVisibilityChange);
+          }
+          function handlePrintMediaChange(event) {
+            if (event.matches) {
+              printLifecycleObserved = true;
+              return;
+            }
+            if (!event.matches) {
+              restoreTitle();
+            }
+          }
+          function handleVisibilityChange() {
+            if (document.visibilityState === "hidden") {
+              printLifecycleObserved = true;
+            }
+          }
+          function handleBeforePrint() {
+            printLifecycleObserved = true;
+          }
+          function scheduleRestoreFallback(delay, attempts) {
+            window.setTimeout(function () {
+              if (restored) return;
+              var printStillActive = mediaQuery && mediaQuery.matches;
+              var pageVisible = typeof document.visibilityState !== "string" || document.visibilityState === "visible";
+              if (printLifecycleObserved && !printStillActive && pageVisible) {
+                restoreTitle();
+                return;
+              }
+              if (attempts < 10) {
+                scheduleRestoreFallback(1000, attempts + 1);
+              }
+            }, delay);
+          }
+          activeHighlight = "all";
+          setActive(highlightButtons, null, "data-highlight", activeHighlight);
+          updateVisibility();
+          document.body.setAttribute("data-print-mode", mode || "full");
+          document.title = buildPrintTitle(mode || "full");
+          if (hasBeforePrintSupport) {
+            window.addEventListener("beforeprint", handleBeforePrint);
+          }
+          window.addEventListener("afterprint", restoreTitle);
+          document.addEventListener("visibilitychange", handleVisibilityChange);
+          if (mediaQuery) {
+            if (typeof mediaQuery.addEventListener === "function") {
+              mediaQuery.addEventListener("change", handlePrintMediaChange);
+            } else if (typeof mediaQuery.addListener === "function") {
+              mediaQuery.addListener(handlePrintMediaChange);
+            }
+          }
+          window.print();
+          scheduleRestoreFallback(hasAfterPrintSupport || mediaQuery ? 4000 : 1000, 0);
         }
 
         if (printBtn) {
           printBtn.addEventListener("click", function () {
-            var originalTitle = document.title;
-            var restored = false;
-            function restoreTitle() {
-              if (restored) return;
-              restored = true;
-              document.title = originalTitle;
-              window.removeEventListener("afterprint", restoreTitle);
-            }
-            document.title = buildPrintTitle();
-            window.addEventListener("afterprint", restoreTitle);
-            window.print();
-            setTimeout(function () {
-              restoreTitle();
-            }, 1000);
+            triggerPrint("full");
+          });
+        }
+
+        if (concisePrintBtn) {
+          concisePrintBtn.addEventListener("click", function () {
+            triggerPrint("concise");
           });
         }
 
