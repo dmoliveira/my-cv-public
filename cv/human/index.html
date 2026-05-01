@@ -965,6 +965,66 @@
         body[data-print-mode="concise"] [data-variant="full"] {
           display: none !important;
         }
+        body[data-print-mode="concise"] {
+          font-size: 10pt;
+          line-height: 1.24;
+        }
+        body[data-print-mode="concise"] .hero {
+          margin-bottom: 8px;
+          break-inside: auto;
+        }
+        body[data-print-mode="concise"] .hero-summary {
+          margin-bottom: 6px;
+          font-size: 10pt;
+        }
+        body[data-print-mode="concise"] h2 {
+          margin: 10px 0 5px 0;
+        }
+        body[data-print-mode="concise"] h3 {
+          margin: 6px 0 3px 0;
+          font-size: 11pt;
+        }
+        body[data-print-mode="concise"] .section-stack,
+        body[data-print-mode="concise"] section,
+        body[data-print-mode="concise"] article,
+        body[data-print-mode="concise"] .experience-card,
+        body[data-print-mode="concise"] .education-card,
+        body[data-print-mode="concise"] .section-stack {
+          break-inside: auto;
+          page-break-inside: auto;
+        }
+        body[data-print-mode="concise"] .section-stack {
+          gap: 8px;
+        }
+        body[data-print-mode="concise"] .experience-card,
+        body[data-print-mode="concise"] .education-card {
+          padding: 8px 0;
+          border: none;
+          border-radius: 0;
+          background: transparent;
+        }
+        body[data-print-mode="concise"] .experience-card + .experience-card,
+        body[data-print-mode="concise"] .education-card + .education-card {
+          border-top: 1px solid rgba(0, 0, 0, 0.12);
+          padding-top: 10px;
+        }
+        body[data-print-mode="concise"] .experience-header,
+        body[data-print-mode="concise"] .education-header {
+          margin-bottom: 4px;
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
+        body[data-print-mode="concise"] li,
+        body[data-print-mode="concise"] .cv-item {
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
+        body[data-print-mode="concise"] ul {
+          margin-top: 2px;
+        }
+        body[data-print-mode="concise"] .cv-item {
+          padding: 2px 0 2px 6px;
+        }
       }
     </style>
   </head>
