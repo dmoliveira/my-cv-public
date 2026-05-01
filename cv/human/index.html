@@ -138,9 +138,12 @@
         gap: 12px;
         align-items: flex-start;
       }
-        .print-contact {
-          display: none;
-        }
+      .print-contact {
+        display: none;
+      }
+      .executive-print-highlights {
+        display: none;
+      }
       .profile-aside {
         margin: 0;
         display: flex;
@@ -820,6 +823,9 @@
           text-decoration: none;
           font-weight: 400;
         }
+        .hero-location {
+          display: none !important;
+        }
         .hero {
           display: block;
           margin-bottom: 12px;
@@ -979,6 +985,26 @@
           font-size: 10pt;
           line-height: 1.24;
         }
+        body[data-print-mode="concise"] .executive-print-highlights {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 6px;
+          margin: 0 0 8px;
+          padding: 0;
+          list-style: none;
+        }
+        body[data-print-mode="concise"] .executive-print-highlights li {
+          margin: 0;
+          padding: 0 8px 0 0;
+          font-size: 9.5pt;
+          font-weight: 700;
+          color: #1f4ea8;
+          border-right: 1px solid rgba(0, 0, 0, 0.15);
+        }
+        body[data-print-mode="concise"] .executive-print-highlights li:last-child {
+          border-right: none;
+          padding-right: 0;
+        }
         body[data-print-mode="concise"] .hero {
           margin-bottom: 8px;
           break-inside: auto;
@@ -1085,7 +1111,13 @@
               </button>
             </div>
             <p class="utility-note">Full includes the complete human CV. Executive focuses on summary, leadership highlights, and recent experience.</p>
-            <p>Melbourne, Victoria, Australia · dmarinho.ai@gmail.com</p>
+            <ul class="executive-print-highlights" aria-label="Executive print highlights">
+              <li>10+ years</li>
+              <li>150+ experiments</li>
+              <li>5-10x gains</li>
+              <li>Millions served</li>
+            </ul>
+            <p class="hero-location">Melbourne, Victoria, Australia · dmarinho.ai@gmail.com</p>
             <div class="print-contact" aria-label="Print contact details">
               <p>Melbourne, Victoria, Australia · dmarinho.ai@gmail.com</p>
               <p>LinkedIn: <a href="https://www.linkedin.com/in/dmztheone/">linkedin.com/in/dmztheone</a></p>
