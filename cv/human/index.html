@@ -147,6 +147,9 @@
       .executive-print-section-label {
         display: none;
       }
+      .print-hidden-parent {
+        display: none !important;
+      }
       .profile-aside {
         margin: 0;
         display: flex;
@@ -1786,6 +1789,7 @@ Marinho de Oliveira headshot" />
           var originalTitle = document.title;
           var originalMode = document.body.getAttribute("data-print-mode");
           var originalHighlight = activeHighlight;
+          var printHiddenParents = [];
           var restored = false;
           var mediaQuery = typeof window.matchMedia === "function" ? window.matchMedia("print") : null;
           var hasAfterPrintSupport = "onafterprint" in window;
@@ -1803,6 +1807,10 @@ Marinho de Oliveira headshot" />
             activeHighlight = originalHighlight;
             setActive(highlightButtons, null, "data-highlight", activeHighlight);
             updateVisibility();
+            printHiddenParents.forEach(function (node) {
+              node.classList.remove("print-hidden-parent");
+            });
+            printHiddenParents = [];
             window.removeEventListener("beforeprint", handleBeforePrint);
             window.removeEventListener("afterprint", restoreTitle);
             if (mediaQuery) {
@@ -1848,6 +1856,15 @@ Marinho de Oliveira headshot" />
           activeHighlight = "all";
           setActive(highlightButtons, null, "data-highlight", activeHighlight);
           updateVisibility();
+          if (mode === "concise") {
+            document.querySelectorAll('[data-variant="full"]').forEach(function (node) {
+              var parent = node.parentElement;
+              if (parent && parent.tagName === 'LI') {
+                parent.classList.add('print-hidden-parent');
+                printHiddenParents.push(parent);
+              }
+            });
+          }
           document.body.setAttribute("data-print-mode", mode || "full");
           document.title = buildPrintTitle(mode || "full");
           if (hasBeforePrintSupport) {
