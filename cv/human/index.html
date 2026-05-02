@@ -147,6 +147,9 @@
       .executive-print-section-label {
         display: none;
       }
+      .executive-print-kicker {
+        display: none;
+      }
       .print-hidden-parent {
         display: none !important;
       }
@@ -1020,6 +1023,15 @@
           text-transform: uppercase;
           color: #1f4ea8;
         }
+        body[data-print-mode="concise"] .executive-print-kicker {
+          display: block;
+          margin: 0 0 6px;
+          font-size: 8.5pt;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: #51606c;
+        }
         body[data-print-mode="concise"] .hero {
           margin-bottom: 8px;
           break-inside: auto;
@@ -1104,6 +1116,7 @@
       <section class="hero" id="overview" aria-label="Executive overview">
         <div class="hero-copy">
           <span class="hero-eyebrow">AI/ML Leadership CV</span>
+          <div class="executive-print-kicker">Executive memo · recent leadership snapshot</div>
           <h1 id="diego-marinho-de-oliveira">Diego Marinho de Oliveira</h1>
           <p class="hero-title">AI/ML Leader | Agentic AI, Multi-Agent Systems, AI Search, and Recommenders at Scale</p>
           <p class="hero-summary">Senior Engineering Manager &amp; Principal AI with 10+ years delivering production AI systems, agentic AI experiences, AI search, and recommender platforms with measurable business impact across multiple markets and millions of users.</p>
@@ -1132,10 +1145,10 @@
             </div>
             <p class="utility-note">Full includes the complete human CV. Executive focuses on summary, leadership highlights, and recent experience.</p>
             <ul class="executive-print-highlights" aria-label="Executive print highlights">
-              <li>10+ years</li>
-              <li>150+ experiments</li>
-              <li>5-10x gains</li>
-              <li>Millions served</li>
+              <li>10+ yrs AI/ML</li>
+              <li>150+ A/B tests</li>
+              <li>5–10x recommender gains</li>
+              <li>Millions of users</li>
             </ul>
             <p class="hero-location">Melbourne, Victoria, Australia · dmarinho.ai@gmail.com</p>
             <div class="print-contact" aria-label="Print contact details">
