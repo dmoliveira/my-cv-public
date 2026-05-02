@@ -7,34 +7,34 @@ linkedin: https://www.linkedin.com/in/dmztheone
 ---
 
 # Diego Marinho de Oliveira
-AI/ML Leader | Agentic AI, Multi-Agent Systems, AI Search, and Recommendations | Production AI Platforms at Scale
+AI/ML Leader | Production AI Products, Search, Recommendations, and Agentic Systems at Scale
 
 Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · https://www.linkedin.com/in/dmztheone
 
 ## Executive Summary
-- AI/ML leader with 10+ years delivering Agentic AI, AI search, and recommender systems across Oceania, Asia, and South America.
-- Designed, developed, and deployed production-grade agentic AI platforms at scale, including multi-agent orchestration, tool use, evaluation, and safety guardrails.
-- Proven business impact through 150+ online experiments and multiple customer-facing AI launches.
+- AI/ML leader with 10+ years turning ambiguous product and platform bets into production AI systems across search, recommendations, and agentic experiences in Oceania, Asia, and South America.
+- Built the production agent platform behind customer-facing AI search and conversational experiences, standardizing orchestration, evaluation, observability, guardrails, and cost control.
+- Delivered measurable business impact through 150+ online experiments, multi-market platform rollouts, and multiple customer-facing AI launches.
 - Track record of leading global DS/MLE teams, hiring at scale, and shipping end-to-end production AI systems with strong cost, latency, and reliability controls.
 
 ## Leadership and Impact
 - Led AI initiatives across agentic AI, multi-agent systems, AI search, multimodal CV, and recommendations.
-- Built REA's first GenAI property search in under 30 days and shipped production AI agents for direct user conversations.
+- Launched the RED brand's first GenAI property search within REA in under 30 days, turning natural-language intent into production property discovery and setting the foundation for customer-facing AI journeys.
 - Delivered the first real-time attribute extraction CV system to production (45+ attributes).
-- Drove multi-market recommender transformations at SEEK with 5-10x gains and a 12x record in an Asia market.
+- Unified recommender systems across SEEK markets in ANZ and Asia, delivering 5-10x gains and a 12x peak uplift in one Asia market.
 - Shipped personalized AI search for HK (JobsDB) with +14% improvement on a core metric.
 
 ## Operating at Scale
-- Ran 150+ online experiments and A/B tests with positive impact on primary metrics; record uplift in an Asia market.
+- Used 150+ online experiments to de-risk ranking, search, and personalization decisions and compound gains on core marketplace metrics.
 - Delivered real-time recommendations for millions of users across homepage, email, and push.
-- Owned cost and performance targets across AWS/GCP; optimized LLM usage with prompt caching, token-level cost tracking, and latency-aware production controls.
+- Owned AI platform economics and performance targets across AWS/GCP, using prompt caching, token-level cost tracking, and latency-aware controls to keep production AI practical at scale.
 - Designed systems with offline evaluation, online testing, and load tests to meet SLAs (recs ~500ms, GenAI 1-2s).
-- Implemented guardrails, rate limiting, LLM-as-judge evaluation, and production monitoring; completed a security pen test.
+- Owned AI governance controls across guardrails, rate limiting, evaluation, monitoring, and security validation, including a completed pen test.
 - Defined OKRs with executive stakeholders and partnered across product, engineering, and leadership.
 
 ## Signature Projects
-- GenAI Property Search (REA): Built and launched in under 30 days; production AI search for property discovery.
-- Agentic AI Platform (REA): Designed and deployed tool-augmented AI agents at scale with orchestration, cost controls, safety, observability, and evaluation.
+- GenAI Property Search (REA): Launched in under 30 days to turn natural-language intent into production property discovery.
+- Agentic AI Platform (REA): Built the production agent platform behind customer-facing AI products, with orchestration, evaluation, observability, guardrails, and cost governance.
 - Multimodal CV Attribute Extraction (REA): Real-time system extracting 45+ property attributes in production.
 - Unified Recommender Platform (SEEK): 8+ markets, 5-10x gains, and a 12x record in an Asia market.
 - Personalized AI Search (SEEK JobsDB): +14% improvement on a core metric in HK.
@@ -43,27 +43,26 @@ Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · https://www.linkedin.
 
 ### Senior Engineering Manager / Principal AI — Machine Learning, REA Group (Melbourne, Australia)
 April 2024 — Present
-- Lead DS/MLE teams delivering production Agentic AI, AI search, and personalization (12 people, up to 3 teams).
-- Built a GenAI property search engine for the RED brand end-to-end in under one month.
-- Designed and deployed tool-augmented AI agent systems to production at scale, including orchestration, observability, evaluation, and guardrails.
+- Built and led DS/MLE teams across production Agentic AI, AI search, and personalization (12 people, up to 3 teams), balancing customer value, delivery speed, and platform reuse.
+- Launched the RED brand's first GenAI property search end-to-end in under one month to validate conversational discovery in production.
+- Built the production agent platform behind AI search and conversational experiences, including orchestration, observability, evaluation, and guardrails.
 - Delivered real-time CV attribute extraction and multimodal inference in production.
-- Implemented GenAI observability for real-time monitoring, evaluation, tracing, and operational debugging.
-- Managed GenAI costs (input/output, caching) and met SLAs (1-2s per request).
-- Applied guardrails, rate limiting, LLM-as-judge evaluation, and production monitoring; completed a security pen test.
-
+- Established GenAI observability for real-time monitoring, evaluation, tracing, and operational debugging so teams could ship with clearer reliability and accountability.
+- Owned GenAI economics and latency, managing input/output and caching costs while keeping production responses within 1-2s SLAs.
+- Owned AI governance controls across guardrails, rate limiting, evaluation, monitoring, and security validation, including a completed pen test.
 ### AI / Data Scientist Manager; Senior Data Scientist; Data Scientist, SEEK (Melbourne, Australia)
 March 2017 — April 2024
-- Managed a global DS team of ~10 and led hiring processes across multiple AI teams.
-- Led recommender system transformation with 5-10x improvements and a 12x record in an Asia market.
+- Built and led a global DS team of ~10 while hiring across multiple AI teams and expanding the organization's ability to ship search, recommendation, and experimentation systems.
+- Led the recommender platform transformation across multiple markets, producing 5-10x improvements and a 12x record in one Asia market.
 - Delivered a unified recommender platform across 8+ markets in Asia and ANZ.
-- Launched personalized AI search for HK (JobsDB) with +14% main-metric improvement.
-- Ran 150+ online experiments and A/B tests with positive impact on main metrics.
+- Launched personalized AI search for HK (JobsDB) with +14% improvement on a core metric.
+- Used 150+ online experiments to de-risk ranking, search, and personalization decisions and compound gains on core marketplace metrics.
 - Served millions of users with real-time recommendations across homepage, email, and push.
 - Designed systems with offline evaluation, online testing, and load tests to meet SLAs (~500ms for recs).
 
 ### Lead Data Scientist, Catho Online (Sao Paulo, Brazil)
 July 2015 — February 2017
-- Built candidate recommendation systems with >115% uplift in main metrics.
+- Built candidate recommendation systems that delivered >115% uplift on core marketplace metrics.
 - Delivered hybrid recommenders combining collaborative filtering and content-based methods.
 - Applied NLP and ML to real-world hiring marketplace challenges at scale.
 
