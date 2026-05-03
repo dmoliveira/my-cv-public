@@ -100,8 +100,8 @@ July 2015 — February 2017
 
 ## Skills
 Leadership: org design, hiring, mentoring, cross-functional strategy.
-AI/ML Systems: ranking, retrieval, AI search, semantic search, sequential recommenders, online experimentation, A/B testing, learning-to-rank.
-GenAI/LLMs: agentic AI, AI agents, multi-agent orchestration, RAG, tool use, structured outputs, embeddings, evaluation, fine-tuning (QLoRA).
+AI/ML Systems: ranking, retrieval, AI search, hybrid search, reranking, search relevance, semantic search, sequential recommenders, online experimentation, A/B testing, learning-to-rank.
+GenAI/LLMs: agentic AI, AI agents, Agentic Engineering, multi-agent orchestration, tool calling, stateful agents, memory, RAG, structured outputs, embeddings, agent evaluation, continuous evaluation, fine-tuning (QLoRA), MCP.
 ML Techniques: transformers, embeddings, matrix factorization, clustering, RL, offline evaluation.
 Tools: PyTorch, TensorFlow, scikit-learn, Pandas, XGBoost, LightGBM, CatBoost, Spark, Hadoop, FastAPI.
 AI Tools/Services: Codex, Claude Code, OpenCode, Cline, Gemini CLI, VS Code Copilot, Cursor, Vertex AI Studio, MCP.
@@ -111,7 +111,7 @@ Datastores: SQL, Solr, OpenSearch, Elasticsearch, Redis, MongoDB, PostgreSQL, ve
 Languages: Python, R, Julia, Java, Scala, Go, C/C++.
 
 ## Core Expertise
-AI/ML leadership, agentic AI, multi-agent systems, AI search, semantic search, ranking systems, retrieval, recommender systems, GenAI, LLMs, RAG, multimodal AI, online experimentation, A/B testing, observability, evaluation, safety, guardrails.
+AI/ML leadership across search, recommendations, and agentic systems; building production GenAI and LLM platforms with hybrid search, reranking, retrieval, tool calling, stateful agents, RAG, observability, evaluation, safety, guardrails, AI governance, and MLOps discipline.
 
 ## Languages
 English (fluent), Portuguese (native), Spanish (basic).
