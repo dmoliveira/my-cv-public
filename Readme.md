@@ -7,15 +7,15 @@ linkedin: https://www.linkedin.com/in/dmztheone
 ---
 
 # Diego Marinho de Oliveira
-AI/ML Leader | Production AI Products, Search, Recommendations, and Agentic Systems at Scale
+AI/ML Leader | Production AI, Search, Recommendations, and Agentic Systems at Multi-Market Scale
 
 Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · https://www.linkedin.com/in/dmztheone
 
 ## Executive Summary
-- AI/ML leader with 10+ years turning ambiguous product and platform bets into production AI systems across search, recommendations, and agentic experiences in Oceania, Asia, and South America.
+- AI/ML leader with 10+ years leading production AI products and platforms across search, recommendations, and agentic experiences in Oceania, Asia, and South America, with results spanning 150+ experiments, sub-30-day launches, and multi-market uplift up to 12x.
 - Built the production agent platform behind customer-facing AI search and conversational experiences, standardizing orchestration, evaluation, observability, guardrails, and cost control.
 - Delivered measurable business impact through 150+ online experiments, multi-market platform rollouts, and multiple customer-facing AI launches.
-- Track record of leading global DS/MLE teams, hiring at scale, and shipping end-to-end production AI systems with strong cost, latency, and reliability controls.
+- Built and led global DS/MLE teams, hired across multiple AI functions, and translated strategy into production AI systems with strong cost, latency, and reliability discipline.
 
 ## Leadership and Impact
 - Led AI initiatives across agentic AI, multi-agent systems, AI search, multimodal CV, and recommendations.
@@ -26,7 +26,7 @@ Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · https://www.linkedin.
 
 ## Operating at Scale
 - Used 150+ online experiments to de-risk ranking, search, and personalization decisions and compound gains on core marketplace metrics.
-- Delivered real-time recommendations for millions of users across homepage, email, and push.
+- Delivered real-time recommendations for millions of users across homepage, email, and push, turning the recommender platform into a daily operating surface.
 - Owned AI platform economics and performance targets across AWS/GCP, using prompt caching, token-level cost tracking, and latency-aware controls to keep production AI practical at scale.
 - Designed systems with offline evaluation, online testing, and load tests to meet SLAs (recs ~500ms, GenAI 1-2s).
 - Owned AI governance controls across guardrails, rate limiting, evaluation, monitoring, and security validation, including a completed pen test.
@@ -35,7 +35,7 @@ Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · https://www.linkedin.
 ## Signature Projects
 - GenAI Property Search (REA): Launched in under 30 days to turn natural-language intent into production property discovery.
 - Agentic AI Platform (REA): Built the production agent platform behind customer-facing AI products, with orchestration, evaluation, observability, guardrails, and cost governance.
-- Multimodal CV Attribute Extraction (REA): Real-time system extracting 45+ property attributes in production.
+- Multimodal CV Attribute Extraction (REA): Real-time multimodal production system extracting 45+ property attributes for downstream search and listing quality.
 - Unified Recommender Platform (SEEK): 8+ markets, 5-10x gains, and a 12x record in an Asia market.
 - Personalized AI Search (SEEK JobsDB): +14% improvement on a core metric in HK.
 
