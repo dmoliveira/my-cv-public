@@ -1,13 +1,13 @@
 ---
 name: Diego Marinho de Oliveira
-title: AI/ML Leader
+title: Senior AI/ML Leader — Agentic AI, Search & Recommender Platforms
 location: Melbourne, Victoria, Australia
 email: dmarinho.ai@gmail.com
 linkedin: https://www.linkedin.com/in/dmztheone
 ---
 
 # Diego Marinho de Oliveira
-AI/ML Leader | Production AI, Search, Recommendations, and Agentic Systems at Multi-Market Scale
+Senior AI/ML Leader | Production Agentic AI, Search & Recommender Platforms
 
 Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · https://www.linkedin.com/in/dmztheone
 
@@ -18,9 +18,9 @@ Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · https://www.linkedin.
 - Built and led global DS/MLE teams, hired across multiple AI functions, and translated strategy into production AI systems with strong cost, latency, and reliability discipline.
 
 ## Leadership and Impact
-- Led AI initiatives across agentic AI, multi-agent systems, AI search, multimodal CV, and recommendations.
+- Led AI initiatives across agentic AI, multi-agent systems, AI search, multimodal computer vision, and recommendations.
 - Launched the RED brand's first GenAI property search within REA in under 30 days, turning natural-language intent into production property discovery and setting the foundation for customer-facing AI journeys.
-- Delivered the first real-time attribute extraction CV system to production (45+ attributes).
+- Delivered the first real-time computer vision attribute extraction system to production (45+ attributes).
 - Unified recommender systems across SEEK markets in ANZ and Asia, delivering 5-10x gains and a 12x peak uplift in one Asia market.
 - Shipped personalized AI search for HK (JobsDB) with +14% improvement on a core metric.
 
@@ -35,7 +35,7 @@ Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · https://www.linkedin.
 ## Signature Projects
 - GenAI Property Search (REA): Launched in under 30 days to turn natural-language intent into production property discovery.
 - Agentic AI Platform (REA): Built the production agent platform behind customer-facing AI products, with orchestration, evaluation, observability, guardrails, and cost governance.
-- Multimodal CV Attribute Extraction (REA): Real-time multimodal production system extracting 45+ property attributes for downstream search and listing quality.
+- Multimodal Computer Vision Attribute Extraction (REA): Real-time multimodal production system extracting 45+ property attributes for downstream search and listing quality.
 - Unified Recommender Platform (SEEK): 8+ markets, 5-10x gains, and a 12x record in an Asia market.
 - Personalized AI Search (SEEK JobsDB): +14% improvement on a core metric in HK.
 
@@ -46,7 +46,7 @@ April 2024 — Present
 - Built and led DS/MLE teams across production Agentic AI, AI search, and personalization (12 people, up to 3 teams), balancing customer value, delivery speed, and platform reuse.
 - Launched the RED brand's first GenAI property search end-to-end in under one month to validate conversational discovery in production.
 - Built the production agent platform behind AI search and conversational experiences, including orchestration, observability, evaluation, and guardrails.
-- Delivered real-time CV attribute extraction and multimodal inference in production.
+- Delivered real-time computer vision attribute extraction and multimodal inference in production.
 - Established GenAI observability for real-time monitoring, evaluation, tracing, and operational debugging so teams could ship with clearer reliability and accountability.
 - Owned GenAI economics and latency, managing input/output and caching costs while keeping production responses within 1-2s SLAs.
 - Owned AI governance controls across guardrails, rate limiting, evaluation, monitoring, and security validation, including a completed pen test.
@@ -76,7 +76,7 @@ July 2015 — February 2017
 ## Selected Impact
 - 150+ online experiments improving core business metrics.
 - 10+ AI projects shipped to production at REA.
-- Real-time CV system extracting 45+ property attributes.
+- Real-time computer vision system extracting 45+ property attributes.
 - Multi-market recommender unification across 8+ markets.
 - Delivered real-time recommendations and AI search to millions of users.
 
@@ -101,7 +101,7 @@ July 2015 — February 2017
 ## Skills
 Leadership: org design, hiring, mentoring, cross-functional strategy.
 AI/ML Systems: ranking, retrieval, AI search, hybrid search, reranking, search relevance, semantic search, sequential recommenders, online experimentation, A/B testing, learning-to-rank.
-GenAI/LLMs: agentic AI, AI agents, Agentic Engineering, multi-agent orchestration, tool calling, stateful agents, memory, RAG, structured outputs, embeddings, agent evaluation, continuous evaluation, fine-tuning (QLoRA), MCP.
+GenAI/LLMs: agentic AI, AI agents, multi-agent orchestration, tool calling, stateful agents, memory, Retrieval-Augmented Generation (RAG), structured outputs, embeddings, agent evaluation, continuous evaluation, fine-tuning (QLoRA), Model Context Protocol (MCP).
 ML Techniques: transformers, embeddings, matrix factorization, clustering, RL, offline evaluation.
 Tools: PyTorch, TensorFlow, scikit-learn, Pandas, XGBoost, LightGBM, CatBoost, Spark, Hadoop, FastAPI.
 AI Tools/Services: Codex, Claude Code, OpenCode, Cline, Gemini CLI, VS Code Copilot, Cursor, Vertex AI Studio, MCP.
@@ -111,7 +111,7 @@ Datastores: SQL, Solr, OpenSearch, Elasticsearch, Redis, MongoDB, PostgreSQL, ve
 Languages: Python, R, Julia, Java, Scala, Go, C/C++.
 
 ## Core Expertise
-AI/ML leadership across search, recommendations, and agentic systems; building production GenAI and LLM platforms with hybrid search, reranking, retrieval, tool calling, stateful agents, RAG, observability, evaluation, safety, guardrails, AI governance, and MLOps discipline.
+AI/ML leadership across search, recommendations, and agentic systems; building production GenAI and LLM platforms with hybrid search, reranking, retrieval, tool calling, stateful agents, Retrieval-Augmented Generation (RAG), observability, evaluation, guardrails, AI governance, and MLOps discipline.
 
 ## Languages
 English (fluent), Portuguese (native), Spanish (basic).
