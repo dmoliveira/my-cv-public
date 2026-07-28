@@ -1,3 +1,5 @@
 title: Diego Marinho de Oliveira
-description: AI/ML Leader | Agentic AI, Multi-Agent Systems, AI Search, and Recommendations
+description: Senior AI/ML Leader | Production Agentic AI, Search & Recommender Platforms
 theme: minima
+exclude:
+  - Readme.md
