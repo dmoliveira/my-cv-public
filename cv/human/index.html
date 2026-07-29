@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Diego Marinho de Oliveira | Senior AI/ML Leader — Agentic AI &amp; Search</title>
+    <title>Diego Marinho de Oliveira | AI/ML Leader</title>
     <meta
       name="description"
       content="Senior AI/ML leader delivering production agentic AI, AI search and recommender platforms; 150+ experiments across global teams and markets."
@@ -12,8 +12,8 @@
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta name="theme-color" content="#123b78" />
     <link rel="canonical" href="https://dmoliveira.github.io/my-cv-public/cv/human/" />
-    <link rel="icon" type="image/png" href="../../assets/photos/dmz-2.png" />
-    <link rel="apple-touch-icon" href="../../assets/photos/dmz-2.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="../../assets/icons/diego-64.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/icons/diego-180.png" />
     <link
       rel="preload"
       as="image"
@@ -110,11 +110,13 @@
           "alumniOf": [
             {
               "@type": "CollegeOrUniversity",
-              "name": "Universidade Federal de Minas Gerais"
+              "name": "Universidade Federal de Minas Gerais",
+              "url": "https://www.ufmg.br/"
             },
             {
               "@type": "CollegeOrUniversity",
-              "name": "Pontificia Universidade Catolica de Minas Gerais"
+              "name": "Pontifícia Universidade Católica de Minas Gerais",
+              "url": "https://www.pucminas.br/"
             }
           ]
         }
@@ -239,7 +241,7 @@
         position: relative;
         isolation: isolate;
         overflow: hidden;
-        padding: clamp(28px, 5vw, 60px);
+        padding: clamp(28px, 4.5vw, 50px);
         border: 1px solid rgba(21, 89, 197, 0.16);
         border-radius: 32px;
         background: linear-gradient(145deg, #ffffff 0%, #f7faff 58%, #edf5ff 100%);
@@ -356,7 +358,7 @@
 
       .hero-summary {
         max-width: 72ch;
-        margin: 22px 0 0;
+        margin: 18px 0 0;
         color: #31445a;
         font-size: clamp(1rem, 1.6vw, 1.13rem);
         line-height: 1.65;
@@ -376,7 +378,37 @@
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        margin-top: 24px;
+        margin-top: 20px;
+      }
+
+      .utility-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px 16px;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .utility-action {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        padding: 7px 1px;
+        border: 0;
+        background: transparent;
+        color: var(--muted);
+        font: inherit;
+        font-size: 0.82rem;
+        font-weight: 720;
+        text-decoration: underline;
+        text-decoration-color: rgba(80, 97, 118, 0.45);
+        text-underline-offset: 0.2em;
+        cursor: pointer;
+      }
+
+      .utility-action:hover {
+        color: var(--accent-dark);
+        text-decoration-color: currentColor;
       }
 
       .button {
@@ -435,7 +467,9 @@
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 12px;
-        margin-top: 32px;
+        margin: 24px 0 0;
+        padding: 0;
+        list-style: none;
       }
 
       .proof-card {
@@ -446,30 +480,32 @@
         background: rgba(255, 255, 255, 0.78);
       }
 
-      .proof-value {
+      .proof-domain {
         display: block;
-        color: var(--accent-dark);
-        font-size: clamp(1.45rem, 3vw, 2rem);
+        color: var(--signal);
+        font-size: 0.7rem;
         font-weight: 850;
-        line-height: 1.05;
-        letter-spacing: -0.03em;
+        letter-spacing: 0.08em;
+        line-height: 1.25;
+        text-transform: uppercase;
       }
 
-      .proof-label {
+      .proof-value {
         display: block;
-        margin-top: 7px;
-        color: var(--ink);
-        font-size: 0.86rem;
-        font-weight: 760;
-        line-height: 1.35;
+        margin-top: 8px;
+        color: var(--accent-dark);
+        font-size: clamp(1.16rem, 2vw, 1.5rem);
+        font-weight: 850;
+        line-height: 1.12;
+        letter-spacing: -0.025em;
       }
 
       .proof-context {
         display: block;
-        margin-top: 4px;
+        margin-top: 6px;
         color: var(--muted);
         font-size: 0.76rem;
-        line-height: 1.35;
+        line-height: 1.4;
       }
 
       .site-nav {
@@ -480,7 +516,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 18px;
-        margin: 18px 0 0;
+        margin: 14px 0 0;
         padding: 9px 10px 9px 18px;
         border: 1px solid rgba(16, 32, 51, 0.1);
         border-radius: 16px;
@@ -594,6 +630,24 @@
         margin-bottom: 24px;
       }
 
+      .section-title-row {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .section-symbol {
+        width: 24px;
+        height: 24px;
+        flex: 0 0 24px;
+        color: var(--accent-dark);
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.75;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
       h2 {
         margin: 5px 0 0;
         font-family: Georgia, "Times New Roman", serif;
@@ -657,6 +711,28 @@
         margin: 0;
         color: var(--muted);
         font-weight: 650;
+      }
+
+      .organization a {
+        color: var(--accent-dark);
+        font-weight: 800;
+      }
+
+      .external-mark {
+        margin-left: 0.12em;
+        font-size: 0.82em;
+      }
+
+      .market-context {
+        max-width: 76ch;
+        margin: 5px 0 0;
+        color: var(--muted);
+        font-size: 0.82rem;
+        line-height: 1.45;
+      }
+
+      .market-context a {
+        font-weight: 700;
       }
 
       .date {
@@ -842,7 +918,9 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
-        margin-top: 16px;
+        margin: 16px 0 0;
+        padding: 0;
+        list-style: none;
       }
 
       .education-item {
@@ -852,12 +930,12 @@
         background: var(--surface-soft);
       }
 
-      .education-item strong,
-      .education-item span {
+      .education-item > strong,
+      .education-item > span {
         display: block;
       }
 
-      .education-item span {
+      .education-item > span {
         margin-top: 3px;
         color: var(--muted);
         font-size: 0.88rem;
@@ -985,6 +1063,17 @@
           font-size: 0.86rem;
         }
 
+        .utility-row {
+          display: flex;
+          gap: 0 14px;
+          margin-top: 6px;
+        }
+
+        .utility-action {
+          min-height: 44px;
+          font-size: 0.76rem;
+        }
+
         .proof-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 8px;
@@ -1000,8 +1089,8 @@
           font-size: 1.45rem;
         }
 
-        .proof-label {
-          font-size: 0.78rem;
+        .proof-domain {
+          font-size: 0.64rem;
         }
 
         .proof-context {
@@ -1074,9 +1163,9 @@
           right: 10px;
           bottom: max(10px, env(safe-area-inset-bottom));
           left: 10px;
-          grid-template-columns: repeat(3, minmax(0, 1fr));
+          grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 6px;
-          padding: 7px;
+          padding: 5px;
           border: 1px solid rgba(16, 32, 51, 0.12);
           border-radius: 16px;
           background: rgba(255, 255, 255, 0.96);
@@ -1091,7 +1180,7 @@
         .mobile-actions a,
         .mobile-actions button {
           min-width: 0;
-          min-height: 46px;
+          min-height: 44px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -1136,6 +1225,10 @@
 
         .cta-row {
           grid-template-columns: 1fr;
+        }
+
+        .utility-row {
+          display: flex;
         }
 
         .button {
@@ -1191,12 +1284,16 @@
         .site-nav,
         .mobile-jump,
         .cta-row,
+        .utility-row,
         .mobile-actions,
         .portrait,
         .screen-only,
         .closing-cta,
         footer,
-        .tag-row {
+        .tag-row,
+        .section-symbol,
+        .external-mark,
+        .market-context {
           display: none !important;
         }
 
@@ -1279,9 +1376,9 @@
           font-size: 14pt;
         }
 
-        .proof-label {
-          margin-top: 0.5mm;
-          font-size: 7pt;
+        .proof-domain {
+          font-size: 6.3pt;
+          letter-spacing: 0.04em;
         }
 
         .proof-context {
@@ -1492,7 +1589,7 @@
           </picture>
         </div>
 
-        <div class="cta-row" aria-label="Contact actions">
+        <div class="cta-row" role="group" aria-label="Contact actions">
           <a
             class="button button--primary"
             href="mailto:dmarinho.ai@gmail.com?subject=AI%2FML%20leadership%20opportunity"
@@ -1509,76 +1606,57 @@
             data-track="linkedin"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM6.81 20.45H3.86V9h2.95v11.45z" /></svg>
-            LinkedIn
+            LinkedIn<span class="sr-only"> (opens in a new tab)</span>
           </a>
         </div>
 
         <p class="hero-summary">
-          AI/ML leader with <strong>10+ years</strong> delivering production AI products and platforms across
-          Oceania, Asia and South America. I lead global data science and machine learning engineering teams
-          from strategy through reliable customer impact—across AI agents, search, recommendations and
-          multimodal AI.
+          AI/ML leader with <strong>10+ years</strong> shipping production systems across Oceania, Asia and South
+          America—leading global data science and ML engineering teams from strategy to customer impact in agents,
+          search, recommendations and multimodal AI.
         </p>
 
-        <div class="cta-row" aria-label="CV format and profile actions">
-          <button class="button" type="button" data-action="print" data-track="print" data-track-manual hidden>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8V2h12v6H6zm10-4H8v2h8V4zm4 5H4a3 3 0 0 0-3 3v6h5v4h12v-4h5v-6a3 3 0 0 0-3-3zm-4 11H8v-6h8v6z" /></svg>
+        <div class="utility-row" role="group" aria-label="CV utilities">
+          <button class="utility-action" type="button" data-action="print" data-track="print" data-track-manual hidden>
             Print / save PDF
           </button>
-          <a class="button" href="../../cv/ats/" data-track="ats">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm2 4v2h12V7H6zm0 4v2h12v-2H6zm0 4v2h8v-2H6z" /></svg>
-            ATS / text CV
-          </a>
-          <button
-            class="button"
-            type="button"
-            data-action="copy-email"
-            data-track="copy-email"
-            data-track-manual
-            aria-describedby="copy-email-status"
-            hidden
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7V3a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h4zm2 0h3a2 2 0 0 1 2 2v6h4V3h-9v4zm3 2H4v12h9V9z" /></svg>
-            <span data-copy-label>Copy email</span>
-          </button>
+          <a class="utility-action" href="../../cv/ats/" data-track="ats">ATS / text CV</a>
           <a
-            class="button screen-only"
+            class="utility-action screen-only"
             href="https://github.com/dmoliveira"
             target="_blank"
             rel="noopener noreferrer"
             data-track="github"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7A11.3 11.3 0 0 0 8.43 22.72c.57.1.78-.25.78-.55v-2.15c-3.18.7-3.85-1.35-3.85-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.25 3.32.95.1-.74.4-1.25.73-1.54-2.54-.29-5.21-1.27-5.21-5.65 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.03 0 0 .96-.31 3.11 1.17a10.75 10.75 0 0 1 5.68 0c2.15-1.48 3.11-1.17 3.11-1.17.62 1.58.23 2.74.11 3.03.73.8 1.18 1.82 1.18 3.07 0 4.39-2.68 5.36-5.23 5.64.41.35.78 1.04.78 2.1v3.2c0 .3.21.66.79.55A11.3 11.3 0 0 0 12 .7z" /></svg>
-            GitHub
-          </a>
+          >GitHub<span class="sr-only"> (opens in a new tab)</span></a>
         </div>
-        <p class="sr-only" id="copy-email-status" aria-live="polite" aria-atomic="true"></p>
-
         <p class="print-contact" hidden>
           Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · linkedin.com/in/dmztheone · github.com/dmoliveira
         </p>
 
-        <section class="proof-grid" aria-label="Selected impact">
-          <article class="proof-card">
-            <span class="proof-value">10+ years</span>
-            <span class="proof-label">AI/ML leadership</span>
-            <span class="proof-context">Production products and platforms</span>
-          </article>
-          <article class="proof-card">
-            <span class="proof-value">12 people</span>
-            <span class="proof-label">Up to three teams</span>
-            <span class="proof-context">Data science and ML engineering</span>
-          </article>
-          <article class="proof-card">
-            <span class="proof-value">150+</span>
-            <span class="proof-label">Online experiments</span>
-            <span class="proof-context">Search, ranking and personalization</span>
-          </article>
-          <article class="proof-card">
-            <span class="proof-value">5–10x</span>
-            <span class="proof-label">Recommender gains</span>
-            <span class="proof-context">12x peak uplift in one Asia market</span>
-          </article>
+        <section aria-labelledby="production-scope-title">
+          <h2 class="sr-only" id="production-scope-title">Production AI scope</h2>
+          <ul class="proof-grid">
+            <li class="proof-card">
+              <span class="proof-domain">Agentic AI</span>
+              <strong class="proof-value">Production platform</strong>
+              <span class="proof-context">Orchestration, evaluation, guardrails and cost control</span>
+            </li>
+            <li class="proof-card">
+              <span class="proof-domain">Search &amp; ranking</span>
+              <strong class="proof-value">150+ experiments</strong>
+              <span class="proof-context">Across search, ranking and personalisation</span>
+            </li>
+            <li class="proof-card">
+              <span class="proof-domain">Recommenders</span>
+              <strong class="proof-value">8+ markets</strong>
+              <span class="proof-context">Unified platform reach across Asia and ANZ</span>
+            </li>
+            <li class="proof-card">
+              <span class="proof-domain">Leadership</span>
+              <strong class="proof-value">12 people</strong>
+              <span class="proof-context">Across up to three AI/ML teams</span>
+            </li>
+          </ul>
         </section>
       </header>
 
@@ -1606,7 +1684,10 @@
         <div class="section-heading">
           <div>
             <p class="section-kicker">Career</p>
-            <h2 id="experience-title" tabindex="-1">Professional experience</h2>
+            <div class="section-title-row">
+              <svg class="section-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M9 7V4h6v3M3 12h18m-11 0v2h4v-2" /></svg>
+              <h2 id="experience-title" tabindex="-1">Professional experience</h2>
+            </div>
           </div>
           <p class="section-summary">
             A record of building teams and shipping measurable AI systems across property, employment and hiring marketplaces.
@@ -1619,7 +1700,8 @@
               <div>
                 <p class="role-label">Current role</p>
                 <h3>Senior Engineering Manager / Principal AI</h3>
-                <p class="organization">Machine Learning, REA Group · Melbourne, Australia</p>
+                <p class="organization">Machine Learning · <a href="https://www.rea-group.com/about-us/about-rea-group/" target="_blank" rel="noopener noreferrer">REA Group <span class="sr-only"> (opens in a new tab)</span><span class="external-mark" aria-hidden="true">↗</span></a> · Melbourne, Australia</p>
+                <p class="market-context">Global digital property business · home to realestate.com.au.</p>
               </div>
               <p class="date">Apr 2024 — Present</p>
             </header>
@@ -1649,7 +1731,7 @@
                 validation, including a completed penetration test.
               </li>
             </ul>
-            <div class="tag-row" aria-label="REA role capabilities">
+            <div class="tag-row" role="group" aria-label="REA role capabilities">
               <span class="tag">Agentic AI</span><span class="tag">AI agents</span><span class="tag">AI search</span>
               <span class="tag">Multimodal AI</span><span class="tag">Evaluation</span><span class="tag">Governance</span>
             </div>
@@ -1659,7 +1741,8 @@
             <header class="experience-header">
               <div>
                 <h3>AI / Data Scientist Manager; Senior Data Scientist; Data Scientist</h3>
-                <p class="organization">SEEK · Melbourne, Australia</p>
+                <p class="organization"><a href="https://au.seek.com/about" target="_blank" rel="noopener noreferrer">SEEK <span class="sr-only"> (opens in a new tab)</span><span class="external-mark" aria-hidden="true">↗</span></a> · Melbourne, Australia</p>
+                <p class="market-context">Online employment marketplace across Australia, New Zealand and six Asian markets.</p>
               </div>
               <p class="date">Mar 2017 — Apr 2024</p>
             </header>
@@ -1684,7 +1767,7 @@
                 alongside offline evaluation and load testing for approximately 500 ms recommendation targets.
               </li>
             </ul>
-            <div class="tag-row" aria-label="SEEK role capabilities">
+            <div class="tag-row" role="group" aria-label="SEEK role capabilities">
               <span class="tag">Recommender systems</span><span class="tag">Search ranking</span>
               <span class="tag">Experimentation</span><span class="tag">Multi-market platforms</span>
             </div>
@@ -1694,7 +1777,8 @@
             <header class="experience-header">
               <div>
                 <h3>Lead Data Scientist</h3>
-                <p class="organization">Catho Online · São Paulo, Brazil</p>
+                <p class="organization"><a href="https://www.catho.com.br/ajuda/candidatos/sobre-a-catho/institucional/498/" target="_blank" rel="noopener noreferrer">Catho <span class="sr-only"> (opens in a new tab)</span><span class="external-mark" aria-hidden="true">↗</span></a> · São Paulo, Brazil</p>
+                <p class="market-context">Brazilian technology and online recruitment platform.</p>
               </div>
               <p class="date">Jul 2015 — Feb 2017</p>
             </header>
@@ -1722,7 +1806,10 @@
         <div class="section-heading">
           <div>
             <p class="section-kicker">Selected work</p>
-            <h2 id="systems-title">AI systems shipped</h2>
+            <div class="section-title-row">
+              <svg class="section-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="7" height="7" rx="1" /><rect x="14" y="4" width="7" height="7" rx="1" /><rect x="8.5" y="15" width="7" height="6" rx="1" /><path d="M6.5 11v2h11v-2M12 13v2" /></svg>
+              <h2 id="systems-title">AI systems shipped</h2>
+            </div>
           </div>
           <p class="section-summary">
             Representative systems spanning AI agents, multimodal inference, information retrieval and recommendations.
@@ -1744,7 +1831,7 @@
           <article class="system-card">
             <span class="system-number" aria-hidden="true">02</span>
             <h3>GenAI property search</h3>
-            <p class="metric-line">Production launch in under 30 days</p>
+            <p class="metric-line">Production launch in under one month</p>
             <p>
               Turned natural-language property intent into a production discovery experience, moving from concept to
               customer-facing validation in under one month.
@@ -1754,14 +1841,14 @@
               href="https://www.mediaweek.com.au/rea-group-unveils-openai-powered-realassist/"
               target="_blank"
               rel="noopener noreferrer"
-            >REA GenAI property-search coverage <span aria-hidden="true">↗</span></a>
+            >REA GenAI property-search coverage<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
             <div class="tag-row"><span class="tag">Generative AI</span><span class="tag">AI search</span><span class="tag">Production</span></div>
           </article>
 
           <article class="system-card">
             <span class="system-number" aria-hidden="true">03</span>
             <h3>Unified recommender platform</h3>
-            <p class="metric-line">8+ markets · 5–10x gains · 12x peak</p>
+            <p class="metric-line">Unified platform across 8+ markets</p>
             <p>
               Replaced isolated market solutions with a reusable platform serving millions of users across real-time
               homepage, email and push recommendations in Asia and ANZ.
@@ -1786,7 +1873,10 @@
         <div class="section-heading">
           <div>
             <p class="section-kicker">Expertise</p>
-            <h2 id="capabilities-title">Leadership + technical depth</h2>
+            <div class="section-title-row">
+              <svg class="section-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16" /><circle cx="9" cy="6" r="2" /><circle cx="15" cy="12" r="2" /><circle cx="7" cy="18" r="2" /></svg>
+              <h2 id="capabilities-title">Leadership + technical depth</h2>
+            </div>
           </div>
           <p class="section-summary">
             Hands-on technical judgement paired with team, product and operating leadership for production AI.
@@ -1829,7 +1919,10 @@
         <div class="section-heading">
           <div>
             <p class="section-kicker">Research &amp; recognition</p>
-            <h2 id="recognition-title">Grounded in the field</h2>
+            <div class="section-title-row">
+              <svg class="section-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 3h8v5a4 4 0 0 1-8 0V3Z" /><path d="M8 5H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4m-4 1v5m-4 4h8m-6-4h4" /></svg>
+              <h2 id="recognition-title">Grounded in the field</h2>
+            </div>
           </div>
           <p class="section-summary">
             Industry recognition, recommender-systems research and a computer science foundation.
@@ -1849,23 +1942,23 @@
           <article class="compact-card">
             <h3>Selected publications</h3>
             <ul class="clean-list">
-              <li><strong>Imbalance Data Sparsity as Source of Unfair Bias in Collaborative Filtering</strong> · RecSys 2022</li>
-              <li><strong>Offline Evaluation Standards for Recommender Systems</strong> · RecSys 2021</li>
-              <li class="print-secondary"><strong>FS-NER: Filter-Stream Named Entity Recognition on Twitter Data</strong> · WWW Workshop 2013</li>
+              <li><a href="https://doi.org/10.1145/3523227.3547404" target="_blank" rel="noopener noreferrer"><strong>Imbalanced Data Sparsity as a Source of Unfair Bias in Collaborative Filtering</strong> <span class="sr-only"> (opens in a new tab)</span><span class="external-mark" aria-hidden="true">↗</span></a> · RecSys 2022</li>
+              <li><a href="https://doi.org/10.1145/3460231.3474608" target="_blank" rel="noopener noreferrer"><strong>Offline Evaluation Standards for Recommender Systems</strong> <span class="sr-only"> (opens in a new tab)</span><span class="external-mark" aria-hidden="true">↗</span></a> · RecSys 2021</li>
+              <li class="print-secondary"><a href="https://doi.org/10.1145/2487788.2488003" target="_blank" rel="noopener noreferrer"><strong>FS-NER: a lightweight filter-stream approach to named entity recognition on twitter data</strong> <span class="sr-only"> (opens in a new tab)</span><span class="external-mark" aria-hidden="true">↗</span></a> · WWW ’13 Companion</li>
             </ul>
           </article>
         </div>
 
-        <div class="education-row" aria-label="Education">
-          <article class="education-item">
+        <ul class="education-row" aria-label="Education">
+          <li class="education-item">
             <strong>M.Sc. Computer Science</strong>
-            <span>Universidade Federal de Minas Gerais · 2010–2012</span>
-          </article>
-          <article class="education-item">
+            <span><a href="https://www.ufmg.br/" target="_blank" rel="noopener noreferrer">Universidade Federal de Minas Gerais <span class="sr-only"> (opens in a new tab)</span><span class="external-mark" aria-hidden="true">↗</span></a> · 2010–2012</span>
+          </li>
+          <li class="education-item">
             <strong>B.Sc. Computer Science</strong>
-            <span>Pontificia Universidade Catolica de Minas Gerais · 2006–2009</span>
-          </article>
-        </div>
+            <span><a href="https://www.pucminas.br/" target="_blank" rel="noopener noreferrer">Pontifícia Universidade Católica de Minas Gerais <span class="sr-only"> (opens in a new tab)</span><span class="external-mark" aria-hidden="true">↗</span></a> · 2006–2009</span>
+          </li>
+        </ul>
         <p class="languages"><strong>Languages:</strong> English (fluent), Portuguese (native), Spanish (basic).</p>
       </section>
 
@@ -1887,7 +1980,7 @@
             target="_blank"
             rel="noopener noreferrer"
             data-track="linkedin-footer"
-          >Connect on LinkedIn</a>
+          >Connect on LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
         </div>
       </section>
 
@@ -1903,12 +1996,8 @@
       </a>
       <a href="https://www.linkedin.com/in/dmztheone/" target="_blank" rel="noopener noreferrer" data-track="linkedin-sticky">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM6.81 20.45H3.86V9h2.95v11.45z" /></svg>
-        LinkedIn
+        LinkedIn<span class="sr-only"> (opens in a new tab)</span>
       </a>
-      <button type="button" data-action="print" data-track="print-sticky" data-track-manual hidden>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8V2h12v6H6zm14 1H4a3 3 0 0 0-3 3v6h5v4h12v-4h5v-6a3 3 0 0 0-3-3zm-4 11H8v-6h8v6z" /></svg>
-        PDF
-      </button>
     </aside>
 
     <script>
@@ -1920,8 +2009,6 @@
         var hero = document.querySelector(".hero");
         var navLinks = document.querySelectorAll(".nav-links a[href^='#']");
         var sections = document.querySelectorAll(".content-section[id]");
-        var copyEmailButton = document.querySelector("[data-action='copy-email']");
-        var copyEmailStatus = document.getElementById("copy-email-status");
 
         function trackAction(element) {
           var actionName = element && element.getAttribute("data-track");
@@ -1937,30 +2024,6 @@
             window.print();
           });
         });
-
-        if (
-          copyEmailButton &&
-          copyEmailStatus &&
-          window.isSecureContext &&
-          navigator.clipboard &&
-          typeof navigator.clipboard.writeText === "function"
-        ) {
-          copyEmailButton.hidden = false;
-          copyEmailButton.addEventListener("click", async function () {
-            var label = copyEmailButton.querySelector("[data-copy-label]");
-            try {
-              await navigator.clipboard.writeText("dmarinho.ai@gmail.com");
-              copyEmailStatus.textContent = "Email address copied to clipboard.";
-              if (label) label.textContent = "Copied";
-              trackAction(copyEmailButton);
-              window.setTimeout(function () {
-                if (label) label.textContent = "Copy email";
-              }, 1800);
-            } catch (error) {
-              copyEmailStatus.textContent = "Unable to copy the email address. Use the Email Diego link instead.";
-            }
-          });
-        }
 
         if (mobileActions && hero && typeof window.IntersectionObserver === "function") {
           mobileActions.hidden = false;
