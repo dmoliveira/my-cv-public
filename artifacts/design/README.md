@@ -15,3 +15,20 @@ Reproducible export from the repository root:
 4. Convert it with `sips -s format jpeg -s formatOptions 88` to the published path.
 
 The production JPEG must be RGB, exactly 1200×630, and no larger than 400,000 bytes.
+
+## Portrait icon derivatives
+
+- Source: `../../assets/photos/dmz-2.png` (square, 1024×1024)
+- Browser favicon: `../../assets/icons/diego-64.png`
+- Apple touch icon: `../../assets/icons/diego-180.png`
+
+Reproducible exports from the repository root on macOS:
+
+```sh
+mkdir -p assets/icons
+sips -z 64 64 assets/photos/dmz-2.png --out assets/icons/diego-64.png
+sips -z 180 180 assets/photos/dmz-2.png --out assets/icons/diego-180.png
+sips -g format -g pixelWidth -g pixelHeight assets/icons/diego-64.png assets/icons/diego-180.png
+```
+
+Both outputs must remain square RGB PNGs at their named dimensions. They are deterministic derivatives of the tracked real portrait, not generated likenesses.
