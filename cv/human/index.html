@@ -990,6 +990,37 @@
         display: none;
       }
 
+      @media screen and (hover: hover) and (pointer: fine) {
+        :is(.experience-card, .system-card, .capability-card, .compact-card) {
+          transition:
+            transform 160ms ease,
+            border-color 160ms ease,
+            box-shadow 160ms ease;
+        }
+
+        :is(.experience-card, .system-card, .capability-card, .compact-card):hover:not(:focus-within) {
+          transform: translateY(-2px);
+          border-color: rgba(21, 89, 197, 0.28);
+          box-shadow: 0 16px 36px rgba(16, 32, 51, 0.08);
+        }
+
+        .experience-card--current:hover:not(:focus-within) {
+          border-color: rgba(21, 89, 197, 0.42);
+          box-shadow: 0 18px 42px rgba(21, 89, 197, 0.11);
+        }
+      }
+
+      @media screen {
+        :is(.experience-card, .system-card, .capability-card, .compact-card):focus-within {
+          transform: none;
+          transition: none;
+          border-color: rgba(21, 89, 197, 0.42);
+          box-shadow:
+            0 0 0 2px rgba(21, 89, 197, 0.1),
+            0 14px 34px rgba(16, 32, 51, 0.07);
+        }
+      }
+
       @media (max-width: 800px) {
         html {
           scroll-padding-top: 16px;
@@ -1241,6 +1272,22 @@
         }
       }
 
+      @media screen and (max-width: 400px) {
+        .proof-card {
+          padding-inline: 10px;
+        }
+
+        .proof-value {
+          font-size: clamp(1.05rem, 4.8vw, 1.18rem);
+          overflow-wrap: normal;
+          word-break: normal;
+        }
+
+        .proof-value-line {
+          display: block;
+        }
+      }
+
       @media (prefers-reduced-motion: reduce) {
         html {
           scroll-behavior: auto;
@@ -1253,6 +1300,11 @@
           transition-duration: 0.01ms !important;
           animation-duration: 0.01ms !important;
           animation-iteration-count: 1 !important;
+        }
+
+        .button,
+        :is(.experience-card, .system-card, .capability-card, .compact-card) {
+          transform: none !important;
         }
       }
 
@@ -1602,7 +1654,7 @@
             class="button"
             href="https://www.linkedin.com/in/dmztheone/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="me noopener noreferrer"
             data-track="linkedin"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM6.81 20.45H3.86V9h2.95v11.45z" /></svg>
@@ -1625,7 +1677,7 @@
             class="utility-action screen-only"
             href="https://github.com/dmoliveira"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="me noopener noreferrer"
             data-track="github"
           >GitHub<span class="sr-only"> (opens in a new tab)</span></a>
         </div>
@@ -1643,7 +1695,7 @@
             </li>
             <li class="proof-card">
               <span class="proof-domain">Search &amp; ranking</span>
-              <strong class="proof-value">150+ experiments</strong>
+              <strong class="proof-value"><span class="proof-value-line">150+</span> <span class="proof-value-line">experiments</span></strong>
               <span class="proof-context">Across search, ranking and personalisation</span>
             </li>
             <li class="proof-card">
@@ -1703,7 +1755,7 @@
                 <p class="organization">Machine Learning · <a href="https://www.rea-group.com/about-us/about-rea-group/" target="_blank" rel="noopener noreferrer">REA Group <span class="sr-only"> (opens in a new tab)</span><span class="external-mark" aria-hidden="true">↗</span></a> · Melbourne, Australia</p>
                 <p class="market-context">Global digital property business · home to realestate.com.au.</p>
               </div>
-              <p class="date">Apr 2024 — Present</p>
+              <p class="date"><time datetime="2024-04">Apr 2024</time> — Present</p>
             </header>
             <ul class="achievement-list">
               <li>
@@ -1744,7 +1796,7 @@
                 <p class="organization"><a href="https://au.seek.com/about" target="_blank" rel="noopener noreferrer">SEEK <span class="sr-only"> (opens in a new tab)</span><span class="external-mark" aria-hidden="true">↗</span></a> · Melbourne, Australia</p>
                 <p class="market-context">Online employment marketplace across Australia, New Zealand and six Asian markets.</p>
               </div>
-              <p class="date">Mar 2017 — Apr 2024</p>
+              <p class="date"><time datetime="2017-03">Mar 2017</time> — <time datetime="2024-04">Apr 2024</time></p>
             </header>
             <ul class="achievement-list">
               <li>
@@ -1780,7 +1832,7 @@
                 <p class="organization"><a href="https://www.catho.com.br/ajuda/candidatos/sobre-a-catho/institucional/498/" target="_blank" rel="noopener noreferrer">Catho <span class="sr-only"> (opens in a new tab)</span><span class="external-mark" aria-hidden="true">↗</span></a> · São Paulo, Brazil</p>
                 <p class="market-context">Brazilian technology and online recruitment platform.</p>
               </div>
-              <p class="date">Jul 2015 — Feb 2017</p>
+              <p class="date"><time datetime="2015-07">Jul 2015</time> — <time datetime="2017-02">Feb 2017</time></p>
             </header>
             <ul class="achievement-list">
               <li>
@@ -1795,7 +1847,7 @@
           </article>
 
           <p class="early-career">
-            <strong>Earlier engineering and machine learning roles · 2009 — 2015</strong>
+            <strong>Earlier engineering and machine learning roles · <time datetime="2009">2009</time> — <time datetime="2015">2015</time></strong>
             Machine Learning Engineer, RBS Group / Appus; Machine Learning Specialist, Zunnit Technologies; Software
             Engineer, Vale Mining / Visagio; Software Analyst, TOTVS.
           </p>
@@ -1952,11 +2004,11 @@
         <ul class="education-row" aria-label="Education">
           <li class="education-item">
             <strong>M.Sc. Computer Science</strong>
-            <span><a href="https://www.ufmg.br/" target="_blank" rel="noopener noreferrer">Universidade Federal de Minas Gerais <span class="sr-only"> (opens in a new tab)</span><span class="external-mark" aria-hidden="true">↗</span></a> · 2010–2012</span>
+            <span><a href="https://www.ufmg.br/" target="_blank" rel="noopener noreferrer">Universidade Federal de Minas Gerais <span class="sr-only"> (opens in a new tab)</span><span class="external-mark" aria-hidden="true">↗</span></a> · <time datetime="2010">2010</time>–<time datetime="2012">2012</time></span>
           </li>
           <li class="education-item">
             <strong>B.Sc. Computer Science</strong>
-            <span><a href="https://www.pucminas.br/" target="_blank" rel="noopener noreferrer">Pontifícia Universidade Católica de Minas Gerais <span class="sr-only"> (opens in a new tab)</span><span class="external-mark" aria-hidden="true">↗</span></a> · 2006–2009</span>
+            <span><a href="https://www.pucminas.br/" target="_blank" rel="noopener noreferrer">Pontifícia Universidade Católica de Minas Gerais <span class="sr-only"> (opens in a new tab)</span><span class="external-mark" aria-hidden="true">↗</span></a> · <time datetime="2006">2006</time>–<time datetime="2009">2009</time></span>
           </li>
         </ul>
         <p class="languages"><strong>Languages:</strong> English (fluent), Portuguese (native), Spanish (basic).</p>
