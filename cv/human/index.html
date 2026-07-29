@@ -25,7 +25,7 @@
 
     <meta property="og:type" content="profile" />
     <meta property="og:site_name" content="Diego Marinho de Oliveira — CV" />
-    <meta property="og:title" content="Senior AI/ML Leader — Agentic AI, Search &amp; Recommenders" />
+    <meta property="og:title" content="Diego Marinho de Oliveira — Senior AI/ML Leader" />
     <meta
       property="og:description"
       content="Production AI leadership across agentic systems, AI search and recommender platforms, backed by 150+ experiments and multi-market impact."
@@ -33,25 +33,32 @@
     <meta property="og:url" content="https://dmoliveira.github.io/my-cv-public/cv/human/" />
     <meta
       property="og:image"
-      content="https://dmoliveira.github.io/my-cv-public/assets/photos/thumbnail-linkedin-1200x627.png"
+      content="https://dmoliveira.github.io/my-cv-public/assets/social/diego-cv-1200x630.jpg"
     />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="627" />
-    <meta property="og:image:alt" content="Portrait of Diego Marinho de Oliveira" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Diego Marinho de Oliveira, Senior AI/ML Leader in agentic AI, search and recommenders"
+    />
     <meta property="profile:first_name" content="Diego" />
     <meta property="profile:last_name" content="Marinho de Oliveira" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Senior AI/ML Leader — Agentic AI, Search &amp; Recommenders" />
+    <meta name="twitter:title" content="Diego Marinho de Oliveira — Senior AI/ML Leader" />
     <meta
       name="twitter:description"
       content="Production AI leadership across agentic systems, AI search and recommender platforms."
     />
     <meta
       name="twitter:image"
-      content="https://dmoliveira.github.io/my-cv-public/assets/photos/thumbnail-linkedin-1200x627.png"
+      content="https://dmoliveira.github.io/my-cv-public/assets/social/diego-cv-1200x630.jpg"
     />
-    <meta name="twitter:image:alt" content="Portrait of Diego Marinho de Oliveira" />
+    <meta
+      name="twitter:image:alt"
+      content="Diego Marinho de Oliveira, Senior AI/ML Leader in agentic AI, search and recommenders"
+    />
 
     <script type="application/ld+json">
       {
@@ -60,7 +67,7 @@
         "@id": "https://dmoliveira.github.io/my-cv-public/cv/human/#profile",
         "url": "https://dmoliveira.github.io/my-cv-public/cv/human/",
         "name": "Diego Marinho de Oliveira — AI/ML Leadership Profile",
-        "dateModified": "2026-07-28",
+        "dateModified": "2026-07-29",
         "mainEntity": {
           "@type": "Person",
           "@id": "https://dmoliveira.github.io/my-cv-public/cv/human/#person",
@@ -181,10 +188,12 @@
 
       a:focus-visible,
       button:focus-visible,
-      summary:focus-visible {
-        outline: 3px solid #f2a900;
-        outline-offset: 4px;
+      summary:focus-visible,
+      #experience-title:focus {
+        outline: 3px solid #ffffff;
+        outline-offset: 2px;
         border-radius: 6px;
+        box-shadow: 0 0 0 6px var(--accent-dark);
       }
 
       button,
@@ -207,6 +216,18 @@
 
       .skip-link:focus {
         transform: translateY(0);
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
       }
 
       .page-shell {
@@ -316,6 +337,21 @@
         color: var(--accent-dark);
         font-size: clamp(1rem, 2vw, 1.18rem);
         font-weight: 700;
+      }
+
+      .employer-trust {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 8px;
+        align-items: center;
+        margin: -6px 0 0;
+        color: var(--muted);
+        font-size: 0.86rem;
+        font-weight: 650;
+      }
+
+      .employer-trust strong {
+        color: var(--ink);
       }
 
       .hero-summary {
@@ -867,7 +903,7 @@
 
       footer {
         padding: 24px 8px 0;
-        color: #637286;
+        color: var(--muted);
         font-size: 0.82rem;
         text-align: center;
       }
@@ -914,6 +950,12 @@
 
         .positioning {
           margin-bottom: 0;
+        }
+
+        .employer-trust {
+          margin-top: 7px;
+          font-size: 0.76rem;
+          line-height: 1.35;
         }
 
         .portrait {
@@ -1201,6 +1243,11 @@
           font-size: 9.5pt;
         }
 
+        .employer-trust {
+          margin: 0 0 1mm;
+          font-size: 7.7pt;
+        }
+
         .hero-summary {
           max-width: none;
           margin: 2mm 0 0;
@@ -1410,7 +1457,7 @@
     </style>
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to CV content</a>
+    <a class="skip-link" href="#experience-title">Skip to professional experience</a>
 
     <main class="page-shell" id="main-content">
       <header class="hero" id="overview">
@@ -1420,6 +1467,12 @@
             <h1>Diego Marinho de Oliveira</h1>
             <p class="current-role">Senior Engineering Manager / Principal AI</p>
             <p class="positioning">Production Agentic AI, Search &amp; Recommender Platforms</p>
+            <p class="employer-trust">
+              <span>Career experience:</span>
+              <strong>REA Group</strong><span aria-hidden="true">·</span>
+              <strong>SEEK</strong><span aria-hidden="true">·</span>
+              <strong>Catho</strong>
+            </p>
           </div>
           <picture>
             <source
@@ -1468,7 +1521,7 @@
         </p>
 
         <div class="cta-row" aria-label="CV format and profile actions">
-          <button class="button" type="button" data-action="print" data-track="print" hidden>
+          <button class="button" type="button" data-action="print" data-track="print" data-track-manual hidden>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8V2h12v6H6zm10-4H8v2h8V4zm4 5H4a3 3 0 0 0-3 3v6h5v4h12v-4h5v-6a3 3 0 0 0-3-3zm-4 11H8v-6h8v6z" /></svg>
             Print / save PDF
           </button>
@@ -1476,6 +1529,18 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm2 4v2h12V7H6zm0 4v2h12v-2H6zm0 4v2h8v-2H6z" /></svg>
             ATS / text CV
           </a>
+          <button
+            class="button"
+            type="button"
+            data-action="copy-email"
+            data-track="copy-email"
+            data-track-manual
+            aria-describedby="copy-email-status"
+            hidden
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7V3a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h4zm2 0h3a2 2 0 0 1 2 2v6h4V3h-9v4zm3 2H4v12h9V9z" /></svg>
+            <span data-copy-label>Copy email</span>
+          </button>
           <a
             class="button screen-only"
             href="https://github.com/dmoliveira"
@@ -1487,6 +1552,7 @@
             GitHub
           </a>
         </div>
+        <p class="sr-only" id="copy-email-status" aria-live="polite" aria-atomic="true"></p>
 
         <p class="print-contact" hidden>
           Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · linkedin.com/in/dmztheone · github.com/dmoliveira
@@ -1518,7 +1584,7 @@
 
       <nav class="site-nav" aria-label="CV sections">
         <div class="nav-links">
-          <a href="#experience" aria-current="location">Experience</a>
+          <a href="#experience">Experience</a>
           <a href="#systems">AI systems</a>
           <a href="#capabilities">Capabilities</a>
           <a href="#recognition">Recognition</a>
@@ -1540,7 +1606,7 @@
         <div class="section-heading">
           <div>
             <p class="section-kicker">Career</p>
-            <h2 id="experience-title">Professional experience</h2>
+            <h2 id="experience-title" tabindex="-1">Professional experience</h2>
           </div>
           <p class="section-summary">
             A record of building teams and shipping measurable AI systems across property, employment and hiring marketplaces.
@@ -1839,7 +1905,7 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM6.81 20.45H3.86V9h2.95v11.45z" /></svg>
         LinkedIn
       </a>
-      <button type="button" data-action="print" data-track="print-sticky" hidden>
+      <button type="button" data-action="print" data-track="print-sticky" data-track-manual hidden>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8V2h12v6H6zm14 1H4a3 3 0 0 0-3 3v6h5v4h12v-4h5v-6a3 3 0 0 0-3-3zm-4 11H8v-6h8v6z" /></svg>
         PDF
       </button>
@@ -1854,15 +1920,49 @@
         var hero = document.querySelector(".hero");
         var navLinks = document.querySelectorAll(".nav-links a[href^='#']");
         var sections = document.querySelectorAll(".content-section[id]");
+        var copyEmailButton = document.querySelector("[data-action='copy-email']");
+        var copyEmailStatus = document.getElementById("copy-email-status");
+
+        function trackAction(element) {
+          var actionName = element && element.getAttribute("data-track");
+          if (actionName && typeof window.gtag === "function") {
+            window.gtag("event", "cv_action", { action_name: actionName });
+          }
+        }
 
         printButtons.forEach(function (button) {
           button.hidden = false;
           button.addEventListener("click", function () {
+            trackAction(button);
             window.print();
           });
         });
 
-        if (mobileActions && hero && "IntersectionObserver" in window) {
+        if (
+          copyEmailButton &&
+          copyEmailStatus &&
+          window.isSecureContext &&
+          navigator.clipboard &&
+          typeof navigator.clipboard.writeText === "function"
+        ) {
+          copyEmailButton.hidden = false;
+          copyEmailButton.addEventListener("click", async function () {
+            var label = copyEmailButton.querySelector("[data-copy-label]");
+            try {
+              await navigator.clipboard.writeText("dmarinho.ai@gmail.com");
+              copyEmailStatus.textContent = "Email address copied to clipboard.";
+              if (label) label.textContent = "Copied";
+              trackAction(copyEmailButton);
+              window.setTimeout(function () {
+                if (label) label.textContent = "Copy email";
+              }, 1800);
+            } catch (error) {
+              copyEmailStatus.textContent = "Unable to copy the email address. Use the Email Diego link instead.";
+            }
+          });
+        }
+
+        if (mobileActions && hero && typeof window.IntersectionObserver === "function") {
           mobileActions.hidden = false;
           new IntersectionObserver(
             function (entries) {
@@ -1873,32 +1973,56 @@
           ).observe(hero);
         }
 
-        if (navLinks.length && sections.length && "IntersectionObserver" in window) {
-          var sectionObserver = new IntersectionObserver(
-            function (entries) {
-              var visible = entries
-                .filter(function (entry) { return entry.isIntersecting; })
-                .sort(function (a, b) { return b.intersectionRatio - a.intersectionRatio; });
-              if (!visible.length) return;
-              var activeId = "#" + visible[0].target.id;
-              navLinks.forEach(function (link) {
-                if (link.getAttribute("href") === activeId) {
-                  link.setAttribute("aria-current", "location");
-                } else {
-                  link.removeAttribute("aria-current");
-                }
-              });
-            },
-            { rootMargin: "-18% 0px -68%", threshold: [0, 0.15, 0.5] }
-          );
+        if (navLinks.length && sections.length && typeof window.IntersectionObserver === "function") {
+          var sectionUpdatePending = false;
+
+          function updateCurrentSection() {
+            sectionUpdatePending = false;
+            var marker = Math.min(window.innerHeight * 0.28, 240);
+            var activeId = "";
+
+            sections.forEach(function (section) {
+              var rect = section.getBoundingClientRect();
+              if (rect.top <= marker && rect.bottom > marker) {
+                activeId = "#" + section.id;
+              }
+            });
+
+            if (
+              !activeId &&
+              window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2
+            ) {
+              activeId = "#" + sections[sections.length - 1].id;
+            }
+
+            navLinks.forEach(function (link) {
+              if (activeId && link.getAttribute("href") === activeId) {
+                link.setAttribute("aria-current", "location");
+              } else {
+                link.removeAttribute("aria-current");
+              }
+            });
+          }
+
+          function scheduleSectionUpdate() {
+            if (sectionUpdatePending) return;
+            sectionUpdatePending = true;
+            window.requestAnimationFrame(updateCurrentSection);
+          }
+
+          var sectionObserver = new IntersectionObserver(scheduleSectionUpdate, {
+            threshold: [0, 0.01, 0.5, 1]
+          });
           sections.forEach(function (section) { sectionObserver.observe(section); });
+          window.addEventListener("scroll", scheduleSectionUpdate, { passive: true });
+          window.addEventListener("resize", scheduleSectionUpdate);
+          window.addEventListener("hashchange", scheduleSectionUpdate);
+          scheduleSectionUpdate();
         }
 
-        document.querySelectorAll("[data-track]").forEach(function (element) {
+        document.querySelectorAll("[data-track]:not([data-track-manual])").forEach(function (element) {
           element.addEventListener("click", function () {
-            if (typeof window.gtag === "function") {
-              window.gtag("event", "cv_action", { action_name: element.getAttribute("data-track") });
-            }
+            trackAction(element);
           });
         });
       })();

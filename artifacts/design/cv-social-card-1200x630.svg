@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Diego Marinho de Oliveira — Senior AI/ML Leader</title>
+  <desc id="description">Social preview card for Diego Marinho de Oliveira, focused on production agentic AI, search and recommender systems.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" />
+      <stop offset="0.62" stop-color="#f5f9ff" />
+      <stop offset="1" stop-color="#eaf2ff" />
+    </linearGradient>
+    <linearGradient id="portrait-border" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" />
+      <stop offset="1" stop-color="#bfd4f5" />
+    </linearGradient>
+    <clipPath id="portrait-clip">
+      <rect x="828" y="126" width="306" height="378" rx="42" />
+    </clipPath>
+    <filter id="portrait-shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#102033" flood-opacity="0.22" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#background)" />
+  <circle cx="1065" cy="84" r="210" fill="none" stroke="#1559c5" stroke-opacity="0.08" stroke-width="46" />
+  <circle cx="1065" cy="84" r="126" fill="none" stroke="#1559c5" stroke-opacity="0.08" stroke-width="2" />
+  <circle cx="735" cy="590" r="170" fill="#087361" fill-opacity="0.05" />
+  <path d="M64 64H710" stroke="#1559c5" stroke-opacity="0.16" />
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="64" y="104" fill="#0d3f8f" font-size="20" font-weight="700" letter-spacing="3">AI/ML LEADERSHIP</text>
+    <text x="64" y="197" fill="#102033" font-size="66" font-weight="700" letter-spacing="-2">Diego Marinho</text>
+    <text x="64" y="270" fill="#102033" font-size="66" font-weight="700" letter-spacing="-2">de Oliveira</text>
+    <text x="64" y="338" fill="#102033" font-size="31" font-weight="700">Senior AI/ML Leader</text>
+    <text x="64" y="390" fill="#1559c5" font-size="26" font-weight="700">Production Agentic AI · Search · Recommenders</text>
+    <line x1="64" y1="446" x2="700" y2="446" stroke="#d2deed" stroke-width="2" />
+    <text x="64" y="506" fill="#506176" font-size="22" font-weight="600">Career experience:</text>
+    <text x="64" y="548" fill="#102033" font-size="25" font-weight="700">REA Group · SEEK · Catho</text>
+  </g>
+
+  <rect x="814" y="112" width="334" height="406" rx="54" fill="url(#portrait-border)" filter="url(#portrait-shadow)" />
+  <image href="../../assets/photos/dmz-2-376.webp" x="828" y="126" width="306" height="378" preserveAspectRatio="xMidYMid slice" clip-path="url(#portrait-clip)" />
+  <rect x="828" y="126" width="306" height="378" rx="42" fill="none" stroke="#ffffff" stroke-opacity="0.78" stroke-width="4" />
+</svg>
