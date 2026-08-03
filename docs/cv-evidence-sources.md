@@ -1,6 +1,6 @@
 # CV evidence and source ledger
 
-Last reviewed: 2026-07-29
+Last reviewed: 2026-08-03
 
 This ledger separates public context from career claims supplied by Diego. Public company pages support marketplace context; they do not independently verify Diego's employment or delivery metrics.
 
@@ -27,6 +27,24 @@ Timing is written as **under one month** throughout. Recommender gains are state
 | Catho | Brazilian technology and online recruitment platform | [Catho — institutional](https://www.catho.com.br/ajuda/candidatos/sobre-a-catho/institucional/498/) |
 
 The CV does not present SEEK or Catho as a neutral “#1” portal because no current comparative methodology was found. REA Group is a company, not a portal; the qualified audience claim belongs specifically to realestate.com.au.
+
+## Detailed leadership CV policy
+
+The detailed human CV at `cv/human/detailed/` adds challenge, action and delivery context to claims already published in the primary human and ATS CVs. It is intentionally `noindex` with the primary human CV as its canonical URL, so the detailed print view does not compete with the main profile in search results.
+
+Non-quantitative delivery context supplied by Diego is included as self-reported experience: matrix-factorization training, sliding-window datasets, offline evaluation and API contracts for REA recommendations; Vertex AI pipeline work for consumer models; query understanding and behaviour-aware reranking for JobsDB search; and event-driven delivery for SEEK email recommendations. These details support the challenge-action structure without adding unapproved results.
+
+New figures supplied in private working notes are not published until Diego confirms both factual accuracy and permission to disclose them. The following candidates remain pending review:
+
+| Candidate claim | Confirmation required | Public status |
+|---|---|---|
+| Approximately 25% increase in homepage recommendation clicks | Metric definition, experiment duration, release year and disclosure permission | Pending; omitted |
+| 10% prediction precision improvement and 50% fewer unclassified users | Absolute vs relative change, evaluation population and disclosure permission | Pending; omitted |
+| Natural-language search released to 5% of traffic | Traffic definition, release timing and disclosure permission | Pending; omitted |
+| More than 20 million recommendation emails per day | Typical vs peak volume, covered markets and disclosure permission | Pending; omitted |
+| 20–50% increase in visits on peak days | Metric definition, markets, attribution and disclosure permission | Pending; omitted |
+
+The working experience notes are a private input and are not a tracked or published site artifact.
 
 ## Publications
 
