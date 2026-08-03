@@ -352,8 +352,10 @@
         font-weight: 650;
       }
 
-      .employer-trust strong {
+      .employer-trust strong,
+      .employer-trust a {
         color: var(--ink);
+        font-weight: 750;
       }
 
       .hero-summary {
@@ -798,6 +800,10 @@
       .early-career strong {
         display: block;
         margin-bottom: 3px;
+      }
+
+      .early-career a {
+        font-weight: 700;
       }
 
       .card-grid {
@@ -1618,9 +1624,13 @@
             <p class="positioning">Production Agentic AI, Search &amp; Recommender Platforms</p>
             <p class="employer-trust">
               <span>Career experience:</span>
-              <strong>REA Group</strong><span aria-hidden="true">·</span>
-              <strong>SEEK</strong><span aria-hidden="true">·</span>
-              <strong>Catho</strong>
+              <a href="https://www.rea-group.com/">REA Group</a><span aria-hidden="true">·</span>
+              <a href="https://www.seek.com/about/">SEEK</a><span aria-hidden="true">·</span>
+              <a href="https://www.catho.com.br/">Catho</a><span aria-hidden="true">·</span>
+              <a href="https://www.gruporbs.com.br/">RBS Group</a> / <a href="https://www.appus.com/">Appus</a><span aria-hidden="true">·</span>
+              <span>Zunnit Technologies</span><span aria-hidden="true">·</span>
+              <a href="https://vale.com/">Vale</a> / <a href="https://visagio.com/en">Visagio</a><span aria-hidden="true">·</span>
+              <a href="https://en.totvs.com/">TOTVS</a>
             </p>
           </div>
           <picture>
@@ -1641,7 +1651,7 @@
           </picture>
         </div>
 
-        <div class="cta-row" role="group" aria-label="Contact actions">
+        <div class="cta-row" role="group" aria-label="Contact and CV actions">
           <a
             class="button button--primary"
             href="mailto:dmarinho.ai@gmail.com?subject=AI%2FML%20leadership%20opportunity"
@@ -1650,6 +1660,14 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2 9 6 9-6H3zm18 10V9.4l-8.45 5.63a1 1 0 0 1-1.1 0L3 9.4V17h18z" /></svg>
             Email Diego
           </a>
+          <a class="button" href="detailed/" data-track="detailed-cv-primary">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 2h10l4 4v16H5V2zm9 2H7v16h10V7h-3V4zm1 0v2h2l-2-2zM9 10h6v2H9v-2zm0 4h6v2H9v-2z" /></svg>
+            Detailed CV (4 pages)
+          </a>
+          <button class="button" type="button" data-action="print" data-track="print-concise" data-track-manual hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h12v5H6V2zm10 2H8v3h8V4zm3 5a3 3 0 0 1 3 3v6h-4v4H6v-4H2v-6a3 3 0 0 1 3-3h14zm-3 11v-5H8v5h8zm3-4h1v-4a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v4h2v-3h12v3h1z" /></svg>
+            Print concise PDF
+          </button>
           <a
             class="button"
             href="https://www.linkedin.com/in/dmztheone/"
@@ -1669,10 +1687,6 @@
         </p>
 
         <div class="utility-row" role="group" aria-label="CV utilities">
-          <button class="utility-action" type="button" data-action="print" data-track="print" data-track-manual hidden>
-            Print / save PDF
-          </button>
-          <a class="utility-action" href="detailed/" data-track="detailed-cv">Detailed leadership CV</a>
           <a class="utility-action" href="../../cv/ats/" data-track="ats">ATS / text CV</a>
           <a
             class="utility-action screen-only"
@@ -1683,7 +1697,10 @@
           >GitHub<span class="sr-only"> (opens in a new tab)</span></a>
         </div>
         <p class="print-contact" hidden>
-          Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · linkedin.com/in/dmztheone · github.com/dmoliveira
+          Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · linkedin.com/in/dmztheone ·
+          <a href="https://dmoliveira.github.io/my-cv-public/cv/human/">Concise CV</a> ·
+          <a href="https://dmoliveira.github.io/my-cv-public/cv/human/detailed/">Detailed CV</a> ·
+          <a href="https://dmoliveira.github.io/my-cv-public/cv/ats/">ATS CV</a>
         </p>
 
         <section aria-labelledby="production-scope-title">
@@ -1849,8 +1866,9 @@
 
           <p class="early-career">
             <strong>Earlier engineering and machine learning roles · <time datetime="2009">2009</time> — <time datetime="2015">2015</time></strong>
-            Machine Learning Engineer, RBS Group / Appus; Machine Learning Specialist, Zunnit Technologies; Software
-            Engineer, Vale Mining / Visagio; Software Analyst, TOTVS.
+            Machine Learning Engineer, <a href="https://www.gruporbs.com.br/">RBS Group</a> / <a href="https://www.appus.com/">Appus</a>;
+            Machine Learning Specialist, Zunnit Technologies; Software Engineer, <a href="https://vale.com/">Vale</a> /
+            <a href="https://visagio.com/en">Visagio</a>; Software Analyst, <a href="https://en.totvs.com/">TOTVS</a>.
           </p>
         </div>
       </section>
@@ -2038,7 +2056,7 @@
       </section>
 
       <footer>
-        <p>Human-readable CV · <a href="../../cv/ats/">Open the ATS / text version</a></p>
+        <p>Human-readable CV · <a href="detailed/">Open the detailed four-page CV</a> · <a href="../../cv/ats/">Open the ATS / text version</a></p>
       </footer>
     </main>
 

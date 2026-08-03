@@ -25,6 +25,13 @@ Timing is written as **under one month** throughout. Recommender gains are state
 | realestate.com.au | Australia's leading residential property website by average audience, Jul 2024–Jun 2025 | [REA Group FY25 report, p. 24](https://onlinereports.irmau.com/2025/REA/24/) |
 | SEEK | Online employment marketplace across Australia, New Zealand and six Asian markets | [About SEEK](https://au.seek.com/about) and [SEEK FY25 annual report](https://au.seek.com/content/media/SEEK-Annual-Report-2025.pdf) |
 | Catho | Brazilian technology and online recruitment platform | [Catho — institutional](https://www.catho.com.br/ajuda/candidatos/sobre-a-catho/institucional/498/) |
+| RBS Group | Brazilian media and communications group | [Grupo RBS — history](https://www.gruporbs.com.br/nossa-historia) |
+| Appus | HR analytics company | [Appus](https://www.appus.com/) |
+| Vale | Global mining company | [Vale](https://vale.com/) |
+| Visagio | Management consulting and technology company | [Visagio](https://visagio.com/en) |
+| TOTVS | Brazilian enterprise technology company | [TOTVS](https://en.totvs.com/) |
+
+Zunnit Technologies remains unlinked because no trustworthy current official website was found; the former domain now hosts unrelated content.
 
 The CV does not present SEEK or Catho as a neutral “#1” portal because no current comparative methodology was found. REA Group is a company, not a portal; the qualified audience claim belongs specifically to realestate.com.au.
 

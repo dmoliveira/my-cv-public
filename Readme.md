@@ -72,10 +72,10 @@ July 2015 — February 2017
 
 ### Early Career Roles (Grouped)
 2009 — 2015
-- Machine Learning Engineer, RBS Group - Appus Startup.
-- Machine Learning Specialist, Zunnit Technologies.
-- Software Engineer, Vale Mining / Visagio.
-- Software Analyst, TOTVS.
+- Machine Learning Engineer, [RBS Group](https://www.gruporbs.com.br/) / [Appus](https://www.appus.com/).
+- Machine Learning Specialist, Zunnit Technologies (no reliable current official site).
+- Software Engineer, [Vale](https://vale.com/) / [Visagio](https://visagio.com/en).
+- Software Analyst, [TOTVS](https://en.totvs.com/).
 
 ## Selected Impact
 - 150+ online experiments improving core business metrics.
