@@ -11,15 +11,17 @@ Senior AI/ML Leader | Production Agentic AI, Search & Recommender Platforms
 
 Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · https://www.linkedin.com/in/dmztheone
 
+CV formats: [Concise human profile](cv/human/) · [Detailed leadership CV](cv/human/detailed/) · [ATS / text CV](cv/ats/)
+
 ## Executive Summary
-- AI/ML leader with 10+ years leading production AI products and platforms across search, recommendations, and agentic experiences in Oceania, Asia, and South America, with results spanning 150+ experiments, under-one-month launches, and a 12x peak uplift in one Asia market.
+- AI/ML leader with 10+ years leading production AI products and platforms across search, recommendations, and agentic experiences in Oceania, Asia, and South America, with results spanning 150+ experiments, an under-one-month production validation, and a 12x peak uplift in one Asia market.
 - Built the production agent platform behind customer-facing AI search and conversational experiences, standardizing orchestration, evaluation, observability, guardrails, and cost control.
 - Delivered measurable business impact through 150+ online experiments, multi-market platform rollouts, and multiple customer-facing AI launches.
 - Built and led global DS/MLE teams, hired across multiple AI functions, and translated strategy into production AI systems with strong cost, latency, and reliability discipline.
 
 ## Leadership and Impact
 - Led AI initiatives across agentic AI, multi-agent systems, AI search, multimodal computer vision, and recommendations.
-- Launched the RED brand's first GenAI property search within REA in under one month, turning natural-language intent into production property discovery and setting the foundation for customer-facing AI journeys.
+- Moved natural-language property search from concept into production validation in under one month, establishing a foundation for customer-facing AI journeys.
 - Delivered the first real-time computer vision attribute extraction system to production (45+ attributes).
 - Unified recommender systems across SEEK markets in ANZ and Asia, delivering 5-10x gains and a 12x peak uplift in one Asia market.
 - Shipped personalized AI search for HK (JobsDB) with +14% improvement on a core metric.
@@ -33,7 +35,7 @@ Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · https://www.linkedin.
 - Defined OKRs with executive stakeholders and partnered across product, engineering, and leadership.
 
 ## Signature Projects
-- GenAI Property Search (REA): Launched in under one month to turn natural-language intent into production property discovery.
+- GenAI Property Search (REA): Moved natural-language intent from concept into production validation in under one month.
 - Agentic AI Platform (REA): Built the production agent platform behind customer-facing AI products, with orchestration, evaluation, observability, guardrails, and cost governance.
 - Multimodal Computer Vision Attribute Extraction (REA): Real-time multimodal production system extracting 45+ property attributes for downstream search and listing quality.
 - Unified Recommender Platform (SEEK): 8+ markets, with 5-10x gains and a 12x peak in one Asia market.
@@ -44,9 +46,11 @@ Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · https://www.linkedin.
 ### Senior Engineering Manager / Principal AI — Machine Learning, [REA Group](https://www.rea-group.com/about-us/about-rea-group/) (Melbourne, Australia)
 April 2024 — Present
 - Built and led DS/MLE teams across production Agentic AI, AI search, and personalization (12 people, up to 3 teams), balancing customer value, delivery speed, and platform reuse.
-- Launched the RED brand's first GenAI property search end-to-end in under one month to validate conversational discovery in production.
+- Moved natural-language property search from concept into production validation in under one month, creating the evaluation approach and structured-output design used to assess conversational discovery.
 - Built the production agent platform behind AI search and conversational experiences, including orchestration, observability, evaluation, and guardrails.
-- Delivered real-time computer vision attribute extraction and multimodal inference in production.
+- Designed real-time multimodal inference combining listing text and images, then structured delivery across golden-set creation, evaluation, and serving to expose 45+ property attributes.
+- Modernized a legacy homepage recommender through matrix-factorization training, sliding-window datasets, repeatable offline evaluation, and a clear service API contract.
+- Led replacement of ageing buyer and renter prediction models, contributing the training pipeline, feature exploration, and Vertex AI production approach.
 - Established GenAI observability for real-time monitoring, evaluation, tracing, and operational debugging so teams could ship with clearer reliability and accountability.
 - Owned GenAI economics and latency, managing input/output and caching costs while keeping production responses within 1-2s SLAs.
 - Owned AI governance controls across guardrails, rate limiting, evaluation, monitoring, and security validation, including a completed pen test.
@@ -55,9 +59,9 @@ March 2017 — April 2024
 - Built and led a global DS team of ~10 while hiring across multiple AI teams and expanding the organization's ability to ship search, recommendation, and experimentation systems.
 - Led the recommender platform transformation across multiple markets, producing 5-10x improvements and a 12x peak in one Asia market.
 - Delivered a unified recommender platform across 8+ markets in Asia and ANZ.
-- Launched personalized AI search for HK (JobsDB) with +14% improvement on a core metric.
+- Replaced a legacy JobsDB search path in Hong Kong using Solr retrieval, query understanding, expansion, and behaviour-aware reranking; the personalized launch improved a core metric by 14%.
 - Used 150+ online experiments to de-risk ranking, search, and personalization decisions and compound gains on core marketplace metrics.
-- Served millions of users with real-time recommendations across homepage, email, and push.
+- Re-architected high-volume email recommendations away from an error-prone legacy process using event-driven pipelines and collaborative and content-based methods.
 - Designed systems with offline evaluation, online testing, and load tests to meet SLAs (~500ms for recs).
 
 ### Lead Data Scientist, [Catho](https://www.catho.com.br/ajuda/candidatos/sobre-a-catho/institucional/498/) (São Paulo, Brazil)
@@ -68,10 +72,10 @@ July 2015 — February 2017
 
 ### Early Career Roles (Grouped)
 2009 — 2015
-- Machine Learning Engineer, RBS Group - Appus Startup.
-- Machine Learning Specialist, Zunnit Technologies.
-- Software Engineer, Vale Mining / Visagio.
-- Software Analyst, TOTVS.
+- Machine Learning Engineer, [RBS Group](https://www.gruporbs.com.br/) / [Appus](https://www.appus.com/).
+- Machine Learning Specialist, Zunnit Technologies (no reliable current official site).
+- Software Engineer, [Vale](https://vale.com/) / [Visagio](https://visagio.com/en).
+- Software Analyst, [TOTVS](https://en.totvs.com/).
 
 ## Selected Impact
 - 150+ online experiments improving core business metrics.
