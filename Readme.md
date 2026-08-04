@@ -11,7 +11,7 @@ Senior AI/ML Leader | Production Agentic AI, Search & Recommender Platforms
 
 Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · https://www.linkedin.com/in/dmztheone
 
-CV formats: [Concise human profile](cv/human/) · [Detailed leadership CV](cv/human/detailed/) · [ATS / text CV](cv/ats/)
+CV: [All versions](cv/) · [Concise CV](cv/human/) · [Detailed CV](cv/human/detailed/) · [ATS-friendly CV](cv/ats/)
 
 ## Executive Summary
 - Senior AI/ML engineering leader with 10+ years delivering production agentic AI, search, ranking, recommender, multimodal, and MLOps systems across Oceania, Asia, and South America.

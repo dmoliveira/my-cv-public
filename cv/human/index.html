@@ -235,6 +235,23 @@
         margin: 32px auto 72px;
       }
 
+      .cv-home-nav {
+        margin: 0 0 12px;
+      }
+
+      .cv-home-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 7px 11px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.92);
+        font-size: 0.84rem;
+        font-weight: 750;
+        text-decoration: none;
+      }
+
       .hero {
         position: relative;
         isolation: isolate;
@@ -2543,6 +2560,9 @@
     <a class="skip-link" href="#experience-title">Skip to professional experience</a>
 
     <main class="page-shell" id="main-content">
+      <nav class="cv-home-nav screen-only" aria-label="CV versions">
+        <a class="cv-home-link" href="../" data-track="cv-home" aria-label="Back to all CV versions">← All CV versions</a>
+      </nav>
       <header class="hero" id="overview">
         <div class="hero-top">
           <div>
@@ -2583,9 +2603,9 @@
             <summary class="button">CV options</summary>
             <div class="cv-options__panel">
               <p class="cv-options__intro">Choose the format that best suits your review.</p>
-              <a class="cv-option" href="detailed/" data-track="detailed-cv-primary"><strong>Detailed CV</strong><span>Four-page leadership history</span></a>
+              <a class="cv-option" href="detailed/" data-track="detailed-cv-primary"><strong>Detailed CV</strong><span>Expanded leadership history</span></a>
               <button class="cv-option" type="button" data-action="print" data-track="print-concise" data-track-manual hidden><strong>Print concise PDF</strong><span>Two-page summary of this CV</span></button>
-              <a class="cv-option" href="../../cv/ats/" data-track="ats"><strong>ATS / text CV</strong><span>Linear, keyword-rich format</span></a>
+              <a class="cv-option" href="../../cv/ats/" data-track="ats"><strong>ATS-friendly CV</strong><span>Simple, keyword-rich layout</span></a>
             </div>
           </details>
         </div>
@@ -2601,10 +2621,7 @@
           <a class="utility-action screen-only" href="https://github.com/dmoliveira" target="_blank" rel="me noopener noreferrer" data-track="github">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
         </div>
         <p class="print-contact" hidden>
-          Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · linkedin.com/in/dmztheone ·
-          <a href="https://dmoliveira.github.io/my-cv-public/cv/human/">Concise CV</a> ·
-          <a href="https://dmoliveira.github.io/my-cv-public/cv/human/detailed/">Detailed CV</a> ·
-          <a href="https://dmoliveira.github.io/my-cv-public/cv/ats/">ATS CV</a>
+          Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · linkedin.com/in/dmztheone
         </p>
 
         <section aria-labelledby="production-scope-title">
@@ -2951,7 +2968,7 @@
       </section>
 
       <footer>
-        <p>Human-readable CV · <a href="detailed/">Open the detailed four-page CV</a> · <a href="../../cv/ats/">Open the ATS / text version</a></p>
+        <p>Concise CV · <a href="../">All CV versions</a> · <a href="detailed/">Detailed CV</a> · <a href="../../cv/ats/">ATS-friendly CV</a></p>
       </footer>
     </main>
 
