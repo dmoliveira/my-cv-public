@@ -19,11 +19,11 @@ CV: [All versions](cv/) · [Concise CV](cv/human/) · [Detailed CV](cv/human/det
 - Partners across Product, Delivery, UX/Design, Security, Legal, Consumer, and Go-to-Market functions to turn ambiguous opportunities into measurable production outcomes.
 
 ## Selected Leadership and Production Impact
-- **First production, real-time conversational AI for realestate.com.au:** personally implemented core orchestration and memory while leading team delivery of evaluation, guardrails, observability, cost controls, and cloud integration.
-- **GenAI property search:** personally implemented evaluation and structured-output foundations, then led cloud-scale deployment in one month, helping change a search approach established over 25+ years.
+- **First production, real-time conversational AI for realestate.com.au:** Designed and implemented the AI agent framework and production agentic runtime for realestate.com.au’s first production, real-time conversational AI—including tool access, guardrails and request/response contracts—and led the design, evaluation and vendor comparison for memory.
+- **GenAI property search:** Designed and implemented the end-to-end GenAI property-search solution, including evaluation and structured outputs; led its cloud-scale deployment in one month, helping change a search approach established over 25+ years.
 - **Real-time multimodal inference:** delivered 45+ property attributes from listing text and images for downstream search and listing experiences.
 - **Multi-market recommender platform:** unified real-time delivery across ANZ and MY, SG, PH, TH, ID, HK, and VN; produced 5–10x gains in a primary recommendation metric and a 12x peak in one market.
-- **Personalized JobsDB search:** personally developed query understanding and behaviour-aware reranking, delivering a 14% lift in overall user interaction in a controlled Hong Kong experiment.
+- **Personalized JobsDB search:** Designed and implemented the end-to-end JobsDB AI search replacement—from source-data ingestion and enrichment through synonym expansion, AI-enriched lists, retrieval and behaviour-aware reranking—delivering a 14% lift in overall user interaction in a controlled Hong Kong experiment.
 - **Experimentation and reliability:** used 150+ online experiments plus offline evaluation and load testing to guide ranking, search, and personalization decisions at approximately 500 ms recommendation and 1–2 second GenAI service targets.
 
 ## Professional Experience
@@ -31,20 +31,21 @@ CV: [All versions](cv/) · [Concise CV](cv/human/) · [Detailed CV](cv/human/det
 ### Senior Engineering Manager / Principal AI — Machine Learning, [REA Group](https://www.rea-group.com/about-us/about-rea-group/) (Melbourne, Australia)
 April 2024 — Present
 - Built and led up to 18 DS/MLE professionals across three teams spanning Agentic AI, AI search, multimodal enrichment, and personalization; aligned delivery with Product Managers, Heads of Product, Delivery Managers/Leads, UX/Design, Security, Legal, Consumer, and GTM partners.
-- Architected and personally implemented the evaluation and structured-output foundations, then led cloud-scale deployment in one month—helping change a property-search approach established over 25+ years; later built the fine-tuning and evaluation framework for model iteration.
-- Architected and personally implemented core orchestration and memory for realestate.com.au’s first production, real-time conversational AI, while leading the team delivering evaluation, guardrails, observability, cost controls, and cloud integration.
+- Designed and implemented the end-to-end GenAI property-search solution, including evaluation and structured outputs; led its cloud-scale deployment in one month, helping change a search approach established over 25+ years.
+- Built the fine-tuning and evaluation framework for subsequent model iteration.
+- Designed and implemented the AI agent framework and production agentic runtime for realestate.com.au’s first production, real-time conversational AI—including tool access, guardrails and request/response contracts—and led the design, evaluation and vendor comparison for memory.
 - Designed real-time multimodal inference combining listing text and images, then structured delivery across golden-set creation, evaluation, and serving to expose 45+ property attributes.
 - Modernized a legacy homepage recommender through matrix-factorization training, sliding-window datasets, repeatable offline evaluation, and a clear service API contract.
 - Led replacement of ageing buyer and renter prediction models, contributing the training pipeline, feature exploration, and Vertex AI production approach.
 - Established GenAI observability for real-time monitoring, evaluation, tracing, and operational debugging so teams could ship with clearer reliability and accountability.
 - Owned GenAI economics and latency, managing input/output and caching costs while keeping production responses within 1-2s SLAs.
-- Owned AI governance controls across guardrails, rate limiting, evaluation, monitoring, and security validation, including a completed pen test.
+- Led the definition and rollout of AI governance controls across rate limiting, evaluation, monitoring and guardrails; partnered with Security to ensure the penetration test was completed and the solution passed its security checks.
 ### AI / Data Scientist Manager; Senior Data Scientist; Data Scientist, [SEEK](https://au.seek.com/about) (Melbourne, Australia)
 March 2017 — April 2024
 - Built and led a global DS team of ~10 while hiring across multiple AI teams and expanding the organization's ability to ship search, recommendation, and experimentation systems.
 - Led the recommender platform transformation across multiple markets, producing 5-10x gains in a primary recommendation metric and a 12x peak in one market.
 - Delivered a unified recommender platform across ANZ and seven Asian markets: Malaysia, Singapore, Philippines, Thailand, Indonesia, Hong Kong, and Vietnam.
-- Replaced a legacy JobsDB search path in Hong Kong using Solr retrieval, query understanding, expansion, and behaviour-aware reranking; the personalized launch delivered a 14% lift in overall user interaction in a controlled online experiment.
+- Designed and implemented the end-to-end JobsDB AI search replacement—from source-data ingestion and enrichment through synonym expansion, AI-enriched lists, retrieval and behaviour-aware reranking—delivering a 14% lift in overall user interaction in a controlled Hong Kong experiment.
 - Used 150+ online experiments to de-risk ranking, search, and personalization decisions and compound gains in primary search, ranking, and personalization metrics.
 - Re-architected high-volume email recommendations away from an error-prone legacy process using event-driven pipelines and collaborative and content-based methods.
 - Designed systems with offline evaluation, online testing, and load tests to meet SLAs (~500ms for recs).

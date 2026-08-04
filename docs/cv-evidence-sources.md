@@ -1,6 +1,6 @@
 # CV evidence and source ledger
 
-Last reviewed: 2026-08-04
+Last reviewed: 2026-08-05
 
 This ledger separates public context from career claims supplied by Diego. Public company pages support marketplace context; they do not independently verify Diego's employment or delivery metrics.
 
@@ -10,12 +10,12 @@ The four summary cards use equal visual weight and one claim per card. These are
 
 | Domain | Headline | Qualifier | Status |
 |---|---|---|---|
-| Agentic AI | First real-time conversational AI for realestate.com.au | Cloud-scaled production agents with orchestration, memory, evaluation, guardrails, observability and cost control | Self-reported; confirmed by Diego on 2026-08-04 |
+| Agentic AI | First real-time conversational AI for realestate.com.au | Production agent framework and runtime with tool access, guardrails and request/response contracts; memory design, evaluation and vendor comparison | Self-reported; confirmed by Diego on 2026-08-05 |
 | Personalized search | 14% lift | Overall user interaction in a controlled online experiment for JobsDB Hong Kong | Self-reported; supplied by Diego in working experience notes |
 | Recommenders | Seven Asian markets + ANZ | MY, SG, PH, TH, ID, HK and VN; gains remain separately qualified | Self-reported; confirmed by Diego on 2026-08-04 |
 | Leadership | 18 people | Across three AI/ML teams plus Product, Delivery, UX/Design, Security, Legal, Consumer and GTM stakeholders | Self-reported; confirmed by Diego on 2026-08-04 |
 
-The REA GenAI search is described as a one-month cloud-scale deployment that helped change a search approach established over 25+ years. Diego’s contribution is consistently stated as personally implementing evaluation and structured-output foundations and leading deployment. For conversational AI, his contribution is stated as personally implementing core orchestration and memory while leading team delivery of evaluation, guardrails, observability, cost controls and cloud integration. These are self-reported claims confirmed by Diego on 2026-08-04.
+Diego confirmed the following self-reported contribution wording on 2026-08-05: Designed and implemented the end-to-end GenAI property-search solution, including evaluation and structured outputs; led its cloud-scale deployment in one month, helping change a search approach established over 25+ years. Designed and implemented the AI agent framework and production agentic runtime for realestate.com.au’s first production, real-time conversational AI—including tool access, guardrails and request/response contracts—and led the design, evaluation and vendor comparison for memory. Led the definition and rollout of AI governance controls across rate limiting, evaluation, monitoring and guardrails; partnered with Security to ensure the penetration test was completed and the solution passed its security checks.
 
 
 
@@ -56,7 +56,7 @@ The CV does not present SEEK or Catho as a neutral “#1” portal because no cu
 
 The detailed human CV at `cv/human/detailed/` adds challenge, action and delivery context to claims already published in the primary human and ATS CVs. It is intentionally `noindex` with the primary human CV as its canonical URL, so the detailed print view does not compete with the main profile in search results.
 
-Non-quantitative delivery context supplied by Diego is included as self-reported experience: matrix-factorization training, sliding-window datasets, offline evaluation and API contracts for REA recommendations; Vertex AI pipeline work for consumer models; query understanding and behaviour-aware reranking for JobsDB search; and event-driven delivery for SEEK email recommendations. These details support the challenge-action structure without adding unapproved results.
+Non-quantitative delivery context supplied by Diego is included as self-reported experience: matrix-factorization training, sliding-window datasets, offline evaluation and API contracts for REA recommendations; Vertex AI pipeline work for consumer models; and event-driven delivery for SEEK email recommendations. For JobsDB search, the confirmed wording is: Designed and implemented the end-to-end JobsDB AI search replacement—from source-data ingestion and enrichment through synonym expansion, AI-enriched lists, retrieval and behaviour-aware reranking—delivering a 14% lift in overall user interaction in a controlled Hong Kong experiment. These details support the challenge-action structure without adding unapproved results.
 
 New figures supplied in private working notes are not published until Diego confirms both factual accuracy and permission to disclose them. The following candidates remain pending review:
 
