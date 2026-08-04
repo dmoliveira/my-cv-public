@@ -1180,37 +1180,6 @@
         display: none;
       }
 
-      @media screen and (hover: hover) and (pointer: fine) {
-        :is(.experience-card, .system-card, .capability-card, .compact-card) {
-          transition:
-            transform 160ms ease,
-            border-color 160ms ease,
-            box-shadow 160ms ease;
-        }
-
-        :is(.experience-card, .system-card, .capability-card, .compact-card):hover:not(:focus-within) {
-          transform: translateY(-2px);
-          border-color: rgba(21, 89, 197, 0.28);
-          box-shadow: 0 16px 36px rgba(16, 32, 51, 0.08);
-        }
-
-        .experience-card--current:hover:not(:focus-within) {
-          border-color: rgba(21, 89, 197, 0.42);
-          box-shadow: 0 18px 42px rgba(21, 89, 197, 0.11);
-        }
-      }
-
-      @media screen {
-        :is(.experience-card, .system-card, .capability-card, .compact-card):focus-within {
-          transform: none;
-          transition: none;
-          border-color: rgba(21, 89, 197, 0.42);
-          box-shadow:
-            0 0 0 2px rgba(21, 89, 197, 0.1),
-            0 14px 34px rgba(16, 32, 51, 0.07);
-        }
-      }
-
       @media (max-width: 800px) {
         html {
           scroll-padding-top: 16px;
@@ -1926,6 +1895,30 @@
         .experience-card--current:hover:not(:focus-within) {
           border-color: rgba(21, 89, 197, 0.3);
           box-shadow: none;
+        }
+
+        :is(.experience-card, .system-card, .capability-card, .compact-card):focus-within {
+          transform: none;
+          transition: none;
+          border-color: rgba(21, 89, 197, 0.42);
+          box-shadow: 0 0 0 3px rgba(21, 89, 197, 0.13);
+        }
+
+        .mobile-jump a[aria-current="location"] {
+          background: var(--accent-soft);
+          color: var(--accent-dark);
+          box-shadow: inset 3px 0 0 var(--accent);
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        .closing-cta {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .closing-cta .cta-row {
+          flex-wrap: wrap;
         }
       }
 
@@ -2914,7 +2907,9 @@
         var printButtons = document.querySelectorAll("[data-action='print']");
         var mobileActions = document.querySelector(".mobile-actions");
         var hero = document.querySelector(".hero");
-        var navLinks = document.querySelectorAll(".nav-links a[href^='#']");
+        var navLinks = document.querySelectorAll(
+          ".nav-links a[href^='#'], .mobile-jump a[href^='#']"
+        );
         var sections = document.querySelectorAll(".content-section[id]");
 
         function trackAction(element) {
