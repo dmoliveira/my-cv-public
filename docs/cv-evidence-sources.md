@@ -11,11 +11,28 @@ The four summary cards use equal visual weight and one claim per card. These are
 | Domain | Headline | Qualifier | Status |
 |---|---|---|---|
 | Agentic AI | First real-time conversational AI for realestate.com.au | Cloud-scaled production agents with orchestration, memory, evaluation, guardrails, observability and cost control | Self-reported; confirmed by Diego on 2026-08-04 |
-| Search & ranking | 150+ experiments | Across search, ranking and personalisation | Self-reported; described in SEEK experience |
+| Personalized search | 14% lift | Overall user interaction in a controlled online experiment for JobsDB Hong Kong | Self-reported; supplied by Diego in working experience notes |
 | Recommenders | Seven Asian markets + ANZ | MY, SG, PH, TH, ID, HK and VN; gains remain separately qualified | Self-reported; confirmed by Diego on 2026-08-04 |
 | Leadership | 18 people | Across three AI/ML teams plus Product, Delivery, UX/Design, Security, Legal, Consumer and GTM stakeholders | Self-reported; confirmed by Diego on 2026-08-04 |
 
-The REA GenAI search is described as one month of investment to design and deploy a scalable component that helped change a search approach established over 25+ years. This is a self-reported career claim confirmed by Diego on 2026-08-04. Recommender gains preserve the qualifier **12x peak in one market**; the 14% search result remains separate.
+The REA GenAI search is described as a one-month cloud-scale deployment that helped change a search approach established over 25+ years. Diego’s contribution is consistently stated as personally implementing evaluation and structured-output foundations and leading deployment. For conversational AI, his contribution is stated as personally implementing core orchestration and memory while leading team delivery of evaluation, guardrails, observability, cost controls and cloud integration. These are self-reported claims confirmed by Diego on 2026-08-04.
+
+
+
+## Published metric definitions
+
+| Claim | Published wording | Qualification |
+|---|---|---|
+| JobsDB personalized search | 14% lift in overall user interaction | Controlled online experiment in Hong Kong; self-reported |
+| Multi-market recommendations | 5–10x gains in a primary recommendation metric; 12x peak in one market | Market-specific controlled experiments; does not imply uniform gains |
+| Catho recommendations | More than 115% uplift in a primary user engagement metric | Real-time candidate and hirer experience; self-reported |
+| Experimentation scale | 150+ online experiments | Across search, ranking and personalization decisions |
+
+The primary human CV uses the 14% result in the top proof grid because it communicates an outcome more directly than experiment volume.
+
+## Related public coverage
+
+[Mediaweek coverage of realestate.com.au’s OpenAI-powered realAssist](https://www.mediaweek.com.au/rea-group-unveils-openai-powered-realassist/) provides public product context for the conversational AI and GenAI property-search cards. It does not independently verify Diego’s personal contribution, so the CV labels it “Related public coverage,” not evidence.
 
 ## Company context
 
@@ -26,7 +43,7 @@ The REA GenAI search is described as one month of investment to design and deplo
 | SEEK | Online employment marketplace across Australia, New Zealand and six Asian markets | [About SEEK](https://au.seek.com/about) and [SEEK FY25 annual report](https://au.seek.com/content/media/SEEK-Annual-Report-2025.pdf) |
 | Catho | Brazilian technology and online recruitment platform | [Catho — institutional](https://www.catho.com.br/ajuda/candidatos/sobre-a-catho/institucional/498/) |
 | RBS Group | Brazilian media and communications group | [Grupo RBS — history](https://www.gruporbs.com.br/nossa-historia) |
-| Appus | HR analytics company | [Appus](https://www.appus.com/) |
+| Appus | HR analytics company | [Appus](https://www.appus.com/); [official logo asset](https://www.appus.com/wp-content/uploads/2021/06/appus_orange_black.png) |
 | Vale | Global mining company | [Vale](https://vale.com/) |
 | Visagio | Management consulting and technology company | [Visagio](https://visagio.com/en) |
 | TOTVS | Brazilian enterprise technology company | [TOTVS](https://en.totvs.com/) |
@@ -57,11 +74,11 @@ The working experience notes are a private input and are not a tracked or publis
 
 The early-career progression is based on Diego’s supplied LinkedIn experience capture at `assets/images/2025-12-LinkedIn-Experiences.png`:
 
-- RBS Group / Appus: recommender systems, NLP, forecasting and classification using Python, Scala, Java, AWS, Redis and MongoDB.
-- Zunnit Technologies: information retrieval and content recommendation for commerce and news using Java and Python.
-- Vale / Visagio: real-time Java/GWT operational software supporting iron-ore supply management.
-- TOTVS: global HR software development in C#/.NET.
-- Computational Intelligence Lab: artificial neural networks for forecasting, supported by the publication records below.
+- RBS Group / Appus (2013–2015): recommender systems, NLP, forecasting and classification using Python, Scala, Java, AWS, Redis and MongoDB.
+- Zunnit Technologies (2013): information retrieval and content recommendation for commerce and news using Java and Python.
+- Vale / Visagio (2012–2013): real-time Java/GWT operational software supporting iron-ore supply management.
+- TOTVS (2009–2010): global HR software development in C#/.NET.
+- Computational Intelligence Lab (2006–2009): artificial neural networks for forecasting, supported by the publication records below.
 
 These descriptions connect the career journey without adding unverified business outcomes.
 
@@ -89,4 +106,4 @@ Award text remains unlinked. No public organizer result was found that names Die
 
 ## Visual-policy decision
 
-The CV uses semantic HTML, CSS and small inline SVG symbols instead of a literal tag cloud, synthetic trend line or generated hero background. The career history has dates but no comparable time-series measure, so a trend chart would imply unsupported precision. The existing generated hero concept is also substantially larger than the production portrait derivatives and does not add factual evidence.
+The CV uses semantic HTML, CSS, official tracked REA/SEEK/Catho/Appus marks and neutral lettermark fallbacks for brands without reliable assets. Decorative marks are hidden in print so company names and dates remain selectable and ATS-safe. Generated corporate logos are intentionally excluded because they could misrepresent real brands. The career history has dates but no comparable time-series measure, so a trend chart would imply unsupported precision.
