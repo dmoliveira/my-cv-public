@@ -1737,12 +1737,68 @@
         }
 
         .career-journey {
-          gap: 8px 20px;
+          --career-mark-column: 72px;
+          --career-column-gap: 12px;
+          grid-template-columns: 1fr;
+          gap: 0;
+          padding-inline-start: 2rem;
+          list-style-position: outside;
+        }
+
+        .career-journey li {
+          padding: 10px 2px;
+          border-top: 1px solid var(--line);
+        }
+
+        .career-journey li:first-child {
+          border-top: 0;
+        }
+
+        .career-journey li::marker {
+          color: var(--muted);
+          font-weight: 700;
+          font-variant-numeric: tabular-nums;
+        }
+
+        .career-heading {
+          grid-template-columns: var(--career-mark-column) minmax(0, 1fr);
+          grid-template-areas:
+            "mark identity"
+            "mark date";
+          column-gap: var(--career-column-gap);
+          row-gap: 2px;
+          align-items: start;
+        }
+
+        .career-mark {
+          grid-area: mark;
+          align-self: start;
+        }
+
+        .career-identity {
+          min-width: 0;
+          grid-area: identity;
+          font-size: 1rem;
+          line-height: 1.35;
+        }
+
+        .career-employer-group {
+          white-space: nowrap;
+        }
+
+        .career-date {
+          grid-area: date;
+          justify-self: start;
+          margin-top: 1px;
+          font-size: 0.78rem;
+          line-height: 1.35;
         }
 
         .career-detail {
-          font-size: 0.82rem;
-          line-height: 1.45;
+          margin-top: 2px;
+          padding-inline-start: calc(var(--career-mark-column) + var(--career-column-gap));
+          font-size: 0.875rem;
+          line-height: 1.42;
         }
 
         .card-grid {
@@ -2038,7 +2094,13 @@
         }
 
         .career-journey {
-          gap: 9px;
+          --career-column-gap: 8px;
+          gap: 0;
+          padding-inline-start: 2rem;
+        }
+
+        .career-journey li {
+          padding: 9px 2px;
         }
 
         .career-mark {
@@ -2127,6 +2189,10 @@
 
         .proof-value {
           font-size: 1.08rem;
+        }
+
+        .career-journey {
+          --career-column-gap: 6px;
         }
 
         .mobile-jump {
@@ -2699,11 +2765,11 @@
           <div class="early-career" id="career-history">
             <strong>Earlier AI/ML and software engineering journey · <time datetime="2006">2006</time> — <time datetime="2015">2015</time></strong>
             <ol class="career-journey">
-              <li><span class="career-heading"><span class="career-mark career-mark--wordmark" aria-hidden="true"><img src="../../assets/logos/appus.png" alt="" /></span><span><b>Machine Learning Engineer</b> · <a href="https://www.gruporbs.com.br/">RBS Group</a> / <a href="https://www.appus.com/">Appus</a></span><span class="career-date"><time datetime="2013">2013</time>–<time datetime="2015">2015</time></span></span><span class="career-detail">Built recommender systems, NLP, forecasting and classification with Python, Scala, Java, AWS, Redis and MongoDB.</span></li>
-              <li><span class="career-heading"><span class="career-mark" aria-hidden="true">ZUN</span><span><b>Machine Learning Specialist</b> · Zunnit Technologies</span><span class="career-date"><time datetime="2013">2013</time></span></span><span class="career-detail">Developed large-scale information retrieval and content recommendations for commerce and news using Java and Python.</span></li>
-              <li><span class="career-heading"><span class="career-mark" aria-hidden="true">VIS</span><span><b>Software Engineer</b> · <a href="https://vale.com/">Vale</a> / <a href="https://visagio.com/en">Visagio</a></span><span class="career-date"><time datetime="2012">2012</time>–<time datetime="2013">2013</time></span></span><span class="career-detail">Delivered real-time Java/GWT operational software supporting iron-ore supply management.</span></li>
-              <li><span class="career-heading"><span class="career-mark" aria-hidden="true">TOT</span><span><b>Software Analyst</b> · <a href="https://en.totvs.com/">TOTVS</a></span><span class="career-date"><time datetime="2009">2009</time>–<time datetime="2010">2010</time></span></span><span class="career-detail">Developed global HR software in C#/.NET.</span></li>
-              <li><span class="career-heading"><span class="career-mark" aria-hidden="true">CIL</span><span><b>Research Assistant</b> · Computational Intelligence Lab</span><span class="career-date"><time datetime="2006">2006</time>–<time datetime="2009">2009</time></span></span><span class="career-detail">Applied artificial neural networks to forecasting, contributing to peer-reviewed IEEE research.</span></li>
+              <li><span class="career-heading"><span class="career-mark career-mark--wordmark" aria-hidden="true"><img src="../../assets/logos/appus.png" alt="" /></span><span class="career-identity"><b>Machine Learning Engineer</b> · <span class="career-employer-group"><a href="https://www.gruporbs.com.br/">RBS Group</a> / <a href="https://www.appus.com/">Appus</a></span></span><span class="career-date"><time datetime="2013">2013</time>–<time datetime="2015">2015</time></span></span><span class="career-detail">Built recommender systems, NLP, forecasting and classification with Python, Scala, Java, AWS, Redis and MongoDB.</span></li>
+              <li><span class="career-heading"><span class="career-mark" aria-hidden="true">ZUN</span><span class="career-identity"><b>Machine Learning Specialist</b> · Zunnit Technologies</span><span class="career-date"><time datetime="2013">2013</time></span></span><span class="career-detail">Developed large-scale information retrieval and content recommendations for commerce and news using Java and Python.</span></li>
+              <li><span class="career-heading"><span class="career-mark" aria-hidden="true">VIS</span><span class="career-identity"><b>Software Engineer</b> · <span class="career-employer-group"><a href="https://vale.com/">Vale</a> / <a href="https://visagio.com/en">Visagio</a></span></span><span class="career-date"><time datetime="2012">2012</time>–<time datetime="2013">2013</time></span></span><span class="career-detail">Delivered real-time Java/GWT operational software supporting iron-ore supply management.</span></li>
+              <li><span class="career-heading"><span class="career-mark" aria-hidden="true">TOT</span><span class="career-identity"><b>Software Analyst</b> · <a href="https://en.totvs.com/">TOTVS</a></span><span class="career-date"><time datetime="2009">2009</time>–<time datetime="2010">2010</time></span></span><span class="career-detail">Developed global HR software in C#/.NET.</span></li>
+              <li><span class="career-heading"><span class="career-mark" aria-hidden="true">CIL</span><span class="career-identity"><b>Research Assistant</b> · Computational Intelligence Lab</span><span class="career-date"><time datetime="2006">2006</time>–<time datetime="2009">2009</time></span></span><span class="career-detail">Applied artificial neural networks to forecasting, contributing to peer-reviewed IEEE research.</span></li>
             </ol>
           </div>
         </div>
