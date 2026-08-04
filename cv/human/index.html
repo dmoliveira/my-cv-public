@@ -1496,6 +1496,651 @@
         }
       }
 
+      /* Executive editorial screen system, informed by the selected A2 design study. */
+      @media screen {
+        :root {
+          --ink: #102a43;
+          --muted: #52657a;
+          --accent: #1559c5;
+          --accent-dark: #0d3f8f;
+          --accent-soft: #eaf2ff;
+          --signal: #087361;
+          --canvas: #f3f7fb;
+          --line: #d7e0ea;
+          --shadow: 0 12px 28px rgba(16, 42, 67, 0.08);
+        }
+
+        body {
+          background:
+            linear-gradient(180deg, rgba(21, 89, 197, 0.045), transparent 24rem),
+            var(--canvas);
+        }
+
+        .page-shell {
+          margin: 18px auto 48px;
+          padding: 0 40px 28px;
+          border: 1px solid rgba(16, 42, 67, 0.11);
+          border-radius: 22px;
+          background: var(--surface);
+          box-shadow: var(--shadow);
+        }
+
+        .hero {
+          margin: 0 -40px;
+          padding: 38px 40px 26px;
+          border: 0;
+          border-bottom: 1px solid var(--line);
+          border-radius: 22px 22px 0 0;
+          background: #ffffff;
+          box-shadow: none;
+        }
+
+        .hero::before {
+          width: 300px;
+          height: 300px;
+          top: -210px;
+          right: 7%;
+          border-color: rgba(21, 89, 197, 0.12);
+          box-shadow:
+            0 0 0 44px rgba(21, 89, 197, 0.022),
+            0 0 0 88px rgba(21, 89, 197, 0.016);
+        }
+
+        .hero::after {
+          display: none;
+        }
+
+        .hero-top {
+          grid-template-columns: minmax(0, 1fr) 172px;
+          gap: clamp(24px, 4vw, 48px);
+        }
+
+        h1 {
+          max-width: 730px;
+          margin: 8px 0 8px;
+          font-size: clamp(2.5rem, 5.15vw, 4.15rem);
+          line-height: 1;
+        }
+
+        .current-role {
+          font-size: clamp(1.05rem, 1.8vw, 1.24rem);
+        }
+
+        .positioning {
+          margin-bottom: 14px;
+          font-size: clamp(0.98rem, 1.7vw, 1.12rem);
+        }
+
+        .employer-trust {
+          margin-top: -3px;
+          font-size: 0.82rem;
+        }
+
+        .portrait {
+          width: 172px;
+          height: 172px;
+          border-width: 4px;
+          border-radius: 22px;
+          box-shadow: 0 12px 28px rgba(16, 42, 67, 0.16);
+        }
+
+        .cta-row {
+          margin-top: 14px;
+        }
+
+        .button {
+          border-radius: 10px;
+          box-shadow: none;
+        }
+
+        .button:hover {
+          box-shadow: 0 8px 18px rgba(16, 42, 67, 0.09);
+        }
+
+        .hero-summary {
+          max-width: 68ch;
+          margin-top: 14px;
+          font-size: clamp(1rem, 1.45vw, 1.08rem);
+          line-height: 1.55;
+        }
+
+        .utility-row {
+          margin-top: 4px;
+        }
+
+        .proof-grid {
+          gap: 0;
+          margin-top: 16px;
+          border-top: 1px solid var(--line);
+          border-bottom: 1px solid var(--line);
+        }
+
+        .proof-card {
+          padding: 13px 16px;
+          border: 0;
+          border-right: 1px solid var(--line);
+          border-radius: 0;
+          background: transparent;
+        }
+
+        .proof-card:last-child {
+          border-right: 0;
+        }
+
+        .proof-domain,
+        .proof-context {
+          font-size: 0.75rem;
+        }
+
+        .proof-value {
+          margin-top: 5px;
+          font-family: Georgia, "Times New Roman", serif;
+          font-size: clamp(1.16rem, 1.8vw, 1.42rem);
+          font-weight: 700;
+          letter-spacing: -0.02em;
+        }
+
+        .proof-context {
+          margin-top: 4px;
+          line-height: 1.35;
+        }
+
+        .site-nav {
+          top: 8px;
+          margin: 0 -40px;
+          padding: 7px 40px;
+          border: 0;
+          border-bottom: 1px solid var(--line);
+          border-radius: 0;
+          background: rgba(255, 255, 255, 0.97);
+          box-shadow: none;
+        }
+
+        .nav-links a:hover,
+        .nav-links a[aria-current="location"] {
+          background: transparent;
+          box-shadow: inset 0 -2px 0 var(--accent);
+        }
+
+        .content-section {
+          padding: 56px 0 0;
+        }
+
+        #experience {
+          padding-top: 44px;
+        }
+
+        .section-heading {
+          gap: 24px;
+          margin-bottom: 18px;
+          padding-bottom: 14px;
+          border-bottom: 1px solid var(--line);
+        }
+
+        .section-title-row {
+          gap: 0;
+        }
+
+        .section-symbol {
+          display: none;
+        }
+
+        h2 {
+          font-size: clamp(2rem, 3.8vw, 2.8rem);
+        }
+
+        .section-summary {
+          max-width: 46ch;
+          font-size: 0.92rem;
+          line-height: 1.5;
+        }
+
+        .experience-list {
+          gap: 0;
+        }
+
+        .experience-card {
+          padding: 24px 4px 26px;
+          border: 0;
+          border-top: 1px solid var(--line);
+          border-radius: 0;
+          background: transparent;
+          box-shadow: none;
+        }
+
+        .experience-card:first-child {
+          border-top: 0;
+        }
+
+        .experience-card--current {
+          margin-bottom: 12px;
+          padding: 22px 24px 24px;
+          border: 1px solid rgba(21, 89, 197, 0.22);
+          border-left: 4px solid var(--accent);
+          border-radius: 14px;
+          background: #f7faff;
+          box-shadow: none;
+        }
+
+        .experience-card--current::before {
+          display: none;
+        }
+
+        .experience-header {
+          gap: 18px;
+          margin-bottom: 11px;
+        }
+
+        h3 {
+          font-size: clamp(1.08rem, 1.75vw, 1.24rem);
+        }
+
+        .date {
+          padding: 0;
+          border-radius: 0;
+          background: transparent;
+        }
+
+        .achievement-list {
+          gap: 6px;
+          max-width: 85ch;
+          line-height: 1.5;
+        }
+
+        .tag-row {
+          gap: 6px;
+          margin-top: 12px;
+        }
+
+        .tag {
+          min-height: 25px;
+          padding: 3px 8px;
+        }
+
+        .early-career {
+          margin: 0;
+          padding: 20px 4px;
+          border: 0;
+          border-top: 1px solid var(--line);
+          border-bottom: 1px solid var(--line);
+          border-radius: 0;
+          background: transparent;
+        }
+
+        .career-journey {
+          gap: 8px 20px;
+        }
+
+        .career-detail {
+          font-size: 0.82rem;
+          line-height: 1.45;
+        }
+
+        .card-grid {
+          gap: 12px;
+        }
+
+        .system-card,
+        .capability-card,
+        .compact-card {
+          border-color: var(--line);
+          box-shadow: none;
+        }
+
+        .system-card--feature {
+          min-height: 228px;
+          padding: 21px;
+          border-radius: 14px;
+        }
+
+        .system-number {
+          width: 32px;
+          height: 32px;
+          margin-bottom: 11px;
+          border-radius: 8px;
+        }
+
+        .system-source {
+          margin: 0;
+          padding: 8px 12px;
+          border-radius: 0;
+          background: transparent;
+        }
+
+        .system-card--compact {
+          min-height: 0;
+          grid-column: 1 / -1;
+          display: grid;
+          grid-template-columns: 42px minmax(230px, 0.75fr) minmax(0, 1.25fr);
+          grid-template-areas:
+            "number title copy"
+            "number metric copy"
+            "number tags copy";
+          gap: 2px 18px;
+          align-items: start;
+          padding: 15px 18px;
+          border-radius: 10px;
+        }
+
+        .system-card--compact .system-number {
+          grid-area: number;
+          margin: 0;
+        }
+
+        .system-card--compact h3 {
+          grid-area: title;
+          margin: 0;
+        }
+
+        .system-card--compact .metric-line {
+          grid-area: metric;
+          margin: 3px 0 0 !important;
+        }
+
+        .system-card--compact > p:not(.metric-line) {
+          grid-area: copy;
+          margin: 0;
+        }
+
+        .system-card--compact .tag-row {
+          grid-area: tags;
+          align-self: end;
+          margin: 7px 0 0;
+          padding: 0;
+        }
+
+        .capability-grid,
+        .recognition-grid {
+          gap: 14px 24px;
+        }
+
+        .capability-card,
+        .compact-card {
+          padding: 16px 4px;
+          border: 0;
+          border-top: 2px solid var(--line);
+          border-radius: 0;
+          background: transparent;
+        }
+
+        .capability-card p,
+        .compact-card p {
+          margin-bottom: 0;
+        }
+
+        .clean-list {
+          gap: 7px;
+          margin-top: 9px;
+        }
+
+        .education-row {
+          gap: 24px;
+          margin-top: 12px;
+        }
+
+        .education-item {
+          padding: 12px 4px;
+          border: 0;
+          border-top: 1px solid var(--line);
+          border-radius: 0;
+          background: transparent;
+        }
+
+        .closing-cta {
+          display: grid;
+          grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr) auto;
+          gap: 28px;
+          align-items: center;
+          margin-top: 56px;
+          padding: 28px 32px;
+          border-radius: 16px;
+          background: #102f5a;
+          text-align: left;
+          box-shadow: 0 12px 28px rgba(16, 47, 90, 0.16);
+        }
+
+        .closing-cta h2,
+        .closing-cta p,
+        .closing-cta .cta-row {
+          margin: 0;
+        }
+
+        .closing-cta h2 {
+          font-size: clamp(1.7rem, 3vw, 2.3rem);
+        }
+
+        .closing-cta .cta-row {
+          flex-wrap: nowrap;
+        }
+
+        .closing-cta .button {
+          white-space: nowrap;
+        }
+
+        :is(.experience-card, .system-card, .capability-card, .compact-card):hover:not(:focus-within) {
+          transform: none;
+          border-color: var(--line);
+          box-shadow: none;
+        }
+
+        .experience-card--current:hover:not(:focus-within) {
+          border-color: rgba(21, 89, 197, 0.3);
+          box-shadow: none;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        .page-shell {
+          width: min(calc(100% - 20px), var(--max-width));
+          margin: 10px auto 32px;
+          padding: 0 18px 20px;
+          border-radius: 18px;
+        }
+
+        .hero {
+          margin: 0 -18px;
+          padding: 22px 18px 20px;
+          border-radius: 18px 18px 0 0;
+        }
+
+        .hero-top {
+          grid-template-columns: minmax(0, 1fr) 84px;
+          gap: 14px;
+        }
+
+        .portrait {
+          width: 84px;
+          height: 84px;
+          border-radius: 18px;
+        }
+
+        h1 {
+          font-size: clamp(2rem, 10vw, 2.85rem);
+        }
+
+        .positioning {
+          margin-bottom: 0;
+        }
+
+        .employer-trust,
+        .eyebrow,
+        .proof-domain,
+        .proof-context {
+          font-size: 0.75rem;
+        }
+
+        .hero-summary {
+          margin-top: 14px;
+          font-size: 1rem;
+          line-height: 1.5;
+        }
+
+        .cta-row {
+          margin-top: 14px;
+        }
+
+        .proof-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          margin-top: 14px;
+        }
+
+        .proof-card {
+          padding: 12px;
+        }
+
+        .proof-card:nth-child(2) {
+          border-right: 0;
+        }
+
+        .proof-card:nth-child(-n + 2) {
+          border-bottom: 1px solid var(--line);
+        }
+
+        .proof-value {
+          font-size: clamp(1.12rem, 5vw, 1.35rem);
+        }
+
+        .mobile-jump {
+          margin: 0 -18px;
+          border-width: 0 0 1px;
+          border-radius: 0;
+        }
+
+        .content-section,
+        #experience {
+          padding-top: 42px;
+        }
+
+        .section-heading {
+          gap: 8px;
+          margin-bottom: 14px;
+          padding-bottom: 11px;
+        }
+
+        h2 {
+          font-size: clamp(1.9rem, 8.5vw, 2.35rem);
+        }
+
+        .experience-card {
+          padding: 18px 0 20px;
+        }
+
+        .experience-card--current {
+          padding: 18px;
+          border-radius: 12px;
+        }
+
+        .experience-header {
+          gap: 7px;
+          margin-bottom: 10px;
+        }
+
+        .achievement-list {
+          gap: 6px;
+          line-height: 1.48;
+        }
+
+        .early-career {
+          padding: 18px 0;
+        }
+
+        .career-journey {
+          gap: 9px;
+        }
+
+        .career-mark {
+          font-size: 0.75rem;
+        }
+
+        .system-card--feature {
+          min-height: 0;
+          padding: 18px;
+          border-radius: 12px;
+        }
+
+        .system-card--compact {
+          display: flex;
+          padding: 18px;
+          border-radius: 12px;
+        }
+
+        .system-card--compact .system-number {
+          margin-bottom: 9px;
+        }
+
+        .system-card--compact .tag-row {
+          margin-top: 8px;
+        }
+
+        .capability-grid,
+        .recognition-grid,
+        .education-row {
+          gap: 8px;
+        }
+
+        .capability-card,
+        .compact-card,
+        .education-item {
+          padding: 14px 0;
+        }
+
+        .closing-cta {
+          grid-template-columns: 1fr;
+          gap: 12px;
+          margin-top: 44px;
+          padding: 24px;
+          border-radius: 14px;
+        }
+
+        .closing-cta .cta-row {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .mobile-actions a,
+        .mobile-actions button {
+          font-size: 0.75rem;
+        }
+      }
+
+      @media screen and (max-width: 360px) {
+        .page-shell {
+          padding-inline: 14px;
+        }
+
+        .hero {
+          margin-inline: -14px;
+          padding-inline: 14px;
+        }
+
+        .hero-top {
+          grid-template-columns: minmax(0, 1fr) 72px;
+        }
+
+        .portrait {
+          width: 72px;
+          height: 72px;
+          border-radius: 16px;
+        }
+
+        .eyebrow {
+          font-size: 0.75rem;
+          letter-spacing: 0.08em;
+        }
+
+        .proof-card {
+          padding-inline: 10px;
+        }
+
+        .proof-value {
+          font-size: 1.08rem;
+        }
+
+        .mobile-jump {
+          margin-inline: -14px;
+        }
+      }
+
       @media (prefers-reduced-motion: reduce) {
         html {
           scroll-behavior: auto;
@@ -2086,7 +2731,7 @@
         </div>
 
         <div class="card-grid">
-          <article class="system-card">
+          <article class="system-card system-card--feature">
             <span class="system-number" aria-hidden="true">01</span>
             <h3>First real-time conversational AI</h3>
             <p class="metric-line">Production · consumer-facing · scalable in cloud</p>
@@ -2096,7 +2741,7 @@
             <div class="tag-row"><span class="tag">AI agents</span><span class="tag">Tool use</span><span class="tag">Observability</span></div>
           </article>
 
-          <article class="system-card">
+          <article class="system-card system-card--feature">
             <span class="system-number" aria-hidden="true">02</span>
             <h3>GenAI property search</h3>
             <p class="metric-line">Helped change a 25+ year search approach in one month</p>
@@ -2108,7 +2753,7 @@
 
           <p class="system-source"><strong>Related public coverage:</strong> <a href="https://www.mediaweek.com.au/rea-group-unveils-openai-powered-realassist/" target="_blank" rel="noopener noreferrer">realestate.com.au’s AI search and conversational experience — Mediaweek<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a></p>
 
-          <article class="system-card">
+          <article class="system-card system-card--compact">
             <span class="system-number" aria-hidden="true">03</span>
             <h3>Unified recommender platform</h3>
             <p class="metric-line">ANZ + seven Asian markets</p>
@@ -2118,7 +2763,7 @@
             <div class="tag-row"><span class="tag">Recommenders</span><span class="tag">Ranking</span><span class="tag">Experimentation</span></div>
           </article>
 
-          <article class="system-card">
+          <article class="system-card system-card--compact">
             <span class="system-number" aria-hidden="true">04</span>
             <h3>Multimodal attribute extraction</h3>
             <p class="metric-line">45+ property attributes in real time</p>
