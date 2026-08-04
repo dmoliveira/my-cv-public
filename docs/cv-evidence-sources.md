@@ -1,6 +1,6 @@
 # CV evidence and source ledger
 
-Last reviewed: 2026-08-03
+Last reviewed: 2026-08-04
 
 This ledger separates public context from career claims supplied by Diego. Public company pages support marketplace context; they do not independently verify Diego's employment or delivery metrics.
 
@@ -10,12 +10,12 @@ The four summary cards use equal visual weight and one claim per card. These are
 
 | Domain | Headline | Qualifier | Status |
 |---|---|---|---|
-| Agentic AI | Production platform | Orchestration, evaluation, guardrails and cost control | Self-reported; described in REA experience and selected systems |
+| Agentic AI | First real-time conversational AI for realestate.com.au | Cloud-scaled production agents with orchestration, memory, evaluation, guardrails, observability and cost control | Self-reported; confirmed by Diego on 2026-08-04 |
 | Search & ranking | 150+ experiments | Across search, ranking and personalisation | Self-reported; described in SEEK experience |
-| Recommenders | 8+ markets | Unified platform reach across Asia and ANZ | Self-reported; does not imply every market had the same gains |
-| Leadership | 12 people | Across up to three AI/ML teams | Self-reported; current-role scope |
+| Recommenders | Seven Asian markets + ANZ | MY, SG, PH, TH, ID, HK and VN; gains remain separately qualified | Self-reported; confirmed by Diego on 2026-08-04 |
+| Leadership | 18 people | Across three AI/ML teams plus Product, Delivery, UX/Design, Security, Legal, Consumer and GTM stakeholders | Self-reported; confirmed by Diego on 2026-08-04 |
 
-Timing is written as **under one month** throughout. Recommender gains are stated only where the CV also preserves the qualifier **12x peak in one Asia market**. The 14% search result remains a separate launch result.
+The REA GenAI search is described as one month of investment to design and deploy a scalable component that helped change a search approach established over 25+ years. This is a self-reported career claim confirmed by Diego on 2026-08-04. Recommender gains preserve the qualifier **12x peak in one market**; the 14% search result remains separate.
 
 ## Company context
 
@@ -52,6 +52,19 @@ New figures supplied in private working notes are not published until Diego conf
 | 20–50% increase in visits on peak days | Metric definition, markets, attribution and disclosure permission | Pending; omitted |
 
 The working experience notes are a private input and are not a tracked or published site artifact.
+
+## Early-career narrative source
+
+The early-career progression is based on Diego’s supplied LinkedIn experience capture at `assets/images/2025-12-LinkedIn-Experiences.png`:
+
+- RBS Group / Appus: recommender systems, NLP, forecasting and classification using Python, Scala, Java, AWS, Redis and MongoDB.
+- Zunnit Technologies: information retrieval and content recommendation for commerce and news using Java and Python.
+- Vale / Visagio: real-time Java/GWT operational software supporting iron-ore supply management.
+- TOTVS: global HR software development in C#/.NET.
+- Computational Intelligence Lab: artificial neural networks for forecasting, supported by the publication records below.
+
+These descriptions connect the career journey without adding unverified business outcomes.
+
 
 ## Publications
 

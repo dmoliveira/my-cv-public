@@ -14,14 +14,14 @@ Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · https://www.linkedin.
 CV formats: [Concise human profile](cv/human/) · [Detailed leadership CV](cv/human/detailed/) · [ATS / text CV](cv/ats/)
 
 ## Executive Summary
-- AI/ML leader with 10+ years leading production AI products and platforms across search, recommendations, and agentic experiences in Oceania, Asia, and South America, with results spanning 150+ experiments, an under-one-month production validation, and a 12x peak uplift in one Asia market.
-- Built the production agent platform behind customer-facing AI search and conversational experiences, standardizing orchestration, evaluation, observability, guardrails, and cost control.
-- Delivered measurable business impact through 150+ online experiments, multi-market platform rollouts, and multiple customer-facing AI launches.
-- Built and led global DS/MLE teams, hired across multiple AI functions, and translated strategy into production AI systems with strong cost, latency, and reliability discipline.
+- AI/ML leader with 10+ years delivering production AI across search, recommendations, and agentic experiences; led up to 18 people across three teams and delivered results through 150+ experiments, multi-market platforms, and consumer-facing AI.
+- Designed and built the core of realestate.com.au’s first real-time conversational AI experience: scalable, consumer-facing cloud agents with orchestration, memory, evaluation, guardrails, observability, and cost control.
+- Delivered measurable business impact through 150+ online experiments, multi-market platform rollouts, and production AI launches.
+- Led up to 18 data science and ML engineering professionals and partnered across Product Managers, Heads of Product, Delivery Managers/Leads, UX/Design, Security, Legal, Consumer, and Go-to-Market teams.
 
 ## Leadership and Impact
 - Led AI initiatives across agentic AI, multi-agent systems, AI search, multimodal computer vision, and recommendations.
-- Moved natural-language property search from concept into production validation in under one month, establishing a foundation for customer-facing AI journeys.
+- With one month of investment, designed and deployed an innovative GenAI search component at scale, helping change a property-search approach established over 25+ years through evaluation and structured outputs.
 - Delivered the first real-time computer vision attribute extraction system to production (45+ attributes).
 - Unified recommender systems across SEEK markets in ANZ and Asia, delivering 5-10x gains and a 12x peak uplift in one Asia market.
 - Shipped personalized AI search for HK (JobsDB) with +14% improvement on a core metric.
@@ -35,19 +35,19 @@ CV formats: [Concise human profile](cv/human/) · [Detailed leadership CV](cv/hu
 - Defined OKRs with executive stakeholders and partnered across product, engineering, and leadership.
 
 ## Signature Projects
-- GenAI Property Search (REA): Moved natural-language intent from concept into production validation in under one month.
-- Agentic AI Platform (REA): Built the production agent platform behind customer-facing AI products, with orchestration, evaluation, observability, guardrails, and cost governance.
+- GenAI Property Search (REA): Designed and deployed an innovative, scalable AI search component in one month, helping change a search approach established over 25+ years.
+- Real-time Conversational AI (REA): Designed the core of realestate.com.au’s first production conversational AI experience—consumer-facing, cloud-scaled agents with orchestration, memory, evaluation, guardrails, observability, and cost control.
 - Multimodal Computer Vision Attribute Extraction (REA): Real-time multimodal production system extracting 45+ property attributes for downstream search and listing quality.
-- Unified Recommender Platform (SEEK): 8+ markets, with 5-10x gains and a 12x peak in one Asia market.
+- Unified Recommender Platform (SEEK): ANZ plus MY, SG, PH, TH, ID, HK, and VN, with 5-10x gains and a 12x peak in one market.
 - Personalized AI Search (SEEK JobsDB): +14% improvement on a core metric in HK.
 
 ## Professional Experience
 
 ### Senior Engineering Manager / Principal AI — Machine Learning, [REA Group](https://www.rea-group.com/about-us/about-rea-group/) (Melbourne, Australia)
 April 2024 — Present
-- Built and led DS/MLE teams across production Agentic AI, AI search, and personalization (12 people, up to 3 teams), balancing customer value, delivery speed, and platform reuse.
-- Moved natural-language property search from concept into production validation in under one month, creating the evaluation approach and structured-output design used to assess conversational discovery.
-- Built the production agent platform behind AI search and conversational experiences, including orchestration, observability, evaluation, and guardrails.
+- Built and led up to 18 DS/MLE professionals across three teams spanning Agentic AI, AI search, multimodal enrichment, and personalization; aligned delivery with Product Managers, Heads of Product, Delivery Managers/Leads, UX/Design, Security, Legal, Consumer, and GTM partners.
+- With one month of investment, designed and deployed an innovative GenAI search component at scale, helping change a property-search approach established over 25+ years through evaluation and structured outputs.
+- Designed and built the core of realestate.com.au’s first real-time conversational AI experience, delivering scalable consumer-facing cloud agents with orchestration, memory, evaluation, guardrails, observability, and cost control.
 - Designed real-time multimodal inference combining listing text and images, then structured delivery across golden-set creation, evaluation, and serving to expose 45+ property attributes.
 - Modernized a legacy homepage recommender through matrix-factorization training, sliding-window datasets, repeatable offline evaluation, and a clear service API contract.
 - Led replacement of ageing buyer and renter prediction models, contributing the training pipeline, feature exploration, and Vertex AI production approach.
@@ -58,7 +58,7 @@ April 2024 — Present
 March 2017 — April 2024
 - Built and led a global DS team of ~10 while hiring across multiple AI teams and expanding the organization's ability to ship search, recommendation, and experimentation systems.
 - Led the recommender platform transformation across multiple markets, producing 5-10x improvements and a 12x peak in one Asia market.
-- Delivered a unified recommender platform across 8+ markets in Asia and ANZ.
+- Delivered a unified recommender platform across ANZ and seven Asian markets: Malaysia, Singapore, Philippines, Thailand, Indonesia, Hong Kong, and Vietnam.
 - Replaced a legacy JobsDB search path in Hong Kong using Solr retrieval, query understanding, expansion, and behaviour-aware reranking; the personalized launch improved a core metric by 14%.
 - Used 150+ online experiments to de-risk ranking, search, and personalization decisions and compound gains on core marketplace metrics.
 - Re-architected high-volume email recommendations away from an error-prone legacy process using event-driven pipelines and collaborative and content-based methods.
@@ -66,22 +66,21 @@ March 2017 — April 2024
 
 ### Lead Data Scientist, [Catho](https://www.catho.com.br/ajuda/candidatos/sobre-a-catho/institucional/498/) (São Paulo, Brazil)
 July 2015 — February 2017
-- Built candidate recommendation systems that delivered >115% uplift on core marketplace metrics.
-- Delivered hybrid recommenders combining collaborative filtering and content-based methods.
-- Applied NLP and ML to real-world hiring marketplace challenges at scale.
+- Led a small team of data scientists and engineers delivering production recommender systems for candidates and hirers, improving user metrics through real-time systems at scale, including >115% uplift on core marketplace metrics.
 
-### Early Career Roles (Grouped)
+### Earlier AI/ML and Software Engineering Journey
 2009 — 2015
-- Machine Learning Engineer, [RBS Group](https://www.gruporbs.com.br/) / [Appus](https://www.appus.com/).
-- Machine Learning Specialist, Zunnit Technologies (no reliable current official site).
-- Software Engineer, [Vale](https://vale.com/) / [Visagio](https://visagio.com/en).
-- Software Analyst, [TOTVS](https://en.totvs.com/).
+- Machine Learning Engineer, [RBS Group](https://www.gruporbs.com.br/) / [Appus](https://www.appus.com/): built recommender, NLP, forecasting, and classification solutions using Python, Scala, Java, AWS, Redis, and MongoDB.
+- Machine Learning Specialist, Zunnit Technologies: developed large-scale information retrieval and content recommendation for commerce and news using Java and Python.
+- Software Engineer, [Vale](https://vale.com/) / [Visagio](https://visagio.com/en): delivered a real-time Java/GWT operational system supporting iron-ore supply management.
+- Software Analyst, [TOTVS](https://en.totvs.com/): developed global HR software in C#/.NET.
+- Research Assistant, Computational Intelligence Lab (2006–2009): applied artificial neural networks to forecasting, co-authoring peer-reviewed IEEE research.
 
 ## Selected Impact
 - 150+ online experiments improving core business metrics.
 - 10+ AI projects shipped to production at REA.
 - Real-time computer vision system extracting 45+ property attributes.
-- Multi-market recommender unification across 8+ markets.
+- Multi-market recommender unification across ANZ and seven Asian markets.
 - Delivered real-time recommendations and AI search to millions of users.
 
 ## Education
@@ -103,7 +102,7 @@ July 2015 — February 2017
 - New Perspectives in the Context of Computer Architecture – Educational Software for Parallel Computation (WEAC 2009)
 
 ## Skills
-Leadership: org design, hiring, mentoring, cross-functional strategy.
+Leadership: org design, hiring, mentoring, executive OKRs, and alignment across Product, Delivery, UX/Design, Security, Legal, Consumer, and GTM.
 AI/ML Systems: ranking, retrieval, AI search, hybrid search, reranking, search relevance, semantic search, sequential recommenders, online experimentation, A/B testing, learning-to-rank.
 GenAI/LLMs: agentic AI, AI agents, multi-agent orchestration, tool calling, stateful agents, memory, Retrieval-Augmented Generation (RAG), structured outputs, embeddings, agent evaluation, continuous evaluation, fine-tuning (QLoRA), Model Context Protocol (MCP).
 ML Techniques: transformers, embeddings, matrix factorization, clustering, RL, offline evaluation.

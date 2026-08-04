@@ -67,7 +67,7 @@
         "@id": "https://dmoliveira.github.io/my-cv-public/cv/human/#profile",
         "url": "https://dmoliveira.github.io/my-cv-public/cv/human/",
         "name": "Diego Marinho de Oliveira — AI/ML Leadership Profile",
-        "dateModified": "2026-08-03",
+        "dateModified": "2026-08-04",
         "mainEntity": {
           "@type": "Person",
           "@id": "https://dmoliveira.github.io/my-cv-public/cv/human/#person",
@@ -411,6 +411,81 @@
       .utility-action:hover {
         color: var(--accent-dark);
         text-decoration-color: currentColor;
+      }
+
+      .cv-options {
+        position: relative;
+        min-width: 0;
+      }
+
+      .cv-options > summary {
+        list-style: none;
+      }
+
+      .cv-options > summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .cv-options > summary::after {
+        margin-left: 4px;
+        content: "▾";
+      }
+
+      .cv-options[open] > summary::after {
+        content: "▴";
+      }
+
+      .cv-options__panel {
+        position: absolute;
+        z-index: 30;
+        top: calc(100% + 8px);
+        left: 0;
+        width: min(680px, calc(100vw - 48px));
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: var(--surface-soft);
+        box-shadow: 0 18px 42px rgba(16, 32, 51, 0.18);
+      }
+
+      .cv-options__intro {
+        grid-column: 1 / -1;
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+
+      .cv-option {
+        min-width: 0;
+        min-height: 54px;
+        padding: 9px 10px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: #ffffff;
+        color: var(--accent-dark);
+        font: inherit;
+        text-align: left;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .cv-option strong,
+      .cv-option span {
+        display: block;
+      }
+
+      .cv-option span {
+        margin-top: 2px;
+        color: var(--muted);
+        font-size: 0.76rem;
+      }
+
+      .cv-option:hover {
+        border-color: rgba(21, 89, 197, 0.45);
+        text-decoration: none;
       }
 
       .button {
@@ -792,18 +867,42 @@
 
       .early-career {
         margin: 4px 4px 0;
-        padding: 14px 16px;
-        border-left: 3px solid var(--line);
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-left: 4px solid var(--accent);
+        border-radius: 12px;
+        background: var(--surface-soft);
         color: var(--muted);
       }
 
-      .early-career strong {
+      .early-career > strong {
         display: block;
-        margin-bottom: 3px;
+        margin-bottom: 9px;
+        color: var(--ink);
       }
 
-      .early-career a {
-        font-weight: 700;
+      .career-journey {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 22px;
+        margin: 0;
+        padding-left: 1.25rem;
+      }
+
+      .career-journey li {
+        padding-left: 2px;
+      }
+
+      .career-journey a,
+      .career-journey b {
+        color: var(--ink);
+        font-weight: 750;
+      }
+
+      .career-detail {
+        display: block;
+        margin-top: 2px;
+        font-size: 0.86rem;
       }
 
       .card-grid {
@@ -1091,6 +1190,16 @@
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 8px;
           margin-top: 18px;
+        }
+
+        .cv-options__panel {
+          right: 0;
+          left: auto;
+          grid-template-columns: 1fr;
+        }
+
+        .career-journey {
+          grid-template-columns: 1fr;
         }
 
         .button {
@@ -1525,6 +1634,20 @@
           break-inside: avoid;
         }
 
+        .career-journey {
+          display: block;
+          margin: 0;
+          padding-left: 4mm;
+        }
+
+        .career-journey li {
+          margin-bottom: 0.5mm;
+        }
+
+        .career-detail {
+          display: none;
+        }
+
         #systems {
           break-before: page;
           padding-top: 0;
@@ -1623,14 +1746,9 @@
             <p class="current-role">Senior Engineering Manager / Principal AI</p>
             <p class="positioning">Production Agentic AI, Search &amp; Recommender Platforms</p>
             <p class="employer-trust">
-              <span>Career experience:</span>
-              <a href="https://www.rea-group.com/">REA Group</a><span aria-hidden="true">·</span>
-              <a href="https://www.seek.com/about/">SEEK</a><span aria-hidden="true">·</span>
-              <a href="https://www.catho.com.br/">Catho</a><span aria-hidden="true">·</span>
-              <a href="https://www.gruporbs.com.br/">RBS Group</a> / <a href="https://www.appus.com/">Appus</a><span aria-hidden="true">·</span>
-              <span>Zunnit Technologies</span><span aria-hidden="true">·</span>
-              <a href="https://vale.com/">Vale</a> / <a href="https://visagio.com/en">Visagio</a><span aria-hidden="true">·</span>
-              <a href="https://en.totvs.com/">TOTVS</a>
+              <strong>Industry career since 2009</strong><span aria-hidden="true">·</span>
+              <span>AI leadership across property and employment marketplaces</span><span aria-hidden="true">·</span>
+              <a href="#career-history">9 industry organisations</a>
             </p>
           </div>
           <picture>
@@ -1652,49 +1770,30 @@
         </div>
 
         <div class="cta-row" role="group" aria-label="Contact and CV actions">
-          <a
-            class="button button--primary"
-            href="mailto:dmarinho.ai@gmail.com?subject=AI%2FML%20leadership%20opportunity"
-            data-track="email"
-          >
+          <a class="button button--primary" href="mailto:dmarinho.ai@gmail.com?subject=AI%2FML%20leadership%20opportunity" data-track="email">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2 9 6 9-6H3zm18 10V9.4l-8.45 5.63a1 1 0 0 1-1.1 0L3 9.4V17h18z" /></svg>
             Email Diego
           </a>
-          <a class="button" href="detailed/" data-track="detailed-cv-primary">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 2h10l4 4v16H5V2zm9 2H7v16h10V7h-3V4zm1 0v2h2l-2-2zM9 10h6v2H9v-2zm0 4h6v2H9v-2z" /></svg>
-            Detailed CV (4 pages)
-          </a>
-          <button class="button" type="button" data-action="print" data-track="print-concise" data-track-manual hidden>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h12v5H6V2zm10 2H8v3h8V4zm3 5a3 3 0 0 1 3 3v6h-4v4H6v-4H2v-6a3 3 0 0 1 3-3h14zm-3 11v-5H8v5h8zm3-4h1v-4a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v4h2v-3h12v3h1z" /></svg>
-            Print concise PDF
-          </button>
-          <a
-            class="button"
-            href="https://www.linkedin.com/in/dmztheone/"
-            target="_blank"
-            rel="me noopener noreferrer"
-            data-track="linkedin"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM6.81 20.45H3.86V9h2.95v11.45z" /></svg>
-            LinkedIn<span class="sr-only"> (opens in a new tab)</span>
-          </a>
+          <details class="cv-options">
+            <summary class="button">CV options</summary>
+            <div class="cv-options__panel">
+              <p class="cv-options__intro">Choose the format that best suits your review.</p>
+              <a class="cv-option" href="detailed/" data-track="detailed-cv-primary"><strong>Detailed CV</strong><span>Four-page leadership history</span></a>
+              <button class="cv-option" type="button" data-action="print" data-track="print-concise" data-track-manual hidden><strong>Print concise PDF</strong><span>Two-page summary of this CV</span></button>
+              <a class="cv-option" href="../../cv/ats/" data-track="ats"><strong>ATS / text CV</strong><span>Linear, keyword-rich format</span></a>
+            </div>
+          </details>
         </div>
 
         <p class="hero-summary">
           AI/ML leader with <strong>10+ years</strong> shipping production systems across Oceania, Asia and South
-          America—leading global data science and ML engineering teams from strategy to customer impact in agents,
+          America—leading up to 18 data science and ML engineering professionals from strategy to consumer and business impact in agents,
           search, recommendations and multimodal AI.
         </p>
 
-        <div class="utility-row" role="group" aria-label="CV utilities">
-          <a class="utility-action" href="../../cv/ats/" data-track="ats">ATS / text CV</a>
-          <a
-            class="utility-action screen-only"
-            href="https://github.com/dmoliveira"
-            target="_blank"
-            rel="me noopener noreferrer"
-            data-track="github"
-          >GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+        <div class="utility-row" role="group" aria-label="Professional profiles">
+          <a class="utility-action" href="https://www.linkedin.com/in/dmztheone/" target="_blank" rel="me noopener noreferrer" data-track="linkedin">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
+          <a class="utility-action screen-only" href="https://github.com/dmoliveira" target="_blank" rel="me noopener noreferrer" data-track="github">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
         </div>
         <p class="print-contact" hidden>
           Melbourne, Victoria, Australia · dmarinho.ai@gmail.com · linkedin.com/in/dmztheone ·
@@ -1708,8 +1807,8 @@
           <ul class="proof-grid">
             <li class="proof-card">
               <span class="proof-domain">Agentic AI</span>
-              <strong class="proof-value">Production platform</strong>
-              <span class="proof-context">Orchestration, evaluation, guardrails and cost control</span>
+              <strong class="proof-value">First conversational AI</strong>
+              <span class="proof-context">Real-time at realestate.com.au</span>
             </li>
             <li class="proof-card">
               <span class="proof-domain">Search &amp; ranking</span>
@@ -1718,13 +1817,13 @@
             </li>
             <li class="proof-card">
               <span class="proof-domain">Recommenders</span>
-              <strong class="proof-value">8+ markets</strong>
-              <span class="proof-context">Unified platform reach across Asia and ANZ</span>
+              <strong class="proof-value">7 Asia + ANZ</strong>
+              <span class="proof-context">MY, SG, PH, TH, ID, HK and VN</span>
             </li>
             <li class="proof-card">
               <span class="proof-domain">Leadership</span>
-              <strong class="proof-value">12 people</strong>
-              <span class="proof-context">Across up to three AI/ML teams</span>
+              <strong class="proof-value">18 people</strong>
+              <span class="proof-context">Across three teams and cross-functional delivery</span>
             </li>
           </ul>
         </section>
@@ -1777,16 +1876,13 @@
             </header>
             <ul class="achievement-list">
               <li>
-                Built and led data science and machine learning engineering teams across production agentic AI,
-                AI search and personalization—<strong>12 people across up to three teams</strong>.
+                Built and led up to <strong>18 data science and ML engineering professionals across three teams</strong>, partnering with Product Managers, Heads of Product, Delivery Managers/Leads, UX/Design, Security, Legal, Consumer and GTM leaders.
               </li>
               <li>
-                Moved natural-language property search from concept into production validation in <strong>under one month</strong>,
-                establishing the evaluation approach and structured-output design used to assess the experience.
+                With <strong>one month of investment</strong>, designed and deployed an innovative GenAI search component at scale, helping change a property-search approach established over 25+ years through evaluation and structured outputs.
               </li>
               <li>
-                Built the production agent platform behind AI search and conversational experiences, including
-                orchestration, evaluation, observability, guardrails and cost controls.
+                Designed the core of realestate.com.au’s <strong>first real-time conversational AI experience</strong>: scalable, production, consumer-facing cloud agents with orchestration, memory, evaluation, guardrails, observability and cost control.
               </li>
               <li>
                 Designed real-time multimodal inference across golden-set creation, evaluation and serving, combining
@@ -1812,7 +1908,7 @@
               <div>
                 <h3>AI / Data Scientist Manager; Senior Data Scientist; Data Scientist</h3>
                 <p class="organization"><a href="https://au.seek.com/about" target="_blank" rel="noopener noreferrer">SEEK <span class="sr-only"> (opens in a new tab)</span><span class="external-mark" aria-hidden="true">↗</span></a> · Melbourne, Australia</p>
-                <p class="market-context">Online employment marketplace across Australia, New Zealand and six Asian markets.</p>
+                <p class="market-context">Online employment marketplace operating across Australia, New Zealand and Asia.</p>
               </div>
               <p class="date"><time datetime="2017-03">Mar 2017</time> — <time datetime="2024-04">Apr 2024</time></p>
             </header>
@@ -1821,12 +1917,11 @@
                 Built and led a global data science team of approximately 10 while hiring across multiple AI teams.
               </li>
               <li>
-                Led the recommender platform transformation across Asia and ANZ, producing
+                Led the recommender platform transformation across ANZ and seven Asian markets, producing
                 <strong>5–10x gains</strong> and a <strong>12x peak uplift</strong> in one Asia market.
               </li>
               <li>
-                Delivered a unified recommender platform across <strong>8+ markets</strong> and real-time recommendations
-                for millions of users across homepage, email and push.
+                Delivered a unified recommender platform across ANZ and <strong>seven Asian markets</strong>—MY, SG, PH, TH, ID, HK and VN—serving millions of users across real-time homepage, email and push experiences.
               </li>
               <li>
                 Replaced a legacy JobsDB search path with query understanding and behaviour-aware reranking, delivering
@@ -1854,8 +1949,7 @@
             </header>
             <ul class="achievement-list">
               <li>
-                Built candidate recommendation systems that delivered <strong>more than 115% uplift</strong> on core
-                marketplace metrics.
+                Led a small team of data scientists and engineers delivering production recommender systems for candidates and hirers, improving user metrics through real-time systems at scale, including <strong>more than 115% uplift</strong> on core marketplace metrics.
               </li>
               <li class="print-secondary">
                 Delivered hybrid recommenders combining collaborative filtering and content-based methods, applying
@@ -1864,12 +1958,16 @@
             </ul>
           </article>
 
-          <p class="early-career">
-            <strong>Earlier engineering and machine learning roles · <time datetime="2009">2009</time> — <time datetime="2015">2015</time></strong>
-            Machine Learning Engineer, <a href="https://www.gruporbs.com.br/">RBS Group</a> / <a href="https://www.appus.com/">Appus</a>;
-            Machine Learning Specialist, Zunnit Technologies; Software Engineer, <a href="https://vale.com/">Vale</a> /
-            <a href="https://visagio.com/en">Visagio</a>; Software Analyst, <a href="https://en.totvs.com/">TOTVS</a>.
-          </p>
+          <div class="early-career" id="career-history">
+            <strong>Earlier AI/ML and software engineering journey · <time datetime="2006">2006</time> — <time datetime="2015">2015</time></strong>
+            <ol class="career-journey">
+              <li><b>Machine Learning Engineer</b> · <a href="https://www.gruporbs.com.br/">RBS Group</a> / <a href="https://www.appus.com/">Appus</a><span class="career-detail">Recommenders, NLP, forecasting and classification with Python, Scala, Java, AWS, Redis and MongoDB.</span></li>
+              <li><b>Machine Learning Specialist</b> · Zunnit Technologies<span class="career-detail">Large-scale information retrieval and content recommendations for commerce and news using Java and Python.</span></li>
+              <li><b>Software Engineer</b> · <a href="https://vale.com/">Vale</a> / <a href="https://visagio.com/en">Visagio</a><span class="career-detail">Real-time Java/GWT operational software supporting iron-ore supply management.</span></li>
+              <li><b>Software Analyst</b> · <a href="https://en.totvs.com/">TOTVS</a><span class="career-detail">Developed global HR software in C#/.NET.</span></li>
+              <li><b>Research Assistant</b> · Computational Intelligence Lab<span class="career-detail">Artificial neural networks for forecasting, contributing to peer-reviewed IEEE research.</span></li>
+            </ol>
+          </div>
         </div>
       </section>
 
@@ -1890,11 +1988,10 @@
         <div class="card-grid">
           <article class="system-card">
             <span class="system-number" aria-hidden="true">01</span>
-            <h3>Production agent platform</h3>
-            <p class="metric-line">Orchestration → evaluation → safe operations</p>
+            <h3>First real-time conversational AI</h3>
+            <p class="metric-line">Production · consumer-facing · scalable in cloud</p>
             <p>
-              Built the shared platform behind customer-facing AI search and conversational experiences, standardizing
-              agent orchestration, observability, evaluation, guardrails and cost governance.
+              Designed and built the core of realestate.com.au’s first real-time conversational AI experience, combining agent orchestration, memory, evaluation, guardrails, observability and cost control for scalable cloud production.
             </p>
             <div class="tag-row"><span class="tag">AI agents</span><span class="tag">Tool use</span><span class="tag">Observability</span></div>
           </article>
@@ -1902,10 +1999,9 @@
           <article class="system-card">
             <span class="system-number" aria-hidden="true">02</span>
             <h3>GenAI property search</h3>
-            <p class="metric-line">Production validation in under one month</p>
+            <p class="metric-line">Helped change a 25+ year search approach in one month</p>
             <p>
-              Turned natural-language property intent into a discovery experience, moving from concept into
-              production validation in under one month.
+              Designed and deployed an innovative GenAI search component at scale in one month, using evaluation and structured outputs to help change a property-search approach established over 25+ years.
             </p>
             <a
               class="system-link"
@@ -1919,10 +2015,9 @@
           <article class="system-card">
             <span class="system-number" aria-hidden="true">03</span>
             <h3>Unified recommender platform</h3>
-            <p class="metric-line">Unified platform across 8+ markets</p>
+            <p class="metric-line">ANZ + seven Asian markets</p>
             <p>
-              Replaced isolated market solutions with a reusable platform serving millions of users across real-time
-              homepage, email and push recommendations in Asia and ANZ.
+              Replaced isolated market solutions with a reusable platform serving millions across real-time homepage, email and push recommendations in MY, SG, PH, TH, ID, HK, VN and ANZ.
             </p>
             <div class="tag-row"><span class="tag">Recommenders</span><span class="tag">Ranking</span><span class="tag">Experimentation</span></div>
           </article>
