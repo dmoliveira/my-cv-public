@@ -15,7 +15,7 @@ CV: [All versions](cv/) · [Concise CV](cv/human/) · [Detailed CV](cv/human/det
 
 ## Executive Summary
 - Senior AI/ML engineering leader with 10+ years delivering production agentic AI, search, ranking, recommender, multimodal, and MLOps systems across Oceania, Asia, and South America.
-- Combines hands-on architecture and implementation with leadership of up to 18 data science and ML engineering professionals across three teams.
+- Combines hands-on architecture and implementation with experience managing up to 18 data science and ML engineering professionals across three teams.
 - Partners across Product, Delivery, UX/Design, Security, Legal, Consumer, and Go-to-Market functions to turn ambiguous opportunities into measurable production outcomes.
 
 ## Selected Leadership and Production Impact
@@ -30,7 +30,7 @@ CV: [All versions](cv/) · [Concise CV](cv/human/) · [Detailed CV](cv/human/det
 
 ### Senior Engineering Manager / Principal AI — Machine Learning, [REA Group](https://www.rea-group.com/about-us/about-rea-group/) (Melbourne, Australia)
 April 2024 — Present
-- Built and led up to 18 DS/MLE professionals across three teams spanning Agentic AI, AI search, multimodal enrichment, and personalization; aligned delivery with Product Managers, Heads of Product, Delivery Managers/Leads, UX/Design, Security, Legal, Consumer, and GTM partners.
+- Built and managed up to 18 DS/MLE professionals across three teams spanning Agentic AI, AI search, multimodal enrichment, and personalization; aligned delivery with Product Managers, Heads of Product, Delivery Managers/Leads, UX/Design, Security, Legal, Consumer, and GTM partners.
 - Designed and implemented the end-to-end GenAI property-search solution, including evaluation and structured outputs; led its cloud-scale deployment in one month, helping change a search approach established over 25+ years.
 - Built the fine-tuning and evaluation framework for subsequent model iteration.
 - Designed and implemented the AI agent framework and production agentic runtime for realestate.com.au’s first production, real-time conversational AI—including tool access, guardrails and request/response contracts—and led the design, evaluation and vendor comparison for memory.

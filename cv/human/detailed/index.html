@@ -18,9 +18,13 @@
     a:focus-visible,button:focus-visible { outline:3px solid #fff; outline-offset:2px; border-radius:4px; box-shadow:0 0 0 6px var(--accent); }
     .skip-link { position:fixed; z-index:10; top:8px; left:8px; transform:translateY(-160%); padding:8px 12px; border-radius:6px; background:var(--ink); color:#fff; font-weight:700; }
     .skip-link:focus { transform:translateY(0); }
-    .toolbar { max-width:var(--width); display:flex; flex-wrap:wrap; gap:8px; margin:0 auto 12px; }
-    .toolbar a,.toolbar button { min-height:44px; display:inline-flex; align-items:center; justify-content:center; padding:9px 14px; border:1px solid var(--line); border-radius:8px; background:var(--surface); color:var(--accent); font:700 .88rem/1 Arial,sans-serif; text-decoration:none; cursor:pointer; }
-    main { width:100%; max-width:var(--width); margin:0 auto; background:var(--surface); box-shadow:0 18px 50px rgba(23,34,53,.1); }
+     .cv-toolbar { max-width:var(--width); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px 14px; margin:0 auto 12px; padding:8px; border:1px solid var(--line); border-radius:14px; background:rgba(255,255,255,.94); box-shadow:0 8px 24px rgba(23,34,53,.08); }
+     .cv-toolbar__label { padding:0 6px; color:var(--muted); font:800 .75rem/1 Arial,sans-serif; letter-spacing:.09em; text-transform:uppercase; white-space:nowrap; }
+     .cv-toolbar__actions { display:flex; flex:1 1 auto; justify-content:flex-end; flex-wrap:wrap; gap:8px; }
+     .cv-control { min-width:44px; min-height:44px; display:inline-flex; align-items:center; justify-content:center; padding:9px 14px; border:1px solid var(--line); border-radius:9px; background:var(--surface); color:var(--accent); font:700 .88rem/1 Arial,sans-serif; text-decoration:none; cursor:pointer; transition:border-color 150ms ease,background 150ms ease,color 150ms ease; }
+     .cv-control:hover { border-color:#91a9ce; background:var(--soft); color:var(--accent); }
+     .cv-control--back { border-color:#aac0df; background:var(--soft); }
+     main { width:100%; max-width:var(--width); margin:0 auto; border:1px solid var(--line); border-radius:16px; background:var(--surface); box-shadow:0 18px 50px rgba(23,34,53,.1); }
     .print-page { padding:clamp(28px,6vw,58px); border-bottom:1px solid var(--line); }
     .print-page:last-child { border-bottom:0; } .identity { padding-bottom:20px; border-bottom:2px solid var(--accent); }
     h1,h2,h3,p { margin-top:0; } h1 { margin-bottom:4px; font:700 clamp(2rem,7vw,3.25rem)/1.05 Georgia,serif; letter-spacing:-.035em; }
@@ -50,11 +54,11 @@
     .portfolio,.capability-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px 22px; margin-top:12px; }
     .case-study { padding:15px; border:1px solid var(--line); border-radius:8px; } .case-study h3 { margin-top:0; }
     .case-study p,.capability-grid p { margin-bottom:5px; color:var(--muted); font-size:.93rem; } .small-note { margin:22px 0 0; color:var(--muted); font-size:.82rem; } .print-only { display:none; }
-    @media (max-width:680px) { body{padding:10px 8px 42px}h1,h2{overflow-wrap:anywhere}.print-page{padding:26px 20px}.impact-grid,.portfolio,.capability-grid{grid-template-columns:1fr}.role-header{display:block}.date{margin-top:3px}.toolbar a,.toolbar button{flex:1 1 auto}.detail-career-heading{grid-template-columns:72px minmax(0,1fr)}.career-date{grid-column:2} }
+     @media (max-width:680px) { body{padding:10px 8px 42px}h1,h2{overflow-wrap:anywhere}.print-page{padding:26px 20px}.impact-grid,.portfolio,.capability-grid{grid-template-columns:1fr}.role-header{display:block}.date{margin-top:3px}.cv-toolbar{align-items:stretch}.cv-toolbar__label{flex:1 0 100%;padding:4px 6px 2px}.cv-toolbar__actions{width:100%;justify-content:flex-start}.cv-control{flex:1 1 150px}.detail-career-heading{grid-template-columns:72px minmax(0,1fr)}.career-date{grid-column:2} }
     @media print {
       @page { size:A4; margin:11mm 12mm 13mm; }
       body { padding:0; background:#fff; color:#111; font-size:9.6pt; line-height:1.28; }
-      .skip-link,.toolbar,.company-mark,.career-mark { display:none!important; } .print-only { display:block; } main { max-width:none; margin:0; box-shadow:none; }
+       .skip-link,.cv-toolbar,.company-mark,.career-mark { display:none!important; } .print-only { display:block; } main { max-width:none; margin:0; border:0; border-radius:0; box-shadow:none; }
       .print-page { padding:0; border:0; }
       .identity { padding-bottom:3mm; } h1 { font-size:23pt; } h2 { margin:4mm 0 1.8mm; font-size:14pt; break-after:avoid; }
       h3 { margin:2.6mm 0 .8mm; font-size:10.5pt; break-after:avoid; } p,li { color:#222; } .profile { margin-top:3mm; }
@@ -66,21 +70,28 @@
       .portfolio { gap:2.5mm; margin-top:2mm; } .case-study { padding:2.5mm; border-radius:0; } .case-study p { font-size:9pt; }
       a { color:#111; text-decoration:none; }
     }
-    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+     @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .cv-control { transition:none; } }
   </style>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to CV content</a>
-  <nav class="toolbar" aria-label="CV versions and print actions"><a href="../../" aria-label="Back to all CV versions">← All CV versions</a><a href="../">Concise CV</a><a href="../../ats/">ATS-friendly CV</a><button type="button" data-action="print" hidden>Print detailed PDF</button></nav>
+  <nav class="cv-toolbar" aria-label="Detailed CV navigation and actions">
+    <span class="cv-toolbar__label" aria-current="page">Detailed CV</span>
+    <div class="cv-toolbar__actions">
+      <a class="cv-control cv-control--back" href="../../../">← Back to main CV</a>
+      <a class="cv-control" href="../../ats/">ATS-friendly CV</a>
+      <button class="cv-control" type="button" data-action="print" hidden>Print detailed PDF</button>
+    </div>
+  </nav>
   <main id="main-content">
     <section class="print-page" aria-labelledby="cv-name">
       <header class="identity"><h1 id="cv-name">Diego Marinho de Oliveira</h1><p class="headline">Senior AI/ML Engineering Leader · Agentic AI, Search &amp; Recommender Platforms</p><p class="contact"><span>Melbourne, Victoria, Australia</span><span><a href="mailto:dmarinho.ai@gmail.com">dmarinho.ai@gmail.com</a></span><span><a href="https://www.linkedin.com/in/dmztheone/">linkedin.com/in/dmztheone</a></span><span><a href="https://github.com/dmoliveira">github.com/dmoliveira</a></span></p></header>
       <h2>Leadership profile</h2>
-      <p class="profile">AI/ML leader with more than 10 years building production systems and growing teams across property, employment and hiring marketplaces in Oceania, Asia and South America. Combines people leadership and product strategy with hands-on architecture across agentic AI, information retrieval, ranking and recommendations. Led up to 18 people across three teams and partnered with Product Managers, Heads of Product, Delivery Managers/Leads, UX/Design, Security, Legal, Consumer and GTM leaders to turn ambiguous opportunities into measurable, safely operated experiences.</p>
+      <p class="profile">AI/ML leader with more than 10 years building production systems and growing teams across property, employment and hiring marketplaces in Oceania, Asia and South America. Combines people leadership and product strategy with hands-on architecture across agentic AI, information retrieval, ranking and recommendations. Managed up to 18 people across three teams and partnered with Product Managers, Heads of Product, Delivery Managers/Leads, UX/Design, Security, Legal, Consumer and GTM leaders to turn ambiguous opportunities into measurable, safely operated experiences.</p>
       <h2>Selected leadership impact</h2>
-      <ul class="impact-grid"><li><strong>18 people · three teams</strong><span>Led DS/MLE teams and cross-functional delivery across product, design, governance and GTM.</span></li><li><strong>Helped change a 25+ year search approach</strong><span>Designed and implemented the end-to-end solution; led one-month cloud-scale deployment.</span></li><li><strong>14% lift in user interaction</strong><span>End-to-end AI search replacement delivered a 14% lift in a controlled Hong Kong experiment.</span></li><li><strong>7 Asian markets + ANZ</strong><span>Unified recommender delivery across MY, SG, PH, TH, ID, HK and VN.</span></li></ul>
+      <ul class="impact-grid"><li><strong>Up to 18 people · three teams</strong><span>Managed DS/MLE teams and cross-functional delivery across product, design, governance and GTM.</span></li><li><strong>Helped change a 25+ year search approach</strong><span>Designed and implemented the end-to-end solution; led one-month cloud-scale deployment.</span></li><li><strong>14% lift in user interaction</strong><span>End-to-end AI search replacement delivered a 14% lift in a controlled Hong Kong experiment.</span></li><li><strong>7 Asian markets + ANZ</strong><span>Unified recommender delivery across MY, SG, PH, TH, ID, HK and VN.</span></li></ul>
       <article aria-labelledby="rea-overview"><div class="role-header"><div><h2 id="rea-overview">Senior Engineering Manager / Principal AI</h2><p class="role-meta"><a class="company-lockup" href="https://www.rea-group.com/about-us/about-rea-group/"><span class="company-mark" aria-hidden="true"><img src="../../../assets/logos/rea-group.svg" alt="" /></span><span>REA Group</span></a> · Machine Learning · Melbourne, Australia</p></div><p class="date"><time datetime="2024-04">Apr 2024</time> — Present</p></div><ul class="achievement-list">
-        <li>Built and led up to <strong>18 data science and ML engineering professionals across three teams</strong>, partnering with Product Managers, Heads of Product, Delivery Managers/Leads, UX/Design, Security, Legal, Consumer and GTM leaders.</li>
+        <li>Built and managed up to <strong>18 data science and ML engineering professionals across three teams</strong>, partnering with Product Managers, Heads of Product, Delivery Managers/Leads, UX/Design, Security, Legal, Consumer and GTM leaders.</li>
         <li>Designed and implemented the end-to-end GenAI property-search solution, including evaluation and structured outputs; led its cloud-scale deployment in <strong>one month</strong>, helping change a search approach established over <strong>25+ years</strong>.</li>
         <li>Built the fine-tuning and evaluation framework for subsequent model iteration.</li>
         <li>Designed and implemented the AI agent framework and production agentic runtime for realestate.com.au’s <strong>first production, real-time conversational AI</strong>—including tool access, guardrails and request/response contracts—and led the design, evaluation and vendor comparison for memory.</li>

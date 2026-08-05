@@ -18,6 +18,7 @@
         --ink: #111827;
         --muted: #465467;
         --accent: #123f8c;
+        --soft: #edf3ff;
         --line: #d7dee8;
         --surface: #ffffff;
         --canvas: #f4f6f9;
@@ -78,15 +79,40 @@
         transform: translateY(0);
       }
 
-      .ats-bar {
+      .cv-toolbar {
         max-width: var(--max-width);
         display: flex;
+        align-items: center;
+        justify-content: space-between;
         flex-wrap: wrap;
-        gap: 8px;
+        gap: 8px 14px;
         margin: 0 auto 12px;
+        padding: 8px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 8px 24px rgba(17, 24, 39, 0.08);
       }
 
-      .ats-link {
+      .cv-toolbar__label {
+        padding: 0 6px;
+        color: var(--muted);
+        font: 800 0.75rem/1 Arial, Helvetica, sans-serif;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .cv-toolbar__actions {
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .cv-control {
+        min-width: 44px;
         min-height: 44px;
         display: inline-flex;
         align-items: center;
@@ -96,11 +122,21 @@
         border-radius: 9px;
         background: var(--surface);
         color: var(--accent);
-        font: inherit;
-        font-size: 0.86rem;
-        font-weight: 700;
+        font: 700 0.88rem/1 Arial, Helvetica, sans-serif;
         text-decoration: none;
         cursor: pointer;
+        transition: border-color 150ms ease, background 150ms ease, color 150ms ease;
+      }
+
+      .cv-control:hover {
+        border-color: #91a9ce;
+        background: var(--soft);
+        color: var(--accent);
+      }
+
+      .cv-control--back {
+        border-color: #aac0df;
+        background: var(--soft);
       }
 
       main {
@@ -211,12 +247,23 @@
           border-radius: 10px;
         }
 
-        .ats-bar {
+        .cv-toolbar {
+          align-items: stretch;
           margin-bottom: 8px;
         }
 
-        .ats-link {
-          flex: 1 1 auto;
+        .cv-toolbar__label {
+          flex: 1 0 100%;
+          padding: 4px 6px 2px;
+        }
+
+        .cv-toolbar__actions {
+          width: 100%;
+          justify-content: flex-start;
+        }
+
+        .cv-control {
+          flex: 1 1 150px;
         }
 
         .contact {
@@ -237,6 +284,10 @@
         html {
           scroll-behavior: auto;
         }
+
+        .cv-control {
+          transition: none;
+        }
       }
 
       @media print {
@@ -254,7 +305,7 @@
         }
 
         .skip-link,
-        .ats-bar,
+        .cv-toolbar,
         .company-context {
           display: none !important;
         }
@@ -323,12 +374,14 @@
   </head>
   <body>
     <a class="skip-link" href="#summary-title">Skip to CV content</a>
-    <nav class="ats-bar" aria-label="CV versions and actions">
-      <a class="ats-link" href="../" aria-label="Back to all CV versions">← All CV versions</a>
-      <a class="ats-link" href="../human/">Concise CV</a>
-      <a class="ats-link" href="../human/detailed/">Detailed CV</a>
-      <a class="ats-link" href="mailto:dmarinho.ai@gmail.com?subject=AI%2FML%20leadership%20opportunity">Email Diego</a>
-      <button class="ats-link" type="button" data-action="print" hidden>Print ATS PDF</button>
+    <nav class="cv-toolbar" aria-label="ATS-friendly CV navigation and actions">
+      <span class="cv-toolbar__label" aria-current="page">ATS-friendly CV</span>
+      <div class="cv-toolbar__actions">
+        <a class="cv-control cv-control--back" href="../../">← Back to main CV</a>
+        <a class="cv-control" href="../human/detailed/">Detailed CV</a>
+        <a class="cv-control" href="mailto:dmarinho.ai@gmail.com?subject=AI%2FML%20leadership%20opportunity">Email Diego</a>
+        <button class="cv-control" type="button" data-action="print" hidden>Print ATS PDF</button>
+      </div>
     </nav>
 
     <main>
@@ -351,8 +404,8 @@
             recommendations and agentic experiences in Oceania, Asia and South America.
           </li>
           <li>
-            Built and led data science and machine learning engineering teams, including
-            <strong>18 people across three teams</strong>, partnering with Product Managers, Heads of Product, Delivery Managers/Leads, UX/Design, Security, Legal, Consumer and GTM leaders.
+            Built and managed data science and machine learning engineering teams, including
+            <strong>up to 18 people across three teams</strong>, partnering with Product Managers, Heads of Product, Delivery Managers/Leads, UX/Design, Security, Legal, Consumer and GTM leaders.
           </li>
           <li>
             Designed and implemented the agent framework and production runtime for realestate.com.au’s first real-time conversational AI, and led memory design, evaluation and vendor comparison.
@@ -383,7 +436,7 @@
           <p class="role-meta">Melbourne, Australia · April 2024 — Present</p>
           <p class="company-context">Global digital property business; home to realestate.com.au.</p>
           <ul>
-            <li>Built and led up to 18 data science and ML engineering professionals across three teams, aligning delivery with Product Managers, Heads of Product, Delivery Managers/Leads, UX/Design, Security, Legal, Consumer and GTM partners.</li>
+            <li>Built and managed up to 18 data science and ML engineering professionals across three teams, aligning delivery with Product Managers, Heads of Product, Delivery Managers/Leads, UX/Design, Security, Legal, Consumer and GTM partners.</li>
             <li>Designed and implemented the end-to-end GenAI property-search solution, including evaluation and structured outputs; led its cloud-scale deployment in one month, helping change a search approach established over 25+ years.</li>
             <li>Built the fine-tuning and evaluation framework for subsequent model iteration.</li>
             <li>Designed and implemented the AI agent framework and production agentic runtime for realestate.com.au’s first production, real-time conversational AI—including tool access, guardrails and request/response contracts—and led the design, evaluation and vendor comparison for memory.</li>
